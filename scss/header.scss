@@ -6,6 +6,7 @@
     left: 0px;
     right: 0px;
     top: 0px;
+    z-index: 9999;
     background-color: $header-bg;
     @media ($sm-1679){
         padding: 15px 0;

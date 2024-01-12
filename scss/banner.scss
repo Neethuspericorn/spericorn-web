@@ -10,10 +10,12 @@
         color: $white;
         display: flex;
         flex-direction: column;
+       
         @media ($sm-767){
             margin-right: 0px;
             max-width: 100%;
         }
+       
         .bnr-title{
             font: normal normal 700 44px/67px $font-primary;
             margin-bottom: 13px;
@@ -75,4 +77,7 @@
     //         }
     //     }
     // }
+}
+.main-desc1{
+    color: #fff !important;
 }

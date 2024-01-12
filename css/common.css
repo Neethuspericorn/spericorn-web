@@ -26,6 +26,10 @@ body {
   }
 }
 
+.main-desc1 {
+  color: #fff !important;
+}
+
 .main-desc {
   font: normal normal 300 22px/35px "Titillium Web", sans-serif;
 }
@@ -41,12 +45,12 @@ body {
 }
 @media (max-width: 1199px) {
   .main-desc {
-    font: normal normal 300 17px/28px "Titillium Web", sans-serif;
+    font: normal normal 300 16px/28px "Titillium Web", sans-serif;
   }
 }
 @media (max-width: 991px) {
   .main-desc {
-    font: normal normal 300 16px/27px "Titillium Web", sans-serif;
+    font: normal normal 300 14px/27px "Titillium Web", sans-serif;
   }
 }
 
@@ -96,3 +100,5 @@ body {
   background-color: #FFFFFF;
   outline: 1px solid #6276A2;
 }
+
+/*# sourceMappingURL=common.css.map */

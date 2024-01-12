@@ -14,6 +14,9 @@ body{
         padding-top: 83px;
     }
 }
+.main-desc1{
+    color: #fff !important;
+}
 .main-desc{
     font: normal normal 300 22px/35px $font-primary;
     @media ($sm-1679){
@@ -23,10 +26,10 @@ body{
         font: normal normal 300 18px/30px $font-primary;
     }
     @media ($sm-1199){
-        font: normal normal 300 17px/28px $font-primary;
+        font: normal normal 300 16px/28px $font-primary;
     }
     @media ($sm-991){
-        font: normal normal 300 16px/27px $font-primary;
+        font: normal normal 300 14px/27px $font-primary;
     }
 }
 .sec-title{
