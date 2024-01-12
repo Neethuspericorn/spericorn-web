@@ -127,6 +127,13 @@
   -o-object-fit: contain;
      object-fit: contain;
 }
+@media (max-width: 1679px) {
+  .custom-web .slider-img {
+    max-width: 100%;
+    width: unset;
+    height: unset;
+  }
+}
 @media (max-width: 991px) {
   .custom-web .slider-img {
     margin-top: 30px;
