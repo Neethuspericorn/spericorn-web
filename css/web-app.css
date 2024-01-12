@@ -143,6 +143,11 @@
        object-fit: contain;
   }
 }
+@media (max-width: 1679px) {
+  .custom-web .slider-img img {
+    max-width: 100%;
+  }
+}
 @media (max-width: 991px) {
   .custom-web .slider-img img {
     max-width: 100%;

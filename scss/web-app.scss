@@ -93,6 +93,9 @@
             object-fit: contain;
         }
         img{
+            @media ($sm-1679){
+                max-width: 100%;
+            }
             @media ($sm-991){
                 max-width: 100%;
             }
