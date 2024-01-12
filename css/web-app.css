@@ -126,6 +126,15 @@
 @media (max-width: 991px) {
   .custom-web .slider-img {
     margin-top: 30px;
+    width: unset;
+    height: unset;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+}
+@media (max-width: 991px) {
+  .custom-web .slider-img img {
+    max-width: 100%;
   }
 }
 .custom-web .slider-wrp {

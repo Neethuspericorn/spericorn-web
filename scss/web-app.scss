@@ -79,6 +79,14 @@
         object-fit: contain;
         @media ($sm-991){
             margin-top: 30px;
+            width: unset;
+            height: unset;
+            object-fit: contain;
+        }
+        img{
+            @media ($sm-991){
+                max-width: 100%;
+            }
         }
     }
     .slider-wrp{
