@@ -12,11 +12,17 @@
         padding: 15px 0;
     }
     .navbar-brand{
-        @media ($sm-1679){
+    
+        
             img{
-                max-width: 140px;
+                @media ($sm-1679){
+                    max-width: 120px;
+                }
+                @media ($sm-1481){
+                    max-width: 120px;
+                }
             }
-        }
+        
     }
     .navbar-toggler{
         .navbar-toggler-icon{

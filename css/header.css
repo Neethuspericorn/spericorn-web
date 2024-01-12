@@ -25,7 +25,12 @@
 }
 @media (max-width: 1679px) {
   .header .navbar-brand img {
-    max-width: 140px;
+    max-width: 120px;
+  }
+}
+@media (max-width: 1481px) {
+  .header .navbar-brand img {
+    max-width: 120px;
   }
 }
 .header .navbar-toggler .navbar-toggler-icon {
