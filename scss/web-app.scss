@@ -57,15 +57,19 @@
         max-width: 647px;
         @media ($sm-1679){
             font: normal normal 300 18px/33px $font-primary;
+            max-width: 620px;
         }
         @media ($sm-1481){
             font: normal normal 300 17px/27px $font-primary;
+            max-width: 590px;
         }
         @media ($sm-1441){
             font: normal normal 300 16px/27px $font-primary;
+            max-width: 550px;
         }
         @media ($sm-1199){
             font: normal normal 300 15px/25px $font-primary;
+            max-width: 520px;
         }
         @media ($sm-991){
             font: normal normal 300 14px/25px $font-primary;

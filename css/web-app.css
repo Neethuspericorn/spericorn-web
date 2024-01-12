@@ -93,21 +93,25 @@
 @media (max-width: 1679px) {
   .custom-web .inner-desc {
     font: normal normal 300 18px/33px "Titillium Web", sans-serif;
+    max-width: 620px;
   }
 }
 @media (max-width: 1481px) {
   .custom-web .inner-desc {
     font: normal normal 300 17px/27px "Titillium Web", sans-serif;
+    max-width: 590px;
   }
 }
 @media (max-width: 1441px) {
   .custom-web .inner-desc {
     font: normal normal 300 16px/27px "Titillium Web", sans-serif;
+    max-width: 550px;
   }
 }
 @media (max-width: 1199px) {
   .custom-web .inner-desc {
     font: normal normal 300 15px/25px "Titillium Web", sans-serif;
+    max-width: 520px;
   }
 }
 @media (max-width: 991px) {
