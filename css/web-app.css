@@ -172,7 +172,7 @@
 @media (max-width: 1199px) {
   .custom-web .slider-wrp {
     margin-top: 55px;
-    margin-right: 50px;
+    margin-right: 15px;
   }
 }
 @media (max-width: 991px) {
@@ -262,6 +262,11 @@
 @media (max-width: 1481px) {
   .custom-web .slider-wrp .details-right {
     padding-left: 35px;
+  }
+}
+@media (max-width: 1199px) {
+  .custom-web .slider-wrp .details-right {
+    padding-left: 25px;
   }
 }
 .custom-web .slider-wrp .details-right .inner-title {
@@ -360,7 +365,7 @@
 }
 @media (max-width: 1199px) {
   .custom-web .slider-wrp .details-right .pro-info li .counts {
-    font: normal normal 600 26px/74px "Titillium Web", sans-serif;
+    font: normal normal 600 24px/74px "Titillium Web", sans-serif;
   }
 }
 .custom-web .slider-wrp .details-right .pro-info li .counts sup {
@@ -388,6 +393,11 @@
 @media (max-width: 1481px) {
   .custom-web .slider-wrp .details-right .pro-info li .brief {
     padding-left: 15px;
+  }
+}
+@media (max-width: 1199px) {
+  .custom-web .slider-wrp .details-right .pro-info li .brief {
+    padding-left: 10px;
   }
 }
 .custom-web .slider-wrp .details-right .pro-info li .brief .title {
