@@ -57,15 +57,19 @@
         max-width: 647px;
         @media ($sm-1679){
             font: normal normal 300 18px/33px $font-primary;
+            max-width: 620px;
         }
         @media ($sm-1481){
             font: normal normal 300 17px/27px $font-primary;
+            max-width: 590px;
         }
         @media ($sm-1441){
             font: normal normal 300 16px/27px $font-primary;
+            max-width: 550px;
         }
         @media ($sm-1199){
             font: normal normal 300 15px/25px $font-primary;
+            max-width: 520px;
         }
         @media ($sm-991){
             font: normal normal 300 14px/25px $font-primary;
@@ -79,6 +83,14 @@
         object-fit: contain;
         @media ($sm-991){
             margin-top: 30px;
+            width: unset;
+            height: unset;
+            object-fit: contain;
+        }
+        img{
+            @media ($sm-991){
+                max-width: 100%;
+            }
         }
     }
     .slider-wrp{
@@ -102,7 +114,7 @@
         }
         @media ($sm-1199){
             margin-top: 55px;
-            margin-right: 50px;
+            margin-right: 15px;
         }
         @media ($sm-991){
             margin-top: 50px;
@@ -178,15 +190,24 @@
             @media ($sm-1481){
                 padding-left: 35px;
             }
+            @media ($sm-1199){
+                padding-left: 25px;
+            }
             .inner-title{
                 font: normal normal bold 35px/54px $font-primary;
                 margin-bottom: 20px;
                 color: $white;
                 @media ($sm-1679){
-                    font: normal normal bold 33px/50px $font-primary;
+                    font: normal normal bold 30px/50px $font-primary;
                 }
                 @media ($sm-1441){
-                    font: normal normal bold 30px/45px $font-primary;
+                    font: normal normal bold 28px/38px $font-primary;
+                }
+                @media ($sm-1281){
+                    font: normal normal bold 24px/34px $font-primary;
+                }
+                @media ($sm-991){
+                    font: normal normal bold 22px/32px $font-primary;
                 }
             }
             .inner-desc{
@@ -239,7 +260,7 @@
                             font: normal normal 600 30px/74px $font-primary;
                         }
                         @media ($sm-1199){
-                            font: normal normal 600 26px/74px $font-primary;
+                            font: normal normal 600 24px/74px $font-primary;
                         }
                         sup{
                             font: normal normal 600 30px/74px $font-primary;
@@ -258,6 +279,9 @@
                         }
                         @media ($sm-1481){
                             padding-left: 15px;
+                        }
+                        @media ($sm-1199){
+                            padding-left: 10px;
                         }
                         flex: 1;
                         .title{

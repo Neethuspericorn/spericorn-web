@@ -33,32 +33,22 @@
 }
 @media (max-width: 1679px) {
   .banner .bnr-left .bnr-title {
-    font: normal normal 700 40px/60px "Titillium Web", sans-serif;
+    font: normal normal 700 30px/50px "Titillium Web", sans-serif;
   }
 }
-@media (max-width: 1481px) {
-  .banner .bnr-left .bnr-title {
-    font: normal normal 700 38px/53px "Titillium Web", sans-serif;
-  }
-}
-@media (max-width: 1199px) {
-  .banner .bnr-left .bnr-title {
-    font: normal normal 700 35px/50px "Titillium Web", sans-serif;
-  }
-}
-@media (max-width: 991px) {
-  .banner .bnr-left .bnr-title {
-    font: normal normal 700 30px/40px "Titillium Web", sans-serif;
-  }
-}
-@media (max-width: 767px) {
+@media (max-width: 1441px) {
   .banner .bnr-left .bnr-title {
     font: normal normal 700 28px/38px "Titillium Web", sans-serif;
   }
 }
-@media (max-width: 579px) {
+@media (max-width: 1281px) {
   .banner .bnr-left .bnr-title {
-    font: normal normal 700 25px/35px "Titillium Web", sans-serif;
+    font: normal normal 700 24px/34px "Titillium Web", sans-serif;
+  }
+}
+@media (max-width: 991px) {
+  .banner .bnr-left .bnr-title {
+    font: normal normal 700 25px/32px "Titillium Web", sans-serif;
   }
 }
 .banner .bnr-left .bnr-title span {
@@ -67,31 +57,21 @@
 }
 @media (max-width: 1679px) {
   .banner .bnr-left .bnr-title span {
-    font: normal normal 300 40px/60px "Titillium Web", sans-serif;
+    font: normal normal 300 30px/50px "Titillium Web", sans-serif;
   }
 }
-@media (max-width: 1481px) {
-  .banner .bnr-left .bnr-title span {
-    font: normal normal 300 38px/53px "Titillium Web", sans-serif;
-  }
-}
-@media (max-width: 1199px) {
-  .banner .bnr-left .bnr-title span {
-    font: normal normal 300 35px/55px "Titillium Web", sans-serif;
-  }
-}
-@media (max-width: 991px) {
-  .banner .bnr-left .bnr-title span {
-    font: normal normal 300 30px/40px "Titillium Web", sans-serif;
-  }
-}
-@media (max-width: 767px) {
+@media (max-width: 1441px) {
   .banner .bnr-left .bnr-title span {
     font: normal normal 300 28px/38px "Titillium Web", sans-serif;
   }
 }
-@media (max-width: 579px) {
+@media (max-width: 1281px) {
   .banner .bnr-left .bnr-title span {
-    font: normal normal 300 25px/35px "Titillium Web", sans-serif;
+    font: normal normal 300 24px/34px "Titillium Web", sans-serif;
+  }
+}
+@media (max-width: 991px) {
+  .banner .bnr-left .bnr-title span {
+    font: normal normal 300 25px/32px "Titillium Web", sans-serif;
   }
 }

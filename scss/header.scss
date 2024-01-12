@@ -8,6 +8,7 @@
     top: 0px;
     z-index: 9999;
     background-color: $header-bg;
+
     @media ($sm-1679){
         padding: 15px 0;
     }
@@ -99,6 +100,11 @@
                     padding-right: 0px;
                 }
             }
+        }
+    }
+    .navbar-collapse{
+        @media ($sm-991){
+            height: 100vh;
         }
     }
 }
