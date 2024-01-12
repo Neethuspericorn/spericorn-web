@@ -285,6 +285,7 @@
                         }
                         flex: 1;
                         .title{
+                            color: $white;
                             font: normal normal 600 16px/24px $font-primary;
                             @media ($sm-1679){
                                 font: normal normal 600 15px/24px $font-primary;
