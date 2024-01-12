@@ -1,0 +1,120 @@
+/*** all Mobile Screen (iphone 6,7,8) ***/
+/*** mobile Landscape Size ***/
+/*** medium devices (tablets, less than 992px) ***/
+/*** iPad in landscape ***/
+/**** smaller than desktop 1200 (devices and browsers) ***/
+/*** laptop with MDPI (medium density per inch) resolution ***/
+/*** SP developers resolution ***/
+/*** laptop with HiDPI (High Dots Per Inch) resolution ***/
+/*** WSXGA (Wide Super Extended Graphics Array) resolution ***/
+/* placeholder mixin */
+.header {
+  padding: 22px 0;
+  position: fixed;
+  width: 100%;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  background-color: #1A273C;
+}
+@media (max-width: 1679px) {
+  .header {
+    padding: 15px 0;
+  }
+}
+@media (max-width: 1679px) {
+  .header .navbar-brand img {
+    max-width: 140px;
+  }
+}
+.header .navbar-toggler .navbar-toggler-icon {
+  background-image: url("../img/menu-bar.svg");
+}
+.header .navbar-toggler:focus {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+@media (max-width: 991px) {
+  .header .navbar-expand-lg .navbar-nav {
+    padding: 20px 0;
+  }
+}
+.header .navbar-expand-lg .navbar-nav .nav-item {
+  padding-right: 31.5px;
+  padding-left: 31.5px;
+}
+@media (max-width: 1679px) {
+  .header .navbar-expand-lg .navbar-nav .nav-item {
+    padding-right: 22px;
+    padding-left: 22px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+}
+@media (max-width: 1441px) {
+  .header .navbar-expand-lg .navbar-nav .nav-item {
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+}
+@media (max-width: 1199px) {
+  .header .navbar-expand-lg .navbar-nav .nav-item {
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+}
+@media (max-width: 991px) {
+  .header .navbar-expand-lg .navbar-nav .nav-item {
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+}
+.header .navbar-expand-lg .navbar-nav .nav-item .nav-link {
+  font: normal normal normal 18px/27px Titillium Web;
+  color: #fff;
+  position: relative;
+}
+@media (min-width: 992px) {
+  .header .navbar-expand-lg .navbar-nav .nav-item .nav-link {
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+}
+@media (min-width: 1679px) {
+  .header .navbar-expand-lg .navbar-nav .nav-item .nav-link {
+    font-size: 17px;
+  }
+}
+@media (max-width: 1199px) {
+  .header .navbar-expand-lg .navbar-nav .nav-item .nav-link {
+    font-size: 16px;
+  }
+}
+.header .navbar-expand-lg .navbar-nav .nav-item .nav-link::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: #fff;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.header .navbar-expand-lg .navbar-nav .nav-item .nav-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.header .navbar-expand-lg .navbar-nav .nav-item:last-child {
+  padding-right: 0px;
+}

@@ -1,0 +1,98 @@
+/*** all Mobile Screen (iphone 6,7,8) ***/
+/*** mobile Landscape Size ***/
+/*** medium devices (tablets, less than 992px) ***/
+/*** iPad in landscape ***/
+/**** smaller than desktop 1200 (devices and browsers) ***/
+/*** laptop with MDPI (medium density per inch) resolution ***/
+/*** SP developers resolution ***/
+/*** laptop with HiDPI (High Dots Per Inch) resolution ***/
+/*** WSXGA (Wide Super Extended Graphics Array) resolution ***/
+/* placeholder mixin */
+body, html {
+  font-family: "Titillium Web", sans-serif;
+}
+
+body {
+  font-size: 19px;
+}
+
+.slide {
+  width: 100%;
+  padding-top: 97px;
+}
+@media (max-width: 1679px) {
+  .slide {
+    padding-top: 83px;
+  }
+}
+
+.main-desc {
+  font: normal normal 300 22px/35px "Titillium Web", sans-serif;
+}
+@media (max-width: 1679px) {
+  .main-desc {
+    font: normal normal 300 20px/33px "Titillium Web", sans-serif;
+  }
+}
+@media (max-width: 1481px) {
+  .main-desc {
+    font: normal normal 300 18px/30px "Titillium Web", sans-serif;
+  }
+}
+@media (max-width: 1199px) {
+  .main-desc {
+    font: normal normal 300 17px/28px "Titillium Web", sans-serif;
+  }
+}
+@media (max-width: 991px) {
+  .main-desc {
+    font: normal normal 300 16px/27px "Titillium Web", sans-serif;
+  }
+}
+
+.sec-title {
+  font-size: 39px;
+  font-weight: 700;
+}
+@media (max-width: 1679px) {
+  .sec-title {
+    font-size: 35px;
+  }
+}
+
+.sec-subtitle {
+  font-size: 31px;
+  font-weight: 700;
+}
+
+@media (min-width: 1500px) {
+  .custom-container {
+    max-width: 1450px;
+  }
+}
+@media (min-width: 1700px) {
+  .custom-container {
+    max-width: 1600px;
+  }
+}
+@media (min-width: 1800px) {
+  .custom-container {
+    max-width: 1691px;
+  }
+}
+@media (max-width: 991px) {
+  .custom-container {
+    max-width: 90%;
+  }
+}
+
+.custom-scroll::-webkit-scrollbar {
+  width: 4px;
+}
+.custom-scroll::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 4px rgb(98, 118, 162);
+}
+.custom-scroll::-webkit-scrollbar-thumb {
+  background-color: #FFFFFF;
+  outline: 1px solid #6276A2;
+}

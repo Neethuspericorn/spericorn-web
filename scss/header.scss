@@ -1,0 +1,103 @@
+@import 'partials/partials';
+.header{
+    padding: 22px 0;
+    position: fixed;
+    width: 100%;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    background-color: $header-bg;
+    @media ($sm-1679){
+        padding: 15px 0;
+    }
+    .navbar-brand{
+        @media ($sm-1679){
+            img{
+                max-width: 140px;
+            }
+        }
+    }
+    .navbar-toggler{
+        .navbar-toggler-icon{
+            background-image: url('../img/menu-bar.svg');
+        }
+        &:focus{
+            border: none;
+            outline: none;
+            box-shadow: none;
+        }
+    }
+    .navbar-expand-lg {
+        .navbar-nav{
+            @media ($sm-991){
+                padding: 20px 0;
+            }
+            .nav-item{
+                padding-right: 31.5px;
+                padding-left: 31.5px;
+                @media ($sm-1679){
+                    padding-right: 22px;
+                    padding-left: 22px;
+                    padding-top: 5px;
+                    padding-bottom: 5px;
+                    
+                }
+                @media ($sm-1441){
+                    padding-right: 20px;
+                    padding-left: 20px;
+                    padding-top: 5px;
+                    padding-bottom: 5px;
+                }
+                @media ($sm-1199){
+                    padding-right: 15px;
+                    padding-left: 15px;
+                    padding-top: 5px;
+                    padding-bottom: 5px;
+                }
+                @media ($sm-991){
+                    padding-right: 0px;
+                    padding-left: 0px;
+                    padding-top: 5px;
+                    padding-bottom: 5px;
+                }
+                .nav-link{
+                    font: normal normal normal 18px/27px Titillium Web;
+                    color: $white;
+                    position: relative;
+                    @media ($lg-992){
+                        padding-right: 0px;
+                        padding-left: 0px;
+                        padding-top: 0px;
+                        padding-bottom: 0px;
+                    }
+                    @media (min-width:1679px){
+                        font-size: 17px;
+                        
+                    }
+                    @media ($sm-1199){
+                        font-size: 16px;
+                    }
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        width: 100%;
+                        transform: scaleX(0);
+                        height: 2px;
+                        bottom: -5px;
+                        left: 0;
+                        background-color: $white;
+                        transform-origin: bottom right;
+                        transition: transform 0.25s ease-out;
+                      }
+                      &:hover::after {
+                        transform: scaleX(1);
+                        transform-origin: bottom left;
+                      }
+                }
+                &:last-child{
+                    padding-right: 0px;
+                }
+            }
+        }
+    }
+}

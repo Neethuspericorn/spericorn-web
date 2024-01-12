@@ -1,0 +1,78 @@
+@import 'partials/partials';
+.banner{
+    background: url('/img/Banner.jpg') no-repeat top right;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    .bnr-left{
+        max-width: 745px;
+        margin-right: 138px;
+        color: $white;
+        display: flex;
+        flex-direction: column;
+        @media ($sm-767){
+            margin-right: 0px;
+            max-width: 100%;
+        }
+        .bnr-title{
+            font: normal normal 700 44px/67px $font-primary;
+            margin-bottom: 13px;
+            @media ($sm-1679){
+                font: normal normal 700 40px/60px $font-primary;
+            }
+            @media ($sm-1481){
+                font: normal normal 700 38px/53px $font-primary;
+            }
+            @media ($sm-1199){
+                font: normal normal 700 35px/50px $font-primary;
+            }
+            @media ($sm-991){
+                font: normal normal 700 30px/40px $font-primary;
+            }
+            @media ($sm-767){
+                font: normal normal 700 28px/38px $font-primary;
+            }
+            @media ($sm-579){
+                font: normal normal 700 25px/35px $font-primary;
+            }
+            span{
+                display: block;
+                font: normal normal 300 44px/67px $font-primary;
+                @media ($sm-1679){
+                    font: normal normal 300 40px/60px $font-primary;
+                }
+                @media ($sm-1481){
+                    font: normal normal 300 38px/53px $font-primary;
+                }
+                @media ($sm-1199){
+                    font: normal normal 300 35px/55px $font-primary;
+                }
+                @media ($sm-991){
+                    font: normal normal 300 30px/40px $font-primary;
+                }
+                @media ($sm-767){
+                    font: normal normal 300 28px/38px $font-primary;
+                }
+                @media ($sm-579){
+                    font: normal normal 300 25px/35px $font-primary;
+                }
+            }
+        }
+    }
+    // .bnr-btm{
+    //     padding: 30px 0;
+    //     display: flex;
+    //     justify-content: center;
+    //     align-items: center;
+    //     margin-top: auto;
+    //     background: rgba(27, 38, 56, 0.7);
+    //     .items-wrp{
+    //         display: flex;
+    //         max-width: 1255px;
+    //         margin: 0 auto;
+    //         .items{
+    //             display: flex;
+    //         }
+    //     }
+    // }
+}
