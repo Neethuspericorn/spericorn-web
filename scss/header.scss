@@ -101,4 +101,9 @@
             }
         }
     }
+    .navbar-collapse{
+        @media ($sm-991){
+            height: 100vh;
+        }
+    }
 }
