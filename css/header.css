@@ -23,6 +23,21 @@
     padding: 15px 0;
   }
 }
+@media (max-width: 1481px) {
+  .header {
+    padding: 12px 0;
+  }
+}
+@media (max-width: 1281px) {
+  .header {
+    padding: 10px 0;
+  }
+}
+@media (max-width: 991px) {
+  .header {
+    padding: 8px 0;
+  }
+}
 @media (max-width: 1679px) {
   .header .navbar-brand img {
     max-width: 120px;
@@ -129,5 +144,3 @@
     height: 100vh;
   }
 }
-
-/*# sourceMappingURL=header.css.map */
