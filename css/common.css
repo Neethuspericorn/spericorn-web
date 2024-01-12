@@ -56,7 +56,22 @@ body {
 }
 @media (max-width: 1679px) {
   .sec-title {
-    font-size: 35px;
+    font-size: 30px;
+  }
+}
+@media (max-width: 1441px) {
+  .sec-title {
+    font-size: 28px;
+  }
+}
+@media (max-width: 1281px) {
+  .sec-title {
+    font-size: 24px;
+  }
+}
+@media (max-width: 991px) {
+  .sec-title {
+    font-size: 22px;
   }
 }
 

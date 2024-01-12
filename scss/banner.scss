@@ -17,44 +17,35 @@
         .bnr-title{
             font: normal normal 700 44px/67px $font-primary;
             margin-bottom: 13px;
+            // @media ($sm-1679){
+            //     font: normal normal 700 40px/60px $font-primary;
+            // }
             @media ($sm-1679){
-                font: normal normal 700 40px/60px $font-primary;
+                font: normal normal 700 30px/50px $font-primary;
             }
-            @media ($sm-1481){
-                font: normal normal 700 38px/53px $font-primary;
-            }
-            @media ($sm-1199){
-                font: normal normal 700 35px/50px $font-primary;
-            }
-            @media ($sm-991){
-                font: normal normal 700 30px/40px $font-primary;
-            }
-            @media ($sm-767){
+            @media ($sm-1441){
                 font: normal normal 700 28px/38px $font-primary;
             }
-            @media ($sm-579){
-                font: normal normal 700 25px/35px $font-primary;
+            @media ($sm-1281){
+                font: normal normal 700 24px/34px $font-primary;
+            }
+            @media ($sm-991){
+                font: normal normal 700 22px/32px $font-primary;
             }
             span{
                 display: block;
                 font: normal normal 300 44px/67px $font-primary;
                 @media ($sm-1679){
-                    font: normal normal 300 40px/60px $font-primary;
+                    font: normal normal 300 30px/50px $font-primary;
                 }
-                @media ($sm-1481){
-                    font: normal normal 300 38px/53px $font-primary;
-                }
-                @media ($sm-1199){
-                    font: normal normal 300 35px/55px $font-primary;
-                }
-                @media ($sm-991){
-                    font: normal normal 300 30px/40px $font-primary;
-                }
-                @media ($sm-767){
+                @media ($sm-1441){
                     font: normal normal 300 28px/38px $font-primary;
                 }
-                @media ($sm-579){
-                    font: normal normal 300 25px/35px $font-primary;
+                @media ($sm-1281){
+                    font: normal normal 300 24px/34px $font-primary;
+                }
+                @media ($sm-991){
+                    font: normal normal 300 22px/32px $font-primary;
                 }
             }
         }

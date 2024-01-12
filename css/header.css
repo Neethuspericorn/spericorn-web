@@ -16,6 +16,7 @@
   right: 0px;
   top: 0px;
   background-color: #1A273C;
+  z-index: 3;
 }
 @media (max-width: 1679px) {
   .header {

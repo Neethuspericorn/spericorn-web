@@ -258,12 +258,22 @@
 }
 @media (max-width: 1679px) {
   .custom-web .slider-wrp .details-right .inner-title {
-    font: normal normal bold 33px/50px "Titillium Web", sans-serif;
+    font: normal normal bold 30px/50px "Titillium Web", sans-serif;
   }
 }
 @media (max-width: 1441px) {
   .custom-web .slider-wrp .details-right .inner-title {
-    font: normal normal bold 30px/45px "Titillium Web", sans-serif;
+    font: normal normal bold 28px/38px "Titillium Web", sans-serif;
+  }
+}
+@media (max-width: 1281px) {
+  .custom-web .slider-wrp .details-right .inner-title {
+    font: normal normal bold 24px/34px "Titillium Web", sans-serif;
+  }
+}
+@media (max-width: 991px) {
+  .custom-web .slider-wrp .details-right .inner-title {
+    font: normal normal bold 22px/32px "Titillium Web", sans-serif;
   }
 }
 .custom-web .slider-wrp .details-right .inner-desc {
