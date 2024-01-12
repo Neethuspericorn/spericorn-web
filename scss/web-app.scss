@@ -247,6 +247,18 @@
                     border-bottom:1px solid $mixed-dark;
                     padding-bottom: 30px;
                     margin-bottom: 30px;
+                    @media ($sm-1679){
+                        padding-bottom: 25px;
+                    margin-bottom: 25px;
+                    }
+                    @media ($sm-1481){
+                        padding-bottom: 20px;
+                    margin-bottom: 20px;
+                    }
+                    @media ($sm-1281){
+                        padding-bottom: 15px;
+                    margin-bottom: 15px;
+                    }
                     &:last-child{
                         border: none;
                     }
