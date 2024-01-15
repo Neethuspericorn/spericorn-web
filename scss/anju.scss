@@ -33,6 +33,9 @@ a{
     color: #08243E; 
 
 }
+.industry{
+    height: unset !important;
+}
 .industries-sec{
 
     width: 63%;
@@ -96,6 +99,19 @@ a{
     }
 }
 .logo-sec{
+    padding-bottom: 90px;
+    @media ($sm-991){
+     padding-bottom: 50px;
+     
+    }
+    @media ($sm-1281){
+        padding-bottom: 50px;
+     
+    }
+    @media ($sm-1679){
+        padding-bottom: 80px;
+     
+    }
     .slick-list{  
           padding: 0 20% 0 19% !important;
     }
@@ -130,13 +146,33 @@ a{
     }
    
 }
+.banner {
+    position: relative;
+}
 .years-with-icons{
     background: #1B2638 0% 0% no-repeat padding-box;
     opacity: 0.7;
     backdrop-filter: blur(40px);
-    position: absolute;
+    position:absolute;
+    bottom: 0;
+    height: unset !important;
+    // margin-top: -190px;
     width: 100%;
     padding: 30px 0px;
+    .icon-sec{
+        @media ($sm-991){
+            row-gap: 20px !important;
+        }
+    }
+ 
+    @media ($sm-991){
+       position:unset; 
+       bottom: unset;
+       row-gap: 20px !important;
+       opacity: 1;
+       background-color: #192132;
+      
+    }
     .banner-icons{
         padding-bottom: 0;
         padding-bottom: 0;

@@ -48,6 +48,10 @@ a {
   color: #08243E;
 }
 
+.industry {
+  height: unset !important;
+}
+
 .industries-sec {
   width: 63%;
   margin: 0 auto;
@@ -123,6 +127,24 @@ a {
   min-height: 70px;
 }
 
+.logo-sec {
+  padding-bottom: 90px;
+}
+@media (max-width: 991px) {
+  .logo-sec {
+    padding-bottom: 50px;
+  }
+}
+@media (max-width: 1281px) {
+  .logo-sec {
+    padding-bottom: 50px;
+  }
+}
+@media (max-width: 1679px) {
+  .logo-sec {
+    padding-bottom: 80px;
+  }
+}
 .logo-sec .slick-list {
   padding: 0 20% 0 19% !important;
 }
@@ -154,13 +176,33 @@ a {
   }
 }
 
+.banner {
+  position: relative;
+}
+
 .years-with-icons {
   background: #1B2638 0% 0% no-repeat padding-box;
   opacity: 0.7;
   backdrop-filter: blur(40px);
   position: absolute;
+  bottom: 0;
+  height: unset !important;
   width: 100%;
   padding: 30px 0px;
+}
+@media (max-width: 991px) {
+  .years-with-icons .icon-sec {
+    row-gap: 20px !important;
+  }
+}
+@media (max-width: 991px) {
+  .years-with-icons {
+    position: unset;
+    bottom: unset;
+    row-gap: 20px !important;
+    opacity: 1;
+    background-color: #192132;
+  }
 }
 .years-with-icons .banner-icons {
   padding-bottom: 0;
