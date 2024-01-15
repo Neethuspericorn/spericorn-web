@@ -21,13 +21,13 @@
     <!-- As a heading -->
     <header class="header">
         <div class="sp-container custom-container">
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-expand-lg sp-d-flex">
             <a class="navbar-brand" href="#"><img class="imh-fluid" src="img/spericorn-logo.svg" alt=""></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav ms-auto">
+              <ul class="navbar-nav ms-auto  sp-d-flex">
                 <li class="nav-item active">
                   <a class="nav-link" href="#">Home</a>
                 </li>
@@ -92,64 +92,62 @@
                             </div>
                             <div class="slider-wrp">
                                 <div class="nav-left custom-scroll">
-                                    <ul class="slide-list">
+                                    <ul class="slide-list tab">
+                                        <li><button class="tablinks" onclick="openService(event, 'Service1')" id="defaultOpen">01. Ecommerce</button></li>
+                                        <li><button class="tablinks" onclick="openService(event, 'Service2')" id="defaultOpen">02. Banking App</button></li>
                                         <li>
-                                            01. Ecommerce
+                                            <button class="tablinks" onclick="openService(event, 'Service3')" id="defaultOpen">03. eLearning App</button>
                                         </li>
                                         <li>
-                                            02. Banking App
+                                            <button class="tablinks" onclick="openService(event, 'Service4')" id="defaultOpen">04. Ecommerce</button>
                                         </li>
                                         <li>
-                                            03. eLearning App
+                                            <button class="tablinks" onclick="openService(event, 'Service5')" id="defaultOpen">05. Ecommerce</button>
                                         </li>
                                         <li>
-                                            04. Ecommerce
+                                            <button class="tablinks" onclick="openService(event, 'Service6')" id="defaultOpen">06. Ecommerce</button>
                                         </li>
                                         <li>
-                                            05. Ecommerce
+                                            <button class="tablinks" onclick="openService(event, 'Service7')" id="defaultOpen">07. Ecommerce</button>
                                         </li>
                                         <li>
-                                            06. Ecommerce
+                                            <button class="tablinks" onclick="openService(event, 'Service8')" id="defaultOpen">08. Ecommerce</button>
                                         </li>
                                         <li>
-                                            07. Ecommerce
+                                            <button class="tablinks" onclick="openService(event, 'Service9')" id="defaultOpen">09. Ecommerce</button>
                                         </li>
                                         <li>
-                                            08. Ecommerce
-                                        </li>
-                                        <li>
-                                            09. Ecommerce
-                                        </li>
-                                        <li>
-                                            10. Ecommerce
+                                            <button class="tablinks" onclick="openService(event, 'Service10')" id="defaultOpen">10. Ecommerce</button>
                                         </li>
                                     </ul>
                                 </div>
                                 <div class="details-right">
-                                    <h4 class="inner-title">
-                                        Medical Apps
-                                    </h4>
-                                    <p class="inner-desc">
-                                        We are one of the leading On-demand Doctor applications development firms, specializing in customizing Doctor On-demand apps for healthcare organizations.
-                                    </p>
-                                    <ul class="pro-info">
-                                        <li>
-                                            <div class="counts">
-                                                2300<sup>+</sup>
-                                            </div>
-                                            <div class="brief">
-                                                <h5 class="title">Average Development Time <span>Based on 170+ project</span></h5>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="counts">
-                                                80<sup>+</sup>
-                                            </div>
-                                            <div class="brief">
-                                                <h5 class="title">Total Downloads <span>Based on 290+ applications</span></h5>
-                                            </div>
-                                        </li>
-                                    </ul>
+                                    <div id="Service1" class="tabcontent">
+                                        <h4 class="inner-title">
+                                            Medical Apps
+                                        </h4>
+                                        <p class="inner-desc">
+                                            We are one of the leading On-demand Doctor applications development firms, specializing in customizing Doctor On-demand apps for healthcare organizations.
+                                        </p>
+                                        <ul class="pro-info">
+                                            <li>
+                                                <div class="counts">
+                                                    2300<sup>+</sup>
+                                                </div>
+                                                <div class="brief">
+                                                    <h5 class="title">Average Development Time <span>Based on 170+ project</span></h5>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="counts">
+                                                    80<sup>+</sup>
+                                                </div>
+                                                <div class="brief">
+                                                    <h5 class="title">Total Downloads <span>Based on 290+ applications</span></h5>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                     </div>
@@ -329,5 +327,22 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.21/jquery.scrollify.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="custom.js"></script>
+    <script>
+        function openService(evt, serviceName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(serviceName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+    // Get the element with id="defaultOpen" and click on it
+      document.getElementById("defaultOpen").click();
+    </script>
 </body>
 </html>
