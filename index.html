@@ -213,14 +213,33 @@
                         <div class="bottom-title"><p>Gaming & Streaming</p></div>
                     </div>
                 </div>
-                <div class="logo-slider">
-                    <div class="logos"><img src="img/bit-market-logo.svg" alt="logo"></div>
-                    <div class="logos"><img src="img/bit-market-logo.svg" alt="logo"></div>
-                    <div class="logos"><img src="img/bit-market-logo.svg" alt="logo"></div>
-                    <div class="logos"><img src="img/bit-market-logo.svg" alt="logo"></div>
-                    <div class="logos"><img src="img/bit-market-logo.svg" alt="logo"></div>
-                    <div class="logos"><img src="img/bit-market-logo.svg" alt="logo"></div>
-                    <div class="logos"><img src="img/bit-market-logo.svg" alt="logo"></div>
+                <div class="my-slider">
+                    <div class="logo-slider multiple-slider">
+                        <div class="logos">
+                        <div class="logoimg"><img src="img/bit-market-logo.svg" alt="logo"></div>
+                        </div>
+                        <div class="logos">
+                            <div class="logoimg"><img src="img/bit-market-logo.svg" alt="logo"></div>
+                        </div>
+                        <div class="logos">
+                            <div class="logoimg"><img src="img/bit-market-logo.svg" alt="logo"></div>
+                        </div>
+                        <div class="logos">
+                            <div class="logoimg"><img src="img/bit-market-logo.svg" alt="logo"></div>
+                        </div>
+                        <div class="logos">
+                            <div class="logoimg"><img src="img/bit-market-logo.svg" alt="logo"></div>
+                        </div>
+                        <div class="logos">
+                            <div class="logoimg"><img src="img/bit-market-logo.svg" alt="logo"></div>
+                        </div>
+                        <div class="logos">
+                            <div class="logoimg"><img src="img/bit-market-logo.svg" alt="logo"></div>
+                        </div>
+                        
+                    
+                    </div>
+                  
                 </div>
             </div>
     </section>
@@ -378,5 +397,47 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.21/jquery.scrollify.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="custom.js"></script>
+    <script>
+        $(document).ready(function(e) {
+            $('.multiple-slider').slick({
+                dots: false,
+                infinite: true,
+                arrows: false,
+                autoplay: true, // Corrected option name
+            autoplaySpeed: 2000,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                responsive: [
+                  {
+                    breakpoint: 1024,
+                    settings: {
+                      slidesToShow: 1,
+                      slidesToScroll: 1,
+                      infinite: true,
+                      dots: true
+                    }
+                  },
+                  {
+                    breakpoint: 600,
+                    settings: {
+                      slidesToShow: 1,
+                      slidesToScroll: 1
+                    }
+                  },
+                  {
+                    breakpoint: 480,
+                    settings: {
+                      slidesToShow: 1,
+                      slidesToScroll: 1
+                    }
+                  }
+                  // You can unslick at a given breakpoint now by adding:
+                  // settings: "unslick"
+                  // instead of a settings object
+                ]
+              });});
+        
+            
+     </script>
 </body>
 </html>

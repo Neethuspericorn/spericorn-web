@@ -12,3 +12,7 @@ $(document).ready(function(){
         $(".navbar-collapse").slideToggle();
       });
 });
+
+
+
+
