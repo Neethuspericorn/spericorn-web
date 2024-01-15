@@ -1,7 +1,223 @@
 @import 'partials/partials';
 .faq{
     position: relative;
-    .casestudy-outer{
+    .casestudy-outer {
+        position: absolute;
+        font: normal normal bold 221px/336px Titillium Web;
+        letter-spacing: 0px;
+        color: #F8FBFF;
+        z-index: -13;
+        top: -67px;
         left: 87px;
+        white-space: nowrap;
+        overflow: clip;
+        width: calc(100% - 87px);
+      @media (max-width: 1679px) {
+          font-size: 160px;
+          left: 38px;
+          top: -74px;
+      }
+      @media (max-width: 991px) {
+          font-size: 60px;
+          left: 87px;
+          top: -95px;
+      }
+    }
+    .slider-wrp{
+        margin-top: 117px;
+        display: flex;
+        @media ($sm-1679){
+            margin-top: 70px;
+        }
+        @media ($sm-1481){
+            margin-top: 65px;
+        }
+        @media ($sm-1441){
+            margin-top: 60px;;
+        }
+        @media ($sm-1281){
+            margin-top: 55px;
+        }
+        @media ($sm-1199){
+            margin-top: 50px;
+        }
+        @media ($sm-991){
+            margin-top: 45px;
+        }
+        @media ($sm-767){
+            flex-direction: column;
+            margin-top: 40px;
+        }
+        .conetnt-left{
+            display: flex;
+            flex-direction: column;
+        }
+        .nav-left{
+            // max-width: 350px;
+            width: 100%;
+            max-height: 570px;
+            overflow-y: auto;
+            max-width: 40%;
+            @media (max-width:767px){
+                max-width: 100%;
+                margin-bottom: 20px;
+            }
+            .slide-list{
+                margin-left: 0px;
+                padding-left: 0px;
+                display: flex;
+                flex-direction: column;
+                margin-top: 0px;
+                @media ($sm-767){
+                    flex-direction: row;
+                    margin-top: 0px;
+                }
+                li{
+                    list-style: none;
+                    font: normal normal normal 25px/38px $font-primary;
+                    margin-bottom: 36px;
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    cursor: pointer;
+                    color: $slider-color;
+                    transition: all 0.5s;
+                    button{
+                        background-color: transparent;
+                        color: $slider-color;
+                        border: none;
+                        outline: none;
+                        cursor: pointer;
+                        font: normal normal normal 25px/38px $font-primary;
+                        @media ($sm-1679){
+                            font: normal normal normal 20px/30px $font-primary;
+                        }
+                        @media ($sm-1481){
+                            font: normal normal normal 19px/29px $font-primary;
+                        }
+                        @media ($sm-1441){
+                            font: normal normal normal 18px/28px $font-primary;
+                        }
+                        @media ($sm-1281){
+                            font: normal normal normal 17px/27px $font-primary;
+                        }
+                        @media ($sm-1199){
+                            font: normal normal normal 16px/26px $font-primary;
+                        }
+                        @media ($sm-991){
+                            font: normal normal normal 14px/24px $font-primary;
+                        }
+                    }
+
+                    @media ($sm-1679){
+                        font: normal normal normal 20px/30px $font-primary;
+                        margin-bottom: 25px;
+                    }
+                    @media ($sm-1481){
+                        font: normal normal normal 19px/29px $font-primary;
+                        margin-bottom: 25px;
+                    }
+                    @media ($sm-1441){
+                        font: normal normal normal 18px/28px $font-primary;
+                        margin-bottom: 25px;
+                    }
+                    @media ($sm-1281){
+                        font: normal normal normal 17px/27px $font-primary;
+                        margin-bottom: 25px;
+                    }
+                    @media ($sm-1199){
+                        font: normal normal normal 16px/26px $font-primary;
+                        margin-bottom: 25px;
+                    }
+                    @media ($sm-767){
+                        max-width: 100%;
+                        flex:1 0 auto;
+                        margin-bottom: 10px;
+                    }
+                    &.active{
+                        button{
+                            color: #3B7BF8;
+                        }
+                    }
+                    button{
+                        &:hover{
+                            color:#3B7BF8;
+                        }
+                    }
+                }
+            }
+        }
+        .details-right{
+            padding-left: 54px;
+            // max-width: 550px;
+            max-width: 75%;
+            width: 100%;
+            @media ($sm-1679){
+                padding-left: 45px;
+            }
+            @media ($sm-1481){
+                padding-left: 35px;
+            }
+            @media ($sm-1199){
+                padding-left: 25px;
+            }
+            @media ($sm-767){
+                padding-left: 0px;
+                max-width: 100%;
+            }
+            .gray-box{
+                border-radius: 20px;
+                background-color: #F5F9FF;
+                padding: 69px 56px;
+                color: #08243E;
+                font: normal normal 300 25px/51px Titillium Web;
+                width: 100%;
+            }
+        }
+    }
+    .btm-qa{
+        margin-top: 100px;
+        .btm-title{
+            font: normal normal 600 33px/50px Titillium Web;
+            margin-bottom: 10px;
+            color: #08243E;
+        }
+        .cont-left{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            .para{
+                font: normal normal normal 22px/34px Titillium Web;
+                color: #08243E;
+                max-width: 499px;
+                @media ($sm-1679){
+                    font: normal normal normal 20px/34px Titillium Web;
+                }
+            }
+            .btn-contact{
+                background-color: #3B7BF8;
+                border-radius: 41px;
+                padding: 13px 56px;
+                color: #fff;
+                margin-left: auto;
+                
+            }
+        }
+
+    }
+    .custom-scroll{
+        &::-webkit-scrollbar {
+            width: 4px;
+            height: 2px;
+          }
+           
+          &::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 4px rgba(98, 118, 162, 1);
+          }
+           
+          &::-webkit-scrollbar-thumb {
+            background-color: #3B7BF8;
+            outline: 1px solid #3B7BF8;
+          }
     }
 }
