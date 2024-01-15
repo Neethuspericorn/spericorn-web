@@ -163,6 +163,18 @@ a{
         @media ($sm-991){
             row-gap: 20px !important;
         }
+        @media ($sm-1679){
+       .ion-img {
+            height: 60px;
+            width: 60px;
+            margin: 0 auto;
+
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
     }
  
     @media ($sm-991){
@@ -213,8 +225,8 @@ a{
                 color: #DEE9FF;
                 margin: 0;
                 @media ($sm-1679){
-                    font-size: 14px;
-                    line-height: 22px;
+                    font-size: 13px;
+                    line-height: 18px;
                 }
                 @media ($sm-991){
                     font-size: 13px;
@@ -350,6 +362,12 @@ a{
     z-index: 99;
 }
 .case-studies{
+    .content{
+        @media ($sm-1679){
+            margin: 0;
+            font-size: 18px;
+           }
+    }
     .main-desc{
         @media ($sm-991){
             margin: 0;
