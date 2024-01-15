@@ -14,6 +14,9 @@ body{
     @media ($sm-1679){
         padding-top: 83px;
     }
+    @media ($sm-991){
+        padding-top: 50px;
+    }
 }
 
 img{
@@ -21,6 +24,9 @@ img{
 }
 .main-desc1{
     color: #fff !important;
+}
+img{
+    max-width: 100%;
 }
 .main-desc{
     font: normal normal 300 22px/35px $font-primary;

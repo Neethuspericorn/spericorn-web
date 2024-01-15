@@ -94,6 +94,10 @@
                     @media ($sm-1199){
                         font-size: 16px;
                     }
+                    @media ($sm-991){
+                        padding-top: 5px;
+                        padding-bottom: 5px;
+                    }
                     &::after {
                         content: "";
                         position: absolute;
@@ -105,6 +109,11 @@
                         background-color: $white;
                         transform-origin: bottom right;
                         transition: transform 0.25s ease-out;
+
+                        @media ($sm-991){
+
+                            padding-bottom: 0px;
+                        }
                       }
                       &:hover::after {
                         transform: scaleX(1);
