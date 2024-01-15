@@ -87,6 +87,7 @@
         max-width: 100%;
         position: relative;
         margin-top: -200px;
+        aspect-ratio: 0.9;
         // @media ($sm-1679){
         //     max-width: 100%;
         //     width: unset;
@@ -109,8 +110,11 @@
                 max-width: 100%;
             }
         }
-        @media ($sm-767){
-            margin-top:30px
+        @media ($sm-1199){
+            margin-top:-140px
+        }
+        @media ($sm-991){
+            margin-top:20px
         }
     }
     .slider-wrp{
@@ -262,6 +266,7 @@
             }
             @media ($sm-767){
                 padding-left: 0px;
+                max-width: 100%;
             }
             .inner-outer{
                 display: flex;

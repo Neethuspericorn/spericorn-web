@@ -134,6 +134,7 @@
   max-width: 100%;
   position: relative;
   margin-top: -200px;
+  aspect-ratio: 0.9;
 }
 .custom-web .slider-img img {
   width: 100%;
@@ -150,9 +151,14 @@
     max-width: 100%;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 1199px) {
   .custom-web .slider-img {
-    margin-top: 30px;
+    margin-top: -140px;
+  }
+}
+@media (max-width: 991px) {
+  .custom-web .slider-img {
+    margin-top: 20px;
   }
 }
 .custom-web .slider-wrp {
@@ -347,6 +353,7 @@
 @media (max-width: 767px) {
   .custom-web .slider-wrp .details-right {
     padding-left: 0px;
+    max-width: 100%;
   }
 }
 .custom-web .slider-wrp .details-right .inner-outer {
