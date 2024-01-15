@@ -1,0 +1,108 @@
+/*** all Mobile Screen (iphone 6,7,8) ***/
+/*** mobile Landscape Size ***/
+/*** medium devices (tablets, less than 992px) ***/
+/*** iPad in landscape ***/
+/**** smaller than desktop 1200 (devices and browsers) ***/
+/*** laptop with MDPI (medium density per inch) resolution ***/
+/*** SP developers resolution ***/
+/*** laptop with HiDPI (High Dots Per Inch) resolution ***/
+/*** WSXGA (Wide Super Extended Graphics Array) resolution ***/
+/* placeholder mixin */
+.footer-sec {
+  background-color: #111827;
+  min-height: 100vh;
+  background-image: url("../img/footer.webp");
+  background-repeat: no-repeat;
+  background-position: right bottom; }
+  .footer-sec .footer-nav-sec {
+    padding: 160px 0 140px; }
+    .footer-sec .footer-nav-sec .footer-nav-wrapper {
+      display: flex; }
+      .footer-sec .footer-nav-sec .footer-nav-wrapper .footer-nav-col {
+        width: 25%; }
+        .footer-sec .footer-nav-sec .footer-nav-wrapper .footer-nav-col .f-nav-title {
+          font-size: 20px;
+          color: #fff;
+          margin-bottom: 25px;
+          text-transform: uppercase; }
+        .footer-sec .footer-nav-sec .footer-nav-wrapper .footer-nav-col .f-nav-ul {
+          list-style: none;
+          padding-left: 0;
+          margin: 0; }
+          .footer-sec .footer-nav-sec .footer-nav-wrapper .footer-nav-col .f-nav-ul li {
+            margin-bottom: 15px; }
+            .footer-sec .footer-nav-sec .footer-nav-wrapper .footer-nav-col .f-nav-ul li .f-nav-link {
+              text-decoration: none;
+              color: #D6E4FF;
+              font-size: 20px;
+              font-weight: 300;
+              display: block;
+              padding: 5px 0;
+              transition: .3s; }
+              .footer-sec .footer-nav-sec .footer-nav-wrapper .footer-nav-col .f-nav-ul li .f-nav-link:hover {
+                transform: translateX(5px); }
+  .footer-sec .f-logo-sec {
+    border-top: solid 1px #212F4A;
+    border-bottom: solid 1px #212F4A;
+    padding: 25px 0;
+    display: flex;
+    justify-content: center; }
+    .footer-sec .f-logo-sec .logo-wrapper {
+      min-height: 100px;
+      display: flex;
+      align-items: center; }
+    .footer-sec .f-logo-sec .f-contact-block {
+      flex: 0 0 auto; }
+    .footer-sec .f-logo-sec .f-contact-wrapper {
+      display: flex;
+      align-items: center; }
+    .footer-sec .f-logo-sec .contact-block {
+      flex: 1 1 auto;
+      display: flex; }
+      .footer-sec .f-logo-sec .contact-block .f-contact-wrapper {
+        margin-left: auto; }
+      .footer-sec .f-logo-sec .contact-block .f-contact-block {
+        margin-right: 75px; }
+        .footer-sec .f-logo-sec .contact-block .f-contact-block:last-child {
+          margin-right: 0; }
+        .footer-sec .f-logo-sec .contact-block .f-contact-block .f-contact-link {
+          display: inline-flex;
+          align-items: center;
+          color: #fff;
+          font-size: 20px;
+          text-decoration: none; }
+          .footer-sec .f-logo-sec .contact-block .f-contact-block .f-contact-link img {
+            margin-right: 15px; }
+  .footer-sec .f-rights-sec .f-rights-wrapper {
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    .footer-sec .f-rights-sec .f-rights-wrapper .f-soc-block {
+      display: flex;
+      align-items: center; }
+      .footer-sec .f-rights-sec .f-rights-wrapper .f-soc-block .f-soc {
+        margin-right: 15px;
+        transition: .3s; }
+        .footer-sec .f-rights-sec .f-rights-wrapper .f-soc-block .f-soc:hover {
+          transform: translateY(-5px); }
+    .footer-sec .f-rights-sec .f-rights-wrapper .copy-rights {
+      text-align: center;
+      color: #fff; }
+      .footer-sec .f-rights-sec .f-rights-wrapper .copy-rights a {
+        text-decoration: none;
+        color: #fff; }
+  .footer-sec .f-rights-sec .f-app-block .app-link {
+    display: inline-flex;
+    padding: 5px 25px;
+    background-color: rgba(33, 47, 74, 0.7);
+    margin-right: 10px;
+    width: 140px;
+    height: 50px;
+    border-radius: 45px;
+    align-items: center;
+    justify-content: center; }
+    .footer-sec .f-rights-sec .f-app-block .app-link:last-child {
+      margin-right: 0; }
+
+/*# sourceMappingURL=footer.css.map */
