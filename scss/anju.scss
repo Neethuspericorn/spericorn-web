@@ -72,7 +72,7 @@ a{
         row-gap: 10px !important;
      }
      @media ($sm-1679){
-        font-size: 83px;
+   
         padding-bottom: 80px;
         row-gap: 50px;
      }
@@ -163,6 +163,18 @@ a{
         @media ($sm-991){
             row-gap: 20px !important;
         }
+        @media ($sm-1679){
+       .ion-img {
+            height: 60px;
+            width: 60px;
+            margin: 0 auto;
+
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
     }
  
     @media ($sm-991){
@@ -173,6 +185,10 @@ a{
        background-color: #192132;
       
     }
+    @media ($sm-1679){
+       padding: 20px;
+       
+     }
     .banner-icons{
         padding-bottom: 0;
         padding-bottom: 0;
@@ -180,8 +196,12 @@ a{
         margin: 0 auto;
         grid-column-gap: 120px;
         @media ($sm-1679){
-            width: 90%;
-            grid-column-gap: 80px; 
+            width: 70%;
+            grid-column-gap: 50px;
+        }
+        @media ($sm-1481){
+            width: 75%;
+            grid-column-gap: 50px; 
         }
         @media ($sm-1281){
             width: 90%;
@@ -199,12 +219,14 @@ a{
         }
         .bottom-title{
             p{
+                padding-top: 5px;
                 font: normal normal normal 15px/23px Titillium Web;
                 letter-spacing: 0px;
                 color: #DEE9FF;
                 margin: 0;
                 @media ($sm-1679){
-                    font-size: 14px;
+                    font-size: 13px;
+                    line-height: 18px;
                 }
                 @media ($sm-991){
                     font-size: 13px;
@@ -288,11 +310,9 @@ a{
         padding-bottom: 0px;
     }
     @media ($sm-1441){
-        font-size: 26px!important;
-    }
-    @media ($sm-1281){
         font-size: 24px!important;
     }
+
     @media ($sm-991){
             padding: 10px 0px;
         // font-size: 22px!important;
@@ -342,12 +362,19 @@ a{
     z-index: 99;
 }
 .case-studies{
+    .content{
+        @media ($sm-1679){
+            margin: 0;
+            font-size: 18px;
+           }
+    }
     .main-desc{
         @media ($sm-991){
             margin: 0;
            }
            @media ($sm-1679){
             margin: 0;
+            font-size: 16px;
            }
     }
    
@@ -522,15 +549,13 @@ a{
                 font-size: 28px !important;
             }
             @media ($sm-1441){
-                font-size: 26px!important;
+                font-size: 24px!important;
             }
             @media ($sm-991){
                 font-size: 22px!important;
                 padding: 10px 0px;
             }
-            @media ($sm-1281){
-                font-size: 24px!important;
-            }
+           
           
         } 
         .box{
