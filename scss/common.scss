@@ -58,6 +58,24 @@ img{
     font-size: 31px;
     font-weight: 700;
 }
+.bg-text{
+    position: relative;
+    
+    span{
+        position: relative;
+        z-index: 2;
+    }
+    &:after{
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translate(-15%, -50%);
+        content: attr(data-bg-text);
+        font-size: 5em;
+        z-index: 1;
+        color: #F8FBFF;
+    }
+}
 .custom-container{
     @media (min-width:1500px){
         max-width: 1450px;
