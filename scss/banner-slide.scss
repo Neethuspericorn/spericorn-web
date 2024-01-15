@@ -1,0 +1,108 @@
+@import 'partials/partials';
+.banner
+{
+    height: 100vh;
+    overflow: hidden;
+    .bnr-left
+    {
+        justify-content: center;
+    }
+}
+.banner-outr-container
+{
+    display:flex;
+    justify-content:space-between;
+    .right-anim-slider
+    {
+        width:100%; 
+        //overflow: hidden;
+        transform: rotate(354deg);
+        .gallery {
+            width:100%; 
+            display:flex;
+            height: 57em;
+          }
+          .block-33 {
+            width: 33.3%;
+            margin-right:25px;
+          }
+          .display--inline-top{
+            display:flex;
+            vertical-align:top;
+          }
+          .margin-gutter
+          {
+            margin-left: 14vh;
+          }
+          .margin-gutter-plus
+          {
+            margin-left: 23vh;
+          }
+          .margin-gutter-34
+          {
+            margin-left: 34vh;
+          }
+          .fill-dimensions {
+           // width: 100%;
+            //height: 100%;
+            //position: absolute;
+           // top: 0;
+           // left: 0;
+          }
+          .relative {
+            position: relative;
+          }
+          .cover-img {
+              background-size:cover;
+              background-position: center center;
+              background-repeat: no-repeat;
+          }
+          .fill-dimensions.cover-img img {
+            border-radius: 15px;
+            height:240px;
+        }
+          .gallery-image {
+           padding-bottom: 2.35em;
+            animation: marqueeTop 10s linear infinite;
+            display: flex;
+          }
+      
+          
+          
+          .gallery-image__img  {
+            //padding-top:2vh;
+           // max-width: 35vh;
+            margin: 0 auto;
+            
+          }
+          
+          .gallery-h {
+          overflow: hidden;
+          margin-right:25px;
+          }
+          
+          @keyframes marqueeTop {
+            0% {
+                  -webkit-transform: translate3d(0, 0, 0);
+                  transform: translate3d(0, 0, 0)
+              }
+              100% {
+                  -webkit-transform: translate3d(0, -100%, 0);
+                  transform: translate3d(0, -100%, 0)
+              }
+          }
+          
+          @keyframes marqueeBottom {
+            0% {
+                  -webkit-transform: translate3d(0, -100%, 0);
+                  transform: translate3d(0, -100%, 0)
+              }
+              100% {
+                  -webkit-transform: translate3d(0, 0, 0);
+                  transform: translate3d(0, 0, 0)
+              }
+          }
+    }
+}
+
+  
