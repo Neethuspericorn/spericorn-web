@@ -25,6 +25,11 @@ body {
     padding-top: 83px;
   }
 }
+@media (max-width: 991px) {
+  .slide {
+    padding-top: 50px;
+  }
+}
 
 .main-desc1 {
   color: #fff !important;
