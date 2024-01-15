@@ -43,6 +43,9 @@
         @media ($sm-991){
             padding-bottom: 50px;
         }
+        @media ($sm-767){
+            padding-bottom: 0px;
+        }
     }
     .sec-title{
         color: $white;
@@ -101,7 +104,7 @@
                 max-width: 100%;
             }
         }
-        $sm-767{
+        @media ($sm-767){
             margin-top:30px
         }
     }
@@ -149,6 +152,7 @@
                 padding-left: 0px;
                 display: flex;
                 flex-direction: column;
+                margin-top: 0px;
                 @media ($sm-767){
                     flex-direction: row;
                     margin-top: 0px;
@@ -183,6 +187,9 @@
                         }
                         @media ($sm-1199){
                             font: normal normal normal 16px/26px $font-primary;
+                        }
+                        @media ($sm-991){
+                            font: normal normal normal 14px/24px $font-primary;
                         }
                     }
 
