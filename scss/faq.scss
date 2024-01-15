@@ -82,6 +82,10 @@
                     cursor: pointer;
                     color: $slider-color;
                     transition: all 0.5s;
+                    @media ($sm-991){
+                        align-items: flex-start;
+                        justify-content: flex-start;
+                    }
                     button{
                         background-color: transparent;
                         color: $slider-color;
@@ -89,6 +93,7 @@
                         outline: none;
                         cursor: pointer;
                         font: normal normal normal 25px/38px $font-primary;
+                        text-align: left;
                         @media ($sm-1679){
                             font: normal normal normal 20px/30px $font-primary;
                         }
@@ -172,27 +177,64 @@
                 color: #08243E;
                 font: normal normal 300 25px/51px Titillium Web;
                 width: 100%;
+                @media ($sm-1679){
+                    padding: 40px;
+                    font: normal normal 300 20px/30px Titillium Web;
+                }
+                @media ($sm-1481){
+                    padding: 35px;
+                    font: normal normal 300 18px/28px Titillium Web;
+                }
+                @media ($sm-1199){
+                    padding: 30px;
+                    font: normal normal 300 17px/27px Titillium Web;
+                }
+                @media ($sm-767){
+                    padding: 25px;
+                    max-width: 100%;
+                    font: normal normal 300 16px/26px Titillium Web;
+                }
             }
         }
     }
     .btm-qa{
         margin-top: 100px;
+        @media ($sm-1679){
+            margin-top: 80px;
+        }
+        @media ($sm-1441){
+            margin-top: 60px;
+        }
+        @media ($sm-1281){
+            margin-top: 50px;
+        }
+        @media ($sm-991){
+            margin-top: 40px;
+        }
         .btm-title{
             font: normal normal 600 33px/50px Titillium Web;
             margin-bottom: 10px;
             color: #08243E;
+            @media ($sm-1679){
+                font-size: 30px;
+            }
+            @media ($sm-1441){
+                font-size: 28px;
+            }
+            @media ($sm-1281){
+                font-size: 24px;
+            }
+            @media ($sm-991){
+                font-size: 22px;
+            }
         }
         .cont-left{
             display: flex;
             flex-wrap: wrap;
             align-items: center;
             .para{
-                font: normal normal normal 22px/34px Titillium Web;
                 color: #08243E;
                 max-width: 499px;
-                @media ($sm-1679){
-                    font: normal normal normal 20px/34px Titillium Web;
-                }
             }
             .btn-contact{
                 background-color: #3B7BF8;
@@ -200,6 +242,7 @@
                 padding: 13px 56px;
                 color: #fff;
                 margin-left: auto;
+                font: normal normal normal 22px/32px Titillium Web;
                 
             }
         }

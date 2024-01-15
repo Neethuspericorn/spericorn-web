@@ -60,6 +60,7 @@
           .fill-dimensions.cover-img img {
             border-radius: 15px;
             height:240px;
+            max-width: initial !important;
         }
           .gallery-image {
            padding-bottom: 2.35em;
