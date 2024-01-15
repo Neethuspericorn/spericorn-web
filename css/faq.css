@@ -117,6 +117,12 @@
   color: #6D7B9B;
   transition: all 0.5s;
 }
+@media (max-width: 991px) {
+  .faq .slider-wrp .nav-left .slide-list li {
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+}
 .faq .slider-wrp .nav-left .slide-list li button {
   background-color: transparent;
   color: #6D7B9B;
@@ -124,6 +130,7 @@
   outline: none;
   cursor: pointer;
   font: normal normal normal 25px/38px "Titillium Web", sans-serif;
+  text-align: left;
 }
 @media (max-width: 1679px) {
   .faq .slider-wrp .nav-left .slide-list li button {
@@ -232,6 +239,31 @@
   font: normal normal 300 25px/51px Titillium Web;
   width: 100%;
 }
+@media (max-width: 1679px) {
+  .faq .slider-wrp .details-right .gray-box {
+    padding: 40px;
+    font: normal normal 300 20px/30px Titillium Web;
+  }
+}
+@media (max-width: 1481px) {
+  .faq .slider-wrp .details-right .gray-box {
+    padding: 35px;
+    font: normal normal 300 18px/28px Titillium Web;
+  }
+}
+@media (max-width: 1199px) {
+  .faq .slider-wrp .details-right .gray-box {
+    padding: 30px;
+    font: normal normal 300 17px/27px Titillium Web;
+  }
+}
+@media (max-width: 767px) {
+  .faq .slider-wrp .details-right .gray-box {
+    padding: 25px;
+    max-width: 100%;
+    font: normal normal 300 16px/26px Titillium Web;
+  }
+}
 .faq .btm-qa {
   margin-top: 100px;
 }
@@ -240,20 +272,34 @@
   margin-bottom: 10px;
   color: #08243E;
 }
+@media (max-width: 1679px) {
+  .faq .btm-qa .btm-title {
+    font-size: 30px;
+  }
+}
+@media (max-width: 1441px) {
+  .faq .btm-qa .btm-title {
+    font-size: 28px;
+  }
+}
+@media (max-width: 1281px) {
+  .faq .btm-qa .btm-title {
+    font-size: 24px;
+  }
+}
+@media (max-width: 991px) {
+  .faq .btm-qa .btm-title {
+    font-size: 22px;
+  }
+}
 .faq .btm-qa .cont-left {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
 }
 .faq .btm-qa .cont-left .para {
-  font: normal normal normal 22px/34px Titillium Web;
   color: #08243E;
   max-width: 499px;
-}
-@media (max-width: 1679px) {
-  .faq .btm-qa .cont-left .para {
-    font: normal normal normal 20px/34px Titillium Web;
-  }
 }
 .faq .btm-qa .cont-left .btn-contact {
   background-color: #3B7BF8;
