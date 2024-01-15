@@ -19,6 +19,8 @@ a{
         }
         @media ($sm-991){
             font-size: 25px;
+            line-height: 30px;
+            padding-bottom: 15px;
         }
 
         span{
@@ -30,8 +32,7 @@ a{
     
 
     letter-spacing: 0px;
-    color: #08243E;
-
+    color: #08243E; 
 
 }
 .industries-sec{
@@ -47,6 +48,9 @@ a{
         @media ($sm-991){
             padding-bottom: 30px;   
         }
+        @media ($sm-1679){
+            padding-bottom: 50px;
+        }
     }
 }
 .icon-sec {
@@ -54,6 +58,29 @@ a{
     grid-template-columns: repeat(5,1fr);
     row-gap: 80px;
     text-align: center;
+    padding-bottom: 90px;
+    @media ($sm-991){
+        font-size: 40px;
+     }
+     @media ($sm-1679){
+        font-size: 83px;
+        padding-bottom: 50px;
+        row-gap: 50px;
+     }
+    .bottom-title{
+        p{
+            text-align: center;
+            font: normal normal normal 19px/29px Titillium Web;
+            letter-spacing: 0px;
+            color: #08243E;
+            @media ($sm-1679){
+               font-size: 16px;
+            }
+            @media ($sm-991){
+                font-size: 14px;
+             }
+        }
+    }
     @media ($sm-579){
         grid-template-columns: repeat(2,1fr) !important;
     
@@ -67,6 +94,39 @@ a{
         min-height: 70px;
     }
 }
+.logo-sec{
+    .slick-list{  
+          padding: 0 20% 0 19% !important;
+    }
+    .logos {
+
+        border: 1px solid #F0F0F0;
+        margin: 20px;
+        margin: 0px 5px;
+        border-radius: 61px;
+        padding: 20px 40px;
+       
+        @media ($sm-1679){
+            padding: 10px 40px;
+         
+        }
+
+        .logoimg {
+            display: flex;
+            justify-content: center;
+            height: 30px;
+            @media ($sm-1679){
+                height: 20px;
+             
+            }
+          
+        }
+    
+    }
+   
+}
+
+
 .case-study-btn{
     @media ($sm-991){
       
@@ -145,6 +205,7 @@ a{
         font-size: 24px!important;
     }
     @media ($sm-991){
+            padding: 10px 0px;
         // font-size: 22px!important;
         // padding-bottom: 0px;
     }
@@ -171,7 +232,7 @@ a{
     font: normal normal bold 221px/336px Titillium Web;
     letter-spacing: 0px;
     color: #F8FBFF;
-    z-index:9;
+    z-index:-13;
     top: 0;
     left: -180px;
     @media ($sm-1679){
@@ -192,6 +253,12 @@ a{
     z-index: 99;
 }
 .case-studies{
+    .main-desc{
+        @media ($sm-991){
+            margin: 0;
+           }
+    }
+   
     .heading-sec{
         display: flex;
         justify-content: space-between;
@@ -361,12 +428,14 @@ a{
             @media ($sm-1441){
                 font-size: 26px!important;
             }
+            @media ($sm-991){
+                font-size: 22px!important;
+                padding: 10px 0px;
+            }
             @media ($sm-1281){
                 font-size: 24px!important;
             }
-            @media ($sm-991){
-                font-size: 22px!important;
-            }
+          
         } 
         .box{
             background: transparent linear-gradient(180deg, #1B2640 0%, #111827 100%) 0% 0% no-repeat padding-box;
@@ -429,18 +498,10 @@ a{
                 background-color: #fff !important;
                 color:  #3B7BF8;
                 border: 1px solid #fff;
-            
-                &::before {
-                    transform: scaleX(1);
-                    width: 100%;
-                  
-                
-                }
             }
     
             &::before{
-         
-                background-color: #fff !important;
+                display: none;
 
             }    
         }
@@ -512,3 +573,5 @@ a{
         }
     }
 }
+
+
