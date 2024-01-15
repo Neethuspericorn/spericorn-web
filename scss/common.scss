@@ -43,7 +43,7 @@ img{
         font: normal normal 300 14px/27px $font-primary;
     }
 }
-.sec-title{
+.sec-title{ 
     font-size: 39px;
     font-weight: 700;
     @media ($sm-1679){
@@ -101,6 +101,7 @@ img{
 .custom-scroll{
     &::-webkit-scrollbar {
         width: 4px;
+        height: 2px;
       }
        
       &::-webkit-scrollbar-track {
