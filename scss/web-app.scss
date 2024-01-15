@@ -181,6 +181,7 @@
                         color: $slider-color;
                         border: none;
                         outline: none;
+                        cursor: pointer;
                         font: normal normal normal 25px/38px $font-primary;
                         @media ($sm-1679){
                             font: normal normal normal 20px/30px $font-primary;

@@ -246,6 +246,7 @@
   color: #6D7B9B;
   border: none;
   outline: none;
+  cursor: pointer;
   font: normal normal normal 25px/38px "Titillium Web", sans-serif;
 }
 @media (max-width: 1679px) {
