@@ -1,1 +1,93 @@
 @import "partials/partials";
+
+
+.testi-slide-wrp{
+    display: flex;
+    padding: 70px 100px 70px 70px;
+    background-color: #F5F9FF;
+    border: 1px solid #EDF6FF;
+    border-radius: 18px;
+    .user-titles{
+        display: flex;
+    }
+    .img-wrp{
+        max-width: 260px;
+        flex-shrink: 0;
+        img{
+            border-radius: 100%;
+            width: 100%;
+        }
+    }
+    .txt-wrp{
+        padding-left: 75px;
+    }
+    .name-wrp{
+        color: #08243E;
+        margin-bottom: 30px;
+        .name{
+            margin-bottom: 0;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 1.5;
+            color: #10415F;
+        }
+        .desig{
+            font-size: 12px;
+            opacity: 0.67;
+            margin-bottom: 0;
+        }
+        
+    }
+    .user-cont{
+        color: #08243E;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 1.88;
+    }
+    .rating-wrp{
+        margin-left: auto;
+        ul{
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+           
+            gap: 11px;
+            &.one{
+                li{
+                    &:last-child,
+                    &:nth-child(4),
+                    &:nth-child(3),
+                    &:nth-child(2){
+                        filter: grayscale(1);
+                    } 
+                }
+                
+            }
+            &.two{
+                li{
+                    &:last-child,
+                    &:nth-child(4),
+                    &:nth-child(3){
+                        filter: grayscale(1);
+                    } 
+                }
+                
+            }
+            &.three{
+                li{
+                    &:last-child,
+                    &:nth-child(4){
+                        filter: grayscale(1);
+                    } 
+                } 
+            }
+            &.four{
+                li:last-child{
+                    filter: grayscale(1);
+                }
+            }
+             
+        }
+    }
+}
