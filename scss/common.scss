@@ -36,14 +36,14 @@ img{
     @media ($sm-1481){
         font: normal normal 300 18px/30px $font-primary;
     }
-    @media ($sm-1199){
+    @media ($sm-1281){
         font: normal normal 300 16px/28px $font-primary;
     }
     @media ($sm-991){
-        font: normal normal 300 14px/27px $font-primary;
+        font: normal normal 300 14px/25px $font-primary;
     }
 }
-.sec-title{ 
+.sec-title{  
     font-size: 39px;
     font-weight: 700;
     @media ($sm-1679){
