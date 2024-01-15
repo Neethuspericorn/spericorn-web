@@ -65,9 +65,12 @@
             max-height: 570px;
             overflow-y: auto;
             max-width: 40%;
-            @media (max-width:767px){
+            @media (max-width:991px){
                 max-width: 100%;
                 margin-bottom: 20px;
+            }
+            @media (max-width:767px){
+                max-height: 400px;
             }
             .slide-list{
                 margin-left: 0px;
