@@ -78,6 +78,11 @@
     padding-bottom: 50px;
   }
 }
+@media (max-width: 767px) {
+  .custom-web .inner-wrp {
+    padding-bottom: 0px;
+  }
+}
 .custom-web .sec-title {
   color: #fff;
   margin-bottom: 13px;
@@ -136,6 +141,11 @@
 @media (max-width: 991px) {
   .custom-web .slider-img img {
     max-width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .custom-web .slider-img {
+    margin-top: 30px;
   }
 }
 .custom-web .slider-wrp {
@@ -199,6 +209,7 @@
   padding-left: 0px;
   display: flex;
   flex-direction: column;
+  margin-top: 0px;
 }
 @media (max-width: 767px) {
   .custom-web .slider-wrp .nav-left .slide-list {
@@ -247,6 +258,11 @@
 @media (max-width: 1199px) {
   .custom-web .slider-wrp .nav-left .slide-list li button {
     font: normal normal normal 16px/26px "Titillium Web", sans-serif;
+  }
+}
+@media (max-width: 991px) {
+  .custom-web .slider-wrp .nav-left .slide-list li button {
+    font: normal normal normal 14px/24px "Titillium Web", sans-serif;
   }
 }
 @media (max-width: 1679px) {

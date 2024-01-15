@@ -14,9 +14,19 @@ body{
     @media ($sm-1679){
         padding-top: 83px;
     }
+    @media ($sm-991){
+        padding-top: 50px;
+    }
+}
+
+img{
+    max-width: 100%;
 }
 .main-desc1{
     color: #fff !important;
+}
+img{
+    max-width: 100%;
 }
 .main-desc{
     font: normal normal 300 22px/35px $font-primary;
@@ -53,6 +63,24 @@ body{
 .sec-subtitle{
     font-size: 31px;
     font-weight: 700;
+}
+.bg-text{
+    position: relative;
+    
+    span{
+        position: relative;
+        z-index: 2;
+    }
+    &:after{
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translate(-15%, -50%);
+        content: attr(data-bg-text);
+        font-size: 5em;
+        z-index: 1;
+        color: #F8FBFF;
+    }
 }
 .custom-container{
     @media (min-width:1500px){
