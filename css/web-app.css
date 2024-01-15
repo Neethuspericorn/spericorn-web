@@ -193,17 +193,32 @@
     margin-right: 0px;
   }
 }
+@media (max-width: 700px) {
+  .custom-web .slider-wrp {
+    flex-direction: column;
+  }
+}
 .custom-web .slider-wrp .nav-left {
   max-width: 350px;
   width: 100%;
   max-height: 450px;
   overflow-y: auto;
 }
+@media (max-width: 700px) {
+  .custom-web .slider-wrp .nav-left {
+    max-width: 100%;
+  }
+}
 .custom-web .slider-wrp .nav-left .slide-list {
   margin-left: 0px;
   padding-left: 0px;
   display: flex;
   flex-direction: column;
+}
+@media (max-width: 700px) {
+  .custom-web .slider-wrp .nav-left .slide-list {
+    flex-direction: row;
+  }
 }
 .custom-web .slider-wrp .nav-left .slide-list li {
   list-style: none;
@@ -244,6 +259,12 @@
   .custom-web .slider-wrp .nav-left .slide-list li {
     font: normal normal normal 16px/26px "Titillium Web", sans-serif;
     margin-bottom: 25px;
+  }
+}
+@media (max-width: 700px) {
+  .custom-web .slider-wrp .nav-left .slide-list li {
+    max-width: 100%;
+    flex: 0 0 1;
   }
 }
 .custom-web .slider-wrp .nav-left .slide-list li::before {
