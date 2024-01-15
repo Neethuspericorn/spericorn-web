@@ -1,5 +1,65 @@
 @import "partials/partials";
 
+.left-margin{
+    max-width: 100% !important;
+    padding-right: 0;
+    @media (min-width:1500px){
+        padding-left: calc((100vw - 1450px)/2);  
+    }
+    @media (min-width:1700px){
+        padding-left: calc((100vw - 1600px)/2); 
+    }
+    @media (min-width:1800px){
+        padding-left: calc((100vw - 1691px)/2);
+    }
+    @media ($sm-991){
+        max-width: 90% !important;
+    }
+    .sp-row{
+        margin-right: 0;
+    }
+    .sp-col{
+        padding-right: 0;
+    }
+}
+.testimonials{
+    .slick-list{
+        padding-right: 240px;
+    }
+
+    .testi-slide{
+        margin-right: 40px;
+    }
+
+    .slick-arrow-wrp{
+        display: flex;
+        gap: 15px;
+        .btn{
+            padding: 0;
+            border: 1px solid #3B7BF8;
+            width: 50px;
+            aspect-ratio: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50px;
+            background-color: transparent;
+            cursor: pointer;
+            &:hover{
+                background-color: #3B7BF8;
+                img{
+                    filter: brightness(0) invert(1);
+                }
+            }
+            &.btn-next{
+                img{
+                    transform: rotateY(180deg);
+                }
+            }
+        }
+    }
+}
+
 
 .testi-slide-wrp{
     display: flex;
@@ -7,6 +67,7 @@
     background-color: #F5F9FF;
     border: 1px solid #EDF6FF;
     border-radius: 18px;
+
     .user-titles{
         display: flex;
     }
