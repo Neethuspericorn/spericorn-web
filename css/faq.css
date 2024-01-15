@@ -98,10 +98,15 @@
   overflow-y: auto;
   max-width: 40%;
 }
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .faq .slider-wrp .nav-left {
     max-width: 100%;
     margin-bottom: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .faq .slider-wrp .nav-left {
+    max-height: 400px;
   }
 }
 .faq .slider-wrp .nav-left .slide-list {
@@ -182,25 +187,19 @@
 @media (max-width: 1481px) {
   .faq .slider-wrp .nav-left .slide-list li {
     font: normal normal normal 19px/29px "Titillium Web", sans-serif;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
   }
 }
 @media (max-width: 1441px) {
   .faq .slider-wrp .nav-left .slide-list li {
     font: normal normal normal 18px/28px "Titillium Web", sans-serif;
-    margin-bottom: 25px;
-  }
-}
-@media (max-width: 1281px) {
-  .faq .slider-wrp .nav-left .slide-list li {
-    font: normal normal normal 17px/27px "Titillium Web", sans-serif;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
   }
 }
 @media (max-width: 1199px) {
   .faq .slider-wrp .nav-left .slide-list li {
     font: normal normal normal 16px/26px "Titillium Web", sans-serif;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
   }
 }
 @media (max-width: 767px) {
@@ -253,26 +252,26 @@
 @media (max-width: 1679px) {
   .faq .slider-wrp .details-right .gray-box {
     padding: 40px;
-    font: normal normal 300 20px/30px Titillium Web;
+    font: normal normal 300 20px/32px Titillium Web;
   }
 }
 @media (max-width: 1481px) {
   .faq .slider-wrp .details-right .gray-box {
     padding: 35px;
-    font: normal normal 300 18px/28px Titillium Web;
+    font: normal normal 300 18px/30px Titillium Web;
   }
 }
 @media (max-width: 1199px) {
   .faq .slider-wrp .details-right .gray-box {
     padding: 30px;
-    font: normal normal 300 17px/27px Titillium Web;
+    font: normal normal 300 17px/29px Titillium Web;
   }
 }
 @media (max-width: 767px) {
   .faq .slider-wrp .details-right .gray-box {
     padding: 25px;
     max-width: 100%;
-    font: normal normal 300 16px/26px Titillium Web;
+    font: normal normal 300 16px/28px Titillium Web;
   }
 }
 .faq .btm-qa {
@@ -344,7 +343,13 @@
   padding: 13px 56px;
   color: #fff;
   margin-left: auto;
+  transition: all 0.5s;
   font: normal normal normal 22px/32px Titillium Web;
+}
+.faq .btm-qa .cont-left .btn-contact:hover {
+  background-color: #fff !important;
+  color: #3B7BF8;
+  border: 1px solid #3B7BF8;
 }
 @media (max-width: 1679px) {
   .faq .btm-qa .cont-left .btn-contact {
@@ -381,5 +386,3 @@
   background-color: #3B7BF8;
   outline: 1px solid #3B7BF8;
 }
-
-/*# sourceMappingURL=faq.css.map */
