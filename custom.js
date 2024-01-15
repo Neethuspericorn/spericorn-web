@@ -10,7 +10,7 @@ $(document).ready(function(){
     $(".navbar-toggler").click(function() {
         $(this).toggleClass("on");
         $(".navbar-collapse").slideToggle();
-      });
+    });
 
       $('.testi-slider').slick({
             arrows: false,
@@ -19,4 +19,5 @@ $(document).ready(function(){
             nextArrow: $('.slick-arrow-wrp .btn-next')
       });
 
+    
 });
