@@ -4,7 +4,7 @@ a{
 }
 
 .title{
-    text-align: left;
+ 
     font: normal normal bold 39px/59px Titillium Web;
     letter-spacing: 0px;
     color: #08243E;
@@ -12,24 +12,209 @@ a{
             font-size: 30px;
         }
         @media ($sm-1441){
-            font-size: 28px;
+            font-size: 26px;
         }
         @media ($sm-1281){
             font-size: 24px;
         }
         @media ($sm-991){
             font-size: 22px;
+            line-height: 30px;
+            padding-bottom: 15px;
+        }
+
+        span{
+            font-weight: 300;
         }
 }
 
 .main-desc {
-    
-
     letter-spacing: 0px;
-    color: #08243E;
-
+    color: #08243E; 
 
 }
+.industry{
+    height: unset !important;
+}
+.industries-sec{
+
+    width: 63%;
+    margin: 0 auto;
+    @media ($sm-991){
+        width: 100%;
+    }
+    .heading-sec{
+        text-align: center;
+        padding-bottom: 90px;
+        @media ($sm-991){
+            padding-bottom: 30px;   
+        }
+        @media ($sm-1679){
+            padding-bottom: 50px;
+        }
+
+        .main-desc{
+            @media ($sm-991){
+             margin: 0;  
+            }  
+        }
+    }
+}
+.icon-sec {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    row-gap: 80px;
+    text-align: center;
+    padding-bottom: 90px;
+    @media ($sm-991){
+        grid-template-columns: repeat(3,1fr);
+        font-size: 40px;
+        row-gap: 10px !important;
+     }
+     @media ($sm-1679){
+        font-size: 83px;
+        padding-bottom: 80px;
+        row-gap: 50px;
+     }
+    .bottom-title{
+        p{
+            text-align: center;
+            font: normal normal normal 19px/29px Titillium Web;
+            letter-spacing: 0px;
+            color: #08243E;
+            @media ($sm-1679){
+               font-size: 16px;
+            }
+            @media ($sm-991){
+                font-size: 14px;
+             }
+        }
+    }
+    @media ($sm-579){
+        grid-template-columns: repeat(2,1fr) !important;
+    
+    }
+    .ion-img{
+        min-height: 70px;
+    }
+}
+.logo-sec{
+    padding-bottom: 90px;
+    @media ($sm-991){
+     padding-bottom: 50px;
+     
+    }
+    @media ($sm-1281){
+        padding-bottom: 50px;
+     
+    }
+    @media ($sm-1679){
+        padding-bottom: 80px;
+     
+    }
+    .slick-list{  
+          padding: 0 20% 0 19% !important;
+    }
+    .logos {
+
+        border: 1px solid #F0F0F0;
+        margin: 20px;
+        margin: 0px 5px;
+        border-radius: 61px;
+        padding: 20px 40px;
+        @media ($sm-991){
+            padding: 10px 20px;
+         
+        }
+        @media ($sm-1281){
+            padding: 10px 20px;
+         
+        }
+      
+
+        .logoimg {
+            display: flex;
+            justify-content: center;
+            height: 30px;
+            @media ($sm-1679){
+                height: 20px;
+             
+            }
+          
+        }
+    
+    }
+   
+}
+.banner {
+    position: relative;
+}
+.years-with-icons{
+    background: #1B2638 0% 0% no-repeat padding-box;
+    opacity: 0.7;
+    backdrop-filter: blur(40px);
+    position:absolute;
+    bottom: 0;
+    height: unset !important;
+    // margin-top: -190px;
+    width: 100%;
+    padding: 30px 0px;
+    .icon-sec{
+        @media ($sm-991){
+            row-gap: 20px !important;
+        }
+    }
+ 
+    @media ($sm-991){
+       position:unset; 
+       bottom: unset;
+       row-gap: 20px !important;
+       opacity: 1;
+       background-color: #192132;
+      
+    }
+    .banner-icons{
+        padding-bottom: 0;
+        padding-bottom: 0;
+        width: 73%;
+        margin: 0 auto;
+        grid-column-gap: 120px;
+        @media ($sm-1679){
+            width: 90%;
+            grid-column-gap: 80px; 
+        }
+        @media ($sm-1281){
+            width: 90%;
+            grid-column-gap: 40px; 
+        }
+        @media ($sm-579){
+            width: 100%;
+            grid-column-gap: 0px; 
+            grid-template-columns: repeat(1,1fr) !important;
+        }
+        @media ($sm-767){
+            width: 100%;
+            grid-column-gap: 30px; 
+            grid-template-columns: repeat(2,1fr);
+        }
+        .bottom-title{
+            p{
+                font: normal normal normal 15px/23px Titillium Web;
+                letter-spacing: 0px;
+                color: #DEE9FF;
+                margin: 0;
+                @media ($sm-1679){
+                    font-size: 14px;
+                }
+                @media ($sm-991){
+                    font-size: 13px;
+                }
+            }
+           
+        }
+    }
+}
+
 .case-study-btn{
     @media ($sm-991){
       
@@ -100,6 +285,7 @@ a{
         
     @media ($sm-1679){
         font-size: 28px !important;
+        padding-bottom: 0px;
     }
     @media ($sm-1441){
         font-size: 26px!important;
@@ -108,8 +294,9 @@ a{
         font-size: 24px!important;
     }
     @media ($sm-991){
-        font-size: 22px!important;
-        padding-bottom: 0px;
+            padding: 10px 0px;
+        // font-size: 22px!important;
+        // padding-bottom: 0px;
     }
 
 }
@@ -134,7 +321,7 @@ a{
     font: normal normal bold 221px/336px Titillium Web;
     letter-spacing: 0px;
     color: #F8FBFF;
-    z-index:9;
+    z-index:-13;
     top: 0;
     left: -180px;
     @media ($sm-1679){
@@ -155,6 +342,15 @@ a{
     z-index: 99;
 }
 .case-studies{
+    .main-desc{
+        @media ($sm-991){
+            margin: 0;
+           }
+           @media ($sm-1679){
+            margin: 0;
+           }
+    }
+   
     .heading-sec{
         display: flex;
         justify-content: space-between;
@@ -198,8 +394,12 @@ a{
                 padding-top: 40px;
             }
         
+            @media ($sm-767){
+                width:100% !important;
+                padding-top: 30px;
+            }
             @media ($sm-991){
-                width:100%;
+                width:47%;
                 padding-top: 30px;
             }
         
@@ -221,13 +421,19 @@ a{
                     height: 100%;
                     object-fit: cover;
                     border-radius: 20px;
+                    @media ($sm-991){
+                        border-radius: 10px;
+                    }
                 }
             }
 
             .readmore{
-                padding-top: 40px;
+                padding-top: 20px;
+                @media ($sm-1679){
+                    padding-top: 0px;
+                }
                 @media ($sm-991){
-                    padding-top: 20px;
+                    padding-top: 0px;
                 }
                 a{
                     font: normal normal 600 20px/38px Titillium Web;
@@ -267,7 +473,7 @@ a{
 .consultation{
     padding-bottom: 90px;
     @media ($sm-991){
-        padding-bottom: 50px;
+        padding-bottom: 50px !important;
     }
     @media ($sm-1679){
         padding-bottom: 83px;
@@ -318,18 +524,22 @@ a{
             @media ($sm-1441){
                 font-size: 26px!important;
             }
+            @media ($sm-991){
+                font-size: 22px!important;
+                padding: 10px 0px;
+            }
             @media ($sm-1281){
                 font-size: 24px!important;
             }
-            @media ($sm-991){
-                font-size: 22px!important;
-            }
+          
         } 
         .box{
             background: transparent linear-gradient(180deg, #1B2640 0%, #111827 100%) 0% 0% no-repeat padding-box;
             border-radius: 23px;
             padding: 50px 50px;
-         
+            @media ($sm-1679){
+            padding: 40px 25px !important;
+            }
             @media ($sm-991){
                 margin-bottom: 30px;
                 padding: 20px;
@@ -345,6 +555,10 @@ a{
                 @media ($sm-991){
                     width: 50px;
                 height: 50px;
+                }
+                @media ($sm-1679){
+                    width: 60px;
+                    height: 60px;
                 }
                 img{
                     border-radius: 0;
@@ -380,18 +594,10 @@ a{
                 background-color: #fff !important;
                 color:  #3B7BF8;
                 border: 1px solid #fff;
-            
-                &::before {
-                    transform: scaleX(1);
-                    width: 100%;
-                  
-                
-                }
             }
     
             &::before{
-         
-                background-color: #fff !important;
+                display: none;
 
             }    
         }
@@ -463,3 +669,5 @@ a{
         }
     }
 }
+
+

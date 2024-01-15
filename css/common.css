@@ -14,6 +14,7 @@ body, html {
 
 body {
   font-size: 19px;
+  margin: 0;
 }
 
 .slide {
@@ -25,9 +26,22 @@ body {
     padding-top: 83px;
   }
 }
+@media (max-width: 991px) {
+  .slide {
+    padding-top: 50px;
+  }
+}
+
+img {
+  max-width: 100%;
+}
 
 .main-desc1 {
   color: #fff !important;
+}
+
+img {
+  max-width: 100%;
 }
 
 .main-desc {
@@ -43,14 +57,14 @@ body {
     font: normal normal 300 18px/30px "Titillium Web", sans-serif;
   }
 }
-@media (max-width: 1199px) {
+@media (max-width: 1281px) {
   .main-desc {
     font: normal normal 300 16px/28px "Titillium Web", sans-serif;
   }
 }
 @media (max-width: 991px) {
   .main-desc {
-    font: normal normal 300 14px/27px "Titillium Web", sans-serif;
+    font: normal normal 300 14px/25px "Titillium Web", sans-serif;
   }
 }
 
@@ -84,6 +98,26 @@ body {
   font-weight: 700;
 }
 
+.bg-text {
+  position: relative;
+}
+.bg-text span {
+  position: relative;
+  z-index: 2;
+}
+.bg-text:after {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-15%, -50%);
+  content: attr(data-bg-text);
+  font-size: 5em;
+  z-index: 1;
+  color: #F8FBFF;
+  max-width: 100vw;
+  overflow: hidden;
+}
+
 @media (min-width: 1500px) {
   .custom-container {
     max-width: 1450px;
@@ -107,6 +141,7 @@ body {
 
 .custom-scroll::-webkit-scrollbar {
   width: 4px;
+  height: 2px;
 }
 .custom-scroll::-webkit-scrollbar-track {
   box-shadow: inset 0 0 4px rgb(98, 118, 162);
@@ -115,3 +150,5 @@ body {
   background-color: #FFFFFF;
   outline: 1px solid #6276A2;
 }
+
+/*# sourceMappingURL=common.css.map */
