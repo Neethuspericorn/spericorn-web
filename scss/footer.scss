@@ -9,6 +9,18 @@
     };
     .footer-nav-sec{
         padding: 160px 0 140px;
+        @media ($sm-1679){
+            padding: 100px 0 80px;
+        }
+        @media ($sm-1441){
+            padding: 80px 0 60px;
+        }
+        @media ($sm-1281){
+            padding: 60px 0 40px;
+        }
+        @media ($sm-991){
+            padding: 40px 0 30px;
+        }
         .footer-nav-wrapper{
             display: flex;
             .footer-nav-col{
@@ -16,8 +28,20 @@
                 .f-nav-title{
                     font-size: 20px;
                     color: #fff;
-                    margin-bottom: 25px;
+                    margin-bottom: 1.2em;
                     text-transform: uppercase;
+                    @media ($sm-1679){
+                        font-size: 18px;
+                    }
+                    @media ($sm-1441){
+                        font-size: 16px;
+                    }
+                    @media ($sm-1281){
+                        font-size: 14px;
+                    }
+                    @media ($sm-991){
+                        font-size: 13px;
+                    }
                 }
                 .f-nav-ul{
                     list-style: none;
@@ -33,6 +57,18 @@
                             display: block;
                             padding: 5px 0;
                             transition: .3s;
+                            @media ($sm-1679){
+                                font-size: 18px;
+                            }
+                            @media ($sm-1441){
+                                font-size: 16px;
+                            }
+                            @media ($sm-1281){
+                                font-size: 14px;
+                            }
+                            @media ($sm-991){
+                                font-size: 13px;
+                            }
                             &:hover{
                                 transform: translateX(5px);
                             }
@@ -48,10 +84,47 @@
         padding: 25px 0;
         display: flex;
         justify-content: center;
+        .logo-block{
+            .footer-logo{
+                display: flex;
+                align-items: center;
+            }
+            @media ($sm-1679){
+                max-width: 120px;
+            }
+            @media ($sm-1441){
+                max-width: 100px;
+            }
+            @media ($sm-767){
+                margin-left: auto;
+                margin-right: auto;
+                padding-bottom: 15px;
+            }
+            @media ($sm-579){
+                margin-right: 0;
+                margin-left: 0;
+            }
+             
+        }
         .logo-wrapper{
             min-height: 100px;
             display: flex;
             align-items: center;
+            @media ($sm-1679){
+                min-height: 80px;
+            }
+            @media ($sm-1441){
+                min-height: 60px;
+            }
+            @media ($sm-1281){
+                min-height: 40px;
+            }
+            @media ($sm-991){
+                min-height: 30px;
+            }
+            @media ($sm-767){
+                flex-wrap: wrap;
+            }
         }
         .f-contact-block{
             flex: 0 0 auto;
@@ -63,11 +136,41 @@
         .contact-block{
             flex: 1 1 auto;
             display: flex;
+            @media ($sm-767){
+                width: 100%;
+            }
             .f-contact-wrapper{
                 margin-left: auto;
+                @media ($sm-767){
+                    margin-right: auto;
+                }
+                @media ($sm-579 ){
+                    flex-wrap: wrap;
+                    margin-left: 0;
+                    margin-right: 0;
+                }
             }
             .f-contact-block{
                 margin-right: 75px;
+                @media ($sm-1679){
+                    margin-right: 60px; 
+                }
+                @media ($sm-1441){
+                    margin-right: 50px;
+                }
+                @media ($sm-1281){
+                    margin-right: 40px;
+                }
+                @media ($sm-991){
+                    margin-right: 30px;
+                }
+                @media ($sm-767){
+                    margin-right: 15px;
+                }
+                @media ($sm-579){
+                     
+                    width: 100%;
+                }
                 &:last-child{
                     margin-right: 0;
                 }
@@ -77,8 +180,23 @@
                     color: #fff;
                     font-size: 20px;
                     text-decoration: none;
+                    @media ($sm-1679){
+                        font-size: 18px;
+                    }
+                    @media ($sm-1441){
+                        font-size: 16px;
+                    }
+                    @media ($sm-1281){
+                        font-size: 14px;
+                    }
+                    @media ($sm-991){
+                        font-size: 13px;
+                    }
                     img{
-                        margin-right: 15px;
+                        margin-right: 0.75em;
+                        width: 1.5em;
+                        height: 1.2em;
+                        object-fit: contain;
                     }
                 }
             }
@@ -90,6 +208,16 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
+            @media ($sm-1679){
+                padding: 40px 0; 
+            }
+            @media ($sm-1441){
+                padding: 30px 0;
+            }
+            @media ($sm-1281){
+                padding: 20px 0;
+            }
+            
             .f-soc-block{
                 display: flex;
                 align-items: center;
@@ -103,7 +231,15 @@
             }
             .copy-rights{
                 text-align: center;
-                color: #fff;
+                color: #fff; 
+                font-size: 16px;
+                @media ($sm-1679){
+                    font-size: 14px; 
+                }
+                @media ($sm-1281){
+                    font-size: 13px;
+                }
+
                 a{
                     text-decoration: none;
                     color: #fff;
