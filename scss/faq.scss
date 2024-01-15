@@ -199,6 +199,18 @@
     }
     .btm-qa{
         margin-top: 100px;
+        @media ($sm-1679){
+            margin-top: 80px;
+        }
+        @media ($sm-1441){
+            margin-top: 60px;
+        }
+        @media ($sm-1281){
+            margin-top: 50px;
+        }
+        @media ($sm-991){
+            margin-top: 40px;
+        }
         .btm-title{
             font: normal normal 600 33px/50px Titillium Web;
             margin-bottom: 10px;
@@ -230,6 +242,7 @@
                 padding: 13px 56px;
                 color: #fff;
                 margin-left: auto;
+                font: normal normal normal 22px/32px Titillium Web;
                 
             }
         }

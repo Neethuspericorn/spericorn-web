@@ -267,6 +267,26 @@
 .faq .btm-qa {
   margin-top: 100px;
 }
+@media (max-width: 1679px) {
+  .faq .btm-qa {
+    margin-top: 80px;
+  }
+}
+@media (max-width: 1441px) {
+  .faq .btm-qa {
+    margin-top: 60px;
+  }
+}
+@media (max-width: 1281px) {
+  .faq .btm-qa {
+    margin-top: 50px;
+  }
+}
+@media (max-width: 991px) {
+  .faq .btm-qa {
+    margin-top: 40px;
+  }
+}
 .faq .btm-qa .btm-title {
   font: normal normal 600 33px/50px Titillium Web;
   margin-bottom: 10px;
@@ -307,6 +327,7 @@
   padding: 13px 56px;
   color: #fff;
   margin-left: auto;
+  font: normal normal normal 22px/32px Titillium Web;
 }
 .faq .custom-scroll::-webkit-scrollbar {
   width: 4px;
