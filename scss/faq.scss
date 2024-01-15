@@ -1,13 +1,20 @@
 @import 'partials/partials';
 .faq{
     position: relative;
+    padding: 160px 0 134px;
+    @media ($sm-1679){
+        padding: 85px 0 80px;
+    }
+    @media ($sm-991){
+        padding: 50px 0 40px;
+    }
     .casestudy-outer {
         position: absolute;
         font: normal normal bold 221px/336px Titillium Web;
         letter-spacing: 0px;
         color: #F8FBFF;
         z-index: -13;
-        top: -67px;
+        top: 0px;
         left: 87px;
         white-space: nowrap;
         overflow: clip;
@@ -15,12 +22,12 @@
       @media (max-width: 1679px) {
           font-size: 160px;
           left: 38px;
-          top: -74px;
+          top: -70px;
       }
       @media (max-width: 991px) {
           font-size: 60px;
-          left: 87px;
-          top: -95px;
+          left: 47px;
+          top: -108px;
       }
     }
     .slider-wrp{
@@ -216,22 +223,27 @@
             margin-bottom: 10px;
             color: #08243E;
             @media ($sm-1679){
-                font-size: 30px;
-            }
-            @media ($sm-1441){
                 font-size: 28px;
             }
-            @media ($sm-1281){
+            @media ($sm-1441){
                 font-size: 24px;
             }
-            @media ($sm-991){
+            @media ($sm-1281){
                 font-size: 22px;
             }
+            @media ($sm-991){
+                font-size: 20px;
+            }
+   
         }
         .cont-left{
             display: flex;
             flex-wrap: wrap;
             align-items: center;
+            @media ($sm-991){
+                flex-direction: column;
+                align-items: flex-start;
+            }
             .para{
                 color: #08243E;
                 max-width: 499px;
@@ -243,6 +255,22 @@
                 color: #fff;
                 margin-left: auto;
                 font: normal normal normal 22px/32px Titillium Web;
+                @media ($sm-1679){
+                    font: normal normal 300 20px/33px $font-primary;
+                    padding: 10px 40px;
+                }
+                @media ($sm-1481){
+                    font: normal normal 300 18px/30px $font-primary;
+                    padding: 10px 35px;
+                }
+                @media ($sm-1281){
+                    font: normal normal 300 16px/28px $font-primary;
+                }
+                @media ($sm-991){
+                    font: normal normal 300 14px/25px $font-primary;
+                    margin-left: 0px;
+                    margin-top: 20px;
+                }
                 
             }
         }

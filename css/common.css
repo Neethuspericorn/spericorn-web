@@ -1,1 +1,154 @@
-body,html{font-family:"Titillium Web",sans-serif}body{font-size:19px;margin:0}.slide{width:100%;padding-top:97px}@media(max-width: 1679px){.slide{padding-top:83px}}@media(max-width: 991px){.slide{padding-top:50px}}img{max-width:100%}.main-desc1{color:#fff !important}img{max-width:100%}.main-desc{font:normal normal 300 22px/35px "Titillium Web",sans-serif}@media(max-width: 1679px){.main-desc{font:normal normal 300 20px/33px "Titillium Web",sans-serif}}@media(max-width: 1481px){.main-desc{font:normal normal 300 18px/30px "Titillium Web",sans-serif}}@media(max-width: 1281px){.main-desc{font:normal normal 300 16px/28px "Titillium Web",sans-serif}}@media(max-width: 991px){.main-desc{font:normal normal 300 14px/25px "Titillium Web",sans-serif}}.sec-title{font-size:39px;font-weight:700}@media(max-width: 1679px){.sec-title{font-size:30px}}@media(max-width: 1441px){.sec-title{font-size:28px}}@media(max-width: 1281px){.sec-title{font-size:24px}}@media(max-width: 991px){.sec-title{font-size:22px}}.sec-subtitle{font-size:31px;font-weight:700}.bg-text{position:relative}.bg-text span{position:relative;z-index:2}.bg-text:after{position:absolute;top:50%;left:0;transform:translate(-15%, -50%);content:attr(data-bg-text);font-size:5em;z-index:1;color:#f8fbff;max-width:100vw;overflow:hidden}@media(min-width: 1500px){.custom-container{max-width:1450px}}@media(min-width: 1700px){.custom-container{max-width:1600px}}@media(min-width: 1800px){.custom-container{max-width:1691px}}@media(max-width: 991px){.custom-container{max-width:90%}}.custom-scroll::-webkit-scrollbar{width:4px;height:2px}.custom-scroll::-webkit-scrollbar-track{box-shadow:inset 0 0 4px #6276a2}.custom-scroll::-webkit-scrollbar-thumb{background-color:#fff;outline:1px solid #6276a2}/*# sourceMappingURL=common.css.map */
+/*** all Mobile Screen (iphone 6,7,8) ***/
+/*** mobile Landscape Size ***/
+/*** medium devices (tablets, less than 992px) ***/
+/*** iPad in landscape ***/
+/**** smaller than desktop 1200 (devices and browsers) ***/
+/*** laptop with MDPI (medium density per inch) resolution ***/
+/*** SP developers resolution ***/
+/*** laptop with HiDPI (High Dots Per Inch) resolution ***/
+/*** WSXGA (Wide Super Extended Graphics Array) resolution ***/
+/* placeholder mixin */
+body, html {
+  font-family: "Titillium Web", sans-serif;
+}
+
+body {
+  font-size: 19px;
+  margin: 0;
+}
+
+.slide {
+  width: 100%;
+  padding-top: 97px;
+}
+@media (max-width: 1679px) {
+  .slide {
+    padding-top: 83px;
+  }
+}
+@media (max-width: 991px) {
+  .slide {
+    padding-top: 50px;
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+.main-desc1 {
+  color: #fff !important;
+}
+
+img {
+  max-width: 100%;
+}
+
+.main-desc {
+  font: normal normal 300 22px/35px "Titillium Web", sans-serif;
+}
+@media (max-width: 1679px) {
+  .main-desc {
+    font: normal normal 300 20px/33px "Titillium Web", sans-serif;
+  }
+}
+@media (max-width: 1481px) {
+  .main-desc {
+    font: normal normal 300 18px/30px "Titillium Web", sans-serif;
+  }
+}
+@media (max-width: 1281px) {
+  .main-desc {
+    font: normal normal 300 16px/28px "Titillium Web", sans-serif;
+  }
+}
+@media (max-width: 991px) {
+  .main-desc {
+    font: normal normal 300 14px/25px "Titillium Web", sans-serif;
+  }
+}
+
+.sec-title {
+  font-size: 39px;
+  font-weight: 700;
+}
+@media (max-width: 1679px) {
+  .sec-title {
+    font-size: 30px;
+  }
+}
+@media (max-width: 1441px) {
+  .sec-title {
+    font-size: 28px;
+  }
+}
+@media (max-width: 1281px) {
+  .sec-title {
+    font-size: 24px;
+  }
+}
+@media (max-width: 991px) {
+  .sec-title {
+    font-size: 22px;
+  }
+}
+
+.sec-subtitle {
+  font-size: 31px;
+  font-weight: 700;
+}
+
+.bg-text {
+  position: relative;
+}
+.bg-text span {
+  position: relative;
+  z-index: 2;
+}
+.bg-text:after {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-15%, -50%);
+  content: attr(data-bg-text);
+  font-size: 5em;
+  z-index: 1;
+  color: #F8FBFF;
+  max-width: 100vw;
+  overflow: hidden;
+}
+
+@media (min-width: 1500px) {
+  .custom-container {
+    max-width: 1450px;
+  }
+}
+@media (min-width: 1700px) {
+  .custom-container {
+    max-width: 1600px;
+  }
+}
+@media (min-width: 1800px) {
+  .custom-container {
+    max-width: 1691px;
+  }
+}
+@media (max-width: 991px) {
+  .custom-container {
+    max-width: 90%;
+  }
+}
+
+.custom-scroll::-webkit-scrollbar {
+  width: 4px;
+  height: 2px;
+}
+.custom-scroll::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 4px rgb(98, 118, 162);
+}
+.custom-scroll::-webkit-scrollbar-thumb {
+  background-color: #FFFFFF;
+  outline: 1px solid #6276A2;
+}
+
+/*# sourceMappingURL=common.css.map */

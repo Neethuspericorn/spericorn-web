@@ -10,6 +10,17 @@
 /* placeholder mixin */
 .faq {
   position: relative;
+  padding: 160px 0 134px;
+}
+@media (max-width: 1679px) {
+  .faq {
+    padding: 85px 0 80px;
+  }
+}
+@media (max-width: 991px) {
+  .faq {
+    padding: 50px 0 40px;
+  }
 }
 .faq .casestudy-outer {
   position: absolute;
@@ -17,7 +28,7 @@
   letter-spacing: 0px;
   color: #F8FBFF;
   z-index: -13;
-  top: -67px;
+  top: 0px;
   left: 87px;
   white-space: nowrap;
   overflow: clip;
@@ -27,14 +38,14 @@
   .faq .casestudy-outer {
     font-size: 160px;
     left: 38px;
-    top: -74px;
+    top: -70px;
   }
 }
 @media (max-width: 991px) {
   .faq .casestudy-outer {
     font-size: 60px;
-    left: 87px;
-    top: -95px;
+    left: 47px;
+    top: -108px;
   }
 }
 .faq .slider-wrp {
@@ -294,28 +305,34 @@
 }
 @media (max-width: 1679px) {
   .faq .btm-qa .btm-title {
-    font-size: 30px;
+    font-size: 28px;
   }
 }
 @media (max-width: 1441px) {
   .faq .btm-qa .btm-title {
-    font-size: 28px;
+    font-size: 24px;
   }
 }
 @media (max-width: 1281px) {
   .faq .btm-qa .btm-title {
-    font-size: 24px;
+    font-size: 22px;
   }
 }
 @media (max-width: 991px) {
   .faq .btm-qa .btm-title {
-    font-size: 22px;
+    font-size: 20px;
   }
 }
 .faq .btm-qa .cont-left {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+}
+@media (max-width: 991px) {
+  .faq .btm-qa .cont-left {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 .faq .btm-qa .cont-left .para {
   color: #08243E;
@@ -329,6 +346,30 @@
   margin-left: auto;
   font: normal normal normal 22px/32px Titillium Web;
 }
+@media (max-width: 1679px) {
+  .faq .btm-qa .cont-left .btn-contact {
+    font: normal normal 300 20px/33px "Titillium Web", sans-serif;
+    padding: 10px 40px;
+  }
+}
+@media (max-width: 1481px) {
+  .faq .btm-qa .cont-left .btn-contact {
+    font: normal normal 300 18px/30px "Titillium Web", sans-serif;
+    padding: 10px 35px;
+  }
+}
+@media (max-width: 1281px) {
+  .faq .btm-qa .cont-left .btn-contact {
+    font: normal normal 300 16px/28px "Titillium Web", sans-serif;
+  }
+}
+@media (max-width: 991px) {
+  .faq .btm-qa .cont-left .btn-contact {
+    font: normal normal 300 14px/25px "Titillium Web", sans-serif;
+    margin-left: 0px;
+    margin-top: 20px;
+  }
+}
 .faq .custom-scroll::-webkit-scrollbar {
   width: 4px;
   height: 2px;
@@ -340,3 +381,5 @@
   background-color: #3B7BF8;
   outline: 1px solid #3B7BF8;
 }
+
+/*# sourceMappingURL=faq.css.map */

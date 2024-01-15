@@ -133,8 +133,13 @@
      object-fit: contain;
   max-width: 100%;
   position: relative;
-  margin-top: -200px;
+  margin-top: -235px;
   aspect-ratio: 0.9;
+}
+@media (max-width: 1679px) {
+  .custom-web .slider-img {
+    margin-top: -160px;
+  }
 }
 .custom-web .slider-img img {
   width: 100%;
