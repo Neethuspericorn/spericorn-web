@@ -86,8 +86,11 @@
         object-fit: contain;
         max-width: 100%;
         position: relative;
-        margin-top: -200px;
+        margin-top: -235px;
         aspect-ratio: 0.9;
+        @media ($sm-1679){
+            margin-top: -160px;
+        }
         // @media ($sm-1679){
         //     max-width: 100%;
         //     width: unset;
