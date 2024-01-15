@@ -24,17 +24,17 @@ a {
 }
 @media (max-width: 1441px) {
   .title {
-    font-size: 28px;
+    font-size: 26px;
   }
 }
 @media (max-width: 1281px) {
   .title {
-    font-size: 26px;
+    font-size: 24px;
   }
 }
 @media (max-width: 991px) {
   .title {
-    font-size: 25px;
+    font-size: 22px;
     line-height: 30px;
     padding-bottom: 15px;
   }
@@ -71,6 +71,11 @@ a {
     padding-bottom: 50px;
   }
 }
+@media (max-width: 991px) {
+  .industries-sec .heading-sec .main-desc {
+    margin: 0;
+  }
+}
 
 .icon-sec {
   display: grid;
@@ -81,7 +86,9 @@ a {
 }
 @media (max-width: 991px) {
   .icon-sec {
+    grid-template-columns: repeat(3, 1fr);
     font-size: 40px;
+    row-gap: 10px !important;
   }
 }
 @media (max-width: 1679px) {
@@ -112,12 +119,6 @@ a {
     grid-template-columns: repeat(2, 1fr) !important;
   }
 }
-@media (max-width: 991px) {
-  .icon-sec {
-    grid-template-columns: repeat(3, 1fr);
-    row-gap: 40px;
-  }
-}
 .icon-sec .ion-img {
   min-height: 70px;
 }
@@ -132,9 +133,14 @@ a {
   border-radius: 61px;
   padding: 20px 40px;
 }
-@media (max-width: 1679px) {
+@media (max-width: 991px) {
   .logo-sec .logos {
-    padding: 10px 40px;
+    padding: 10px 20px;
+  }
+}
+@media (max-width: 1281px) {
+  .logo-sec .logos {
+    padding: 10px 20px;
   }
 }
 .logo-sec .logos .logoimg {
@@ -145,6 +151,64 @@ a {
 @media (max-width: 1679px) {
   .logo-sec .logos .logoimg {
     height: 20px;
+  }
+}
+
+.years-with-icons {
+  background: #1B2638 0% 0% no-repeat padding-box;
+  opacity: 0.7;
+  backdrop-filter: blur(40px);
+  position: absolute;
+  width: 100%;
+  padding: 30px 0px;
+}
+.years-with-icons .banner-icons {
+  padding-bottom: 0;
+  padding-bottom: 0;
+  width: 73%;
+  margin: 0 auto;
+  grid-column-gap: 120px;
+}
+@media (max-width: 1679px) {
+  .years-with-icons .banner-icons {
+    width: 90%;
+    grid-column-gap: 80px;
+  }
+}
+@media (max-width: 1281px) {
+  .years-with-icons .banner-icons {
+    width: 90%;
+    grid-column-gap: 40px;
+  }
+}
+@media (max-width: 579px) {
+  .years-with-icons .banner-icons {
+    width: 100%;
+    grid-column-gap: 0px;
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+}
+@media (max-width: 767px) {
+  .years-with-icons .banner-icons {
+    width: 100%;
+    grid-column-gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.years-with-icons .banner-icons .bottom-title p {
+  font: normal normal normal 15px/23px Titillium Web;
+  letter-spacing: 0px;
+  color: #DEE9FF;
+  margin: 0;
+}
+@media (max-width: 1679px) {
+  .years-with-icons .banner-icons .bottom-title p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 991px) {
+  .years-with-icons .banner-icons .bottom-title p {
+    font-size: 13px;
   }
 }
 

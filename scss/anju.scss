@@ -12,13 +12,13 @@ a{
             font-size: 30px;
         }
         @media ($sm-1441){
-            font-size: 28px;
-        }
-        @media ($sm-1281){
             font-size: 26px;
         }
+        @media ($sm-1281){
+            font-size: 24px;
+        }
         @media ($sm-991){
-            font-size: 25px;
+            font-size: 22px;
             line-height: 30px;
             padding-bottom: 15px;
         }
@@ -49,6 +49,12 @@ a{
         @media ($sm-1679){
             padding-bottom: 50px;
         }
+
+        .main-desc{
+            @media ($sm-991){
+             margin: 0;  
+            }  
+        }
     }
 }
 .icon-sec {
@@ -58,7 +64,9 @@ a{
     text-align: center;
     padding-bottom: 90px;
     @media ($sm-991){
+        grid-template-columns: repeat(3,1fr);
         font-size: 40px;
+        row-gap: 10px !important;
      }
      @media ($sm-1679){
         font-size: 83px;
@@ -83,11 +91,6 @@ a{
         grid-template-columns: repeat(2,1fr) !important;
     
     }
-    @media ($sm-991){
-        grid-template-columns: repeat(3,1fr);
-        row-gap: 40px;
-    
-    }
     .ion-img{
         min-height: 70px;
     }
@@ -103,11 +106,15 @@ a{
         margin: 0px 5px;
         border-radius: 61px;
         padding: 20px 40px;
-       
-        @media ($sm-1679){
-            padding: 10px 40px;
+        @media ($sm-991){
+            padding: 10px 20px;
          
         }
+        @media ($sm-1281){
+            padding: 10px 20px;
+         
+        }
+      
 
         .logoimg {
             display: flex;
@@ -123,7 +130,54 @@ a{
     }
    
 }
-
+.years-with-icons{
+    background: #1B2638 0% 0% no-repeat padding-box;
+    opacity: 0.7;
+    backdrop-filter: blur(40px);
+    position: absolute;
+    width: 100%;
+    padding: 30px 0px;
+    .banner-icons{
+        padding-bottom: 0;
+        padding-bottom: 0;
+        width: 73%;
+        margin: 0 auto;
+        grid-column-gap: 120px;
+        @media ($sm-1679){
+            width: 90%;
+            grid-column-gap: 80px; 
+        }
+        @media ($sm-1281){
+            width: 90%;
+            grid-column-gap: 40px; 
+        }
+        @media ($sm-579){
+            width: 100%;
+            grid-column-gap: 0px; 
+            grid-template-columns: repeat(1,1fr) !important;
+        }
+        @media ($sm-767){
+            width: 100%;
+            grid-column-gap: 30px; 
+            grid-template-columns: repeat(2,1fr);
+        }
+        .bottom-title{
+            p{
+                font: normal normal normal 15px/23px Titillium Web;
+                letter-spacing: 0px;
+                color: #DEE9FF;
+                margin: 0;
+                @media ($sm-1679){
+                    font-size: 14px;
+                }
+                @media ($sm-991){
+                    font-size: 13px;
+                }
+            }
+           
+        }
+    }
+}
 
 .case-study-btn{
     @media ($sm-991){
