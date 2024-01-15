@@ -97,7 +97,6 @@ a {
 }
 @media (max-width: 1679px) {
   .icon-sec {
-    font-size: 83px;
     padding-bottom: 80px;
     row-gap: 50px;
   }
@@ -195,6 +194,17 @@ a {
     row-gap: 20px !important;
   }
 }
+@media (max-width: 1679px) {
+  .years-with-icons .icon-sec .ion-img {
+    height: 60px;
+    width: 60px;
+    margin: 0 auto;
+  }
+  .years-with-icons .icon-sec .ion-img img {
+    width: 100%;
+    height: 100%;
+  }
+}
 @media (max-width: 991px) {
   .years-with-icons {
     position: unset;
@@ -202,6 +212,11 @@ a {
     row-gap: 20px !important;
     opacity: 1;
     background-color: #192132;
+  }
+}
+@media (max-width: 1679px) {
+  .years-with-icons {
+    padding: 20px;
   }
 }
 .years-with-icons .banner-icons {
@@ -213,8 +228,14 @@ a {
 }
 @media (max-width: 1679px) {
   .years-with-icons .banner-icons {
-    width: 90%;
-    grid-column-gap: 80px;
+    width: 70%;
+    grid-column-gap: 50px;
+  }
+}
+@media (max-width: 1481px) {
+  .years-with-icons .banner-icons {
+    width: 75%;
+    grid-column-gap: 50px;
   }
 }
 @media (max-width: 1281px) {
@@ -238,6 +259,7 @@ a {
   }
 }
 .years-with-icons .banner-icons .bottom-title p {
+  padding-top: 5px;
   font: normal normal normal 15px/23px Titillium Web;
   letter-spacing: 0px;
   color: #DEE9FF;
@@ -245,7 +267,8 @@ a {
 }
 @media (max-width: 1679px) {
   .years-with-icons .banner-icons .bottom-title p {
-    font-size: 14px;
+    font-size: 13px;
+    line-height: 18px;
   }
 }
 @media (max-width: 991px) {
@@ -325,11 +348,6 @@ a {
 }
 @media (max-width: 1441px) {
   .box-title {
-    font-size: 26px !important;
-  }
-}
-@media (max-width: 1281px) {
-  .box-title {
     font-size: 24px !important;
   }
 }
@@ -383,6 +401,12 @@ a {
   z-index: 99;
 }
 
+@media (max-width: 1679px) {
+  .case-studies .content {
+    margin: 0;
+    font-size: 18px;
+  }
+}
 @media (max-width: 991px) {
   .case-studies .main-desc {
     margin: 0;
@@ -391,6 +415,7 @@ a {
 @media (max-width: 1679px) {
   .case-studies .main-desc {
     margin: 0;
+    font-size: 16px;
   }
 }
 .case-studies .heading-sec {
@@ -582,18 +607,13 @@ a {
 }
 @media (max-width: 1441px) {
   .consultation .consulation-box .box-title {
-    font-size: 26px !important;
+    font-size: 24px !important;
   }
 }
 @media (max-width: 991px) {
   .consultation .consulation-box .box-title {
     font-size: 22px !important;
     padding: 10px 0px;
-  }
-}
-@media (max-width: 1281px) {
-  .consultation .consulation-box .box-title {
-    font-size: 24px !important;
   }
 }
 .consultation .consulation-box .box {
