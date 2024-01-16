@@ -49,12 +49,12 @@ img {
 }
 @media (max-width: 1679px) {
   .main-desc {
-    font: normal normal 300 20px/33px "Titillium Web", sans-serif;
+    font: normal normal 300 18px/28px "Titillium Web", sans-serif;
   }
 }
 @media (max-width: 1481px) {
   .main-desc {
-    font: normal normal 300 18px/30px "Titillium Web", sans-serif;
+    font: normal normal 300 18px/28px "Titillium Web", sans-serif;
   }
 }
 @media (max-width: 1281px) {
