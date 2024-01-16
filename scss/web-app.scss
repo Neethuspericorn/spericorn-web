@@ -171,6 +171,7 @@
                 @media ($sm-767){
                     flex-direction: row;
                     margin-top: 0px;
+                    column-gap: 10px;
                 }
                 li{
                     list-style: none;

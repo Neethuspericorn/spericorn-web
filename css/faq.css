@@ -120,6 +120,8 @@
   .faq .slider-wrp .nav-left .slide-list {
     flex-direction: row;
     margin-top: 0px;
+    -moz-column-gap: 10px;
+         column-gap: 10px;
   }
 }
 .faq .slider-wrp .nav-left .slide-list li {
