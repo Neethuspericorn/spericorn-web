@@ -131,7 +131,7 @@
   .header .main-nav .menu-collapse .navigation li {
     padding-right: 15px;
     padding-left: 15px;
-    padding-top: 5px;
+    padding-top: 0px;
     padding-bottom: 5px;
   }
 }
