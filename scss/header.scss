@@ -153,18 +153,41 @@
                 }
                 &.dropdown{
                     position: relative;
-                    .dropdown-menu{
-                        display: none;
-                        transition: all 0.5s linear;
-                        padding: 15px 10px;
-                        position: absolute;
-                        min-width: 200px;
-                        background: #141b2b;
-                        right: 0px;
-                        a{
-                            color: #fff;
-                            font:normal normal normal 16px/26px Titillium Web;
-                            padding: 5px 0;
+                    .drp-dwn-wrp{
+                        @media ($lg-992){
+                            position: absolute;
+                            right: 0px;
+                            display: none;
+                            padding-top: 20px;
+                        }
+                        .dropdown-menu{
+                            &::before{
+                                @media ($lg-992){
+                                    content: "";
+                                    width: 0; 
+                                    height: 0; 
+                                    border-left: 15px solid transparent;
+                                    border-right: 15px solid transparent;
+                                    border-bottom: 20px solid #141b2b;
+                                    position: absolute;
+                                    right: 10px;
+                                    top: 5px;
+                                }
+                            }
+                            transition: all 0.5s linear;
+                            padding: 15px 20px;
+                            min-width: 200px;
+                            background: #141b2b;
+                            border-radius: 7px;
+                            -webkit-border-radius:7px;
+                            a{
+                                color: #fff;
+                                font:normal normal normal 16px/26px Titillium Web;
+                                padding: 5px 0;
+                            }
+                            @media ($sm-991){
+                                background-color: transparent;
+                            }
                         }
                         @media ($sm-991){
                             position: relative;
@@ -172,9 +195,12 @@
                     }
                 }
                 &:hover{
-                    .dropdown-menu{
+                    .drp-dwn-wrp{
                         display: flex;
-                        flex-direction: column;
+                        .dropdown-menu{
+                            display: flex;
+                            flex-direction: column;
+                        }
                     }
                 }
             }

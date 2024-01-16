@@ -200,26 +200,54 @@
 .header .main-nav .menu-collapse .navigation li.dropdown {
   position: relative;
 }
-.header .main-nav .menu-collapse .navigation li.dropdown .dropdown-menu {
-  display: none;
+@media (min-width: 992px) {
+  .header .main-nav .menu-collapse .navigation li.dropdown .drp-dwn-wrp {
+    position: absolute;
+    right: 0px;
+    display: none;
+    padding-top: 20px;
+  }
+}
+.header .main-nav .menu-collapse .navigation li.dropdown .drp-dwn-wrp .dropdown-menu {
   transition: all 0.5s linear;
-  padding: 15px 10px;
-  position: absolute;
+  padding: 15px 20px;
   min-width: 200px;
   background: #141b2b;
-  right: 0px;
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
 }
-.header .main-nav .menu-collapse .navigation li.dropdown .dropdown-menu a {
+@media (min-width: 992px) {
+  .header .main-nav .menu-collapse .navigation li.dropdown .drp-dwn-wrp .dropdown-menu::before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 20px solid #141b2b;
+    position: absolute;
+    right: 10px;
+    top: 5px;
+  }
+}
+.header .main-nav .menu-collapse .navigation li.dropdown .drp-dwn-wrp .dropdown-menu a {
   color: #fff;
   font: normal normal normal 16px/26px Titillium Web;
   padding: 5px 0;
 }
 @media (max-width: 991px) {
-  .header .main-nav .menu-collapse .navigation li.dropdown .dropdown-menu {
+  .header .main-nav .menu-collapse .navigation li.dropdown .drp-dwn-wrp .dropdown-menu {
+    background-color: transparent;
+  }
+}
+@media (max-width: 991px) {
+  .header .main-nav .menu-collapse .navigation li.dropdown .drp-dwn-wrp {
     position: relative;
   }
 }
-.header .main-nav .menu-collapse .navigation li:hover .dropdown-menu {
+.header .main-nav .menu-collapse .navigation li:hover .drp-dwn-wrp {
+  display: flex;
+}
+.header .main-nav .menu-collapse .navigation li:hover .drp-dwn-wrp .dropdown-menu {
   display: flex;
   flex-direction: column;
 }
