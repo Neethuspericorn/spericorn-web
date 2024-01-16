@@ -46,33 +46,33 @@
   }
 }
 .custom-web .inner-wrp {
-  margin-top: 163px;
+  margin-top: 86px;
 }
 @media (max-width: 1679px) {
   .custom-web .inner-wrp {
-    margin-top: 130px;
+    margin-top: 80px;
   }
 }
 @media (max-width: 1481px) {
   .custom-web .inner-wrp {
-    margin-top: 120px;
+    margin-top: 70px;
   }
 }
 @media (max-width: 1441px) {
   .custom-web .inner-wrp {
-    margin-top: 100px;
+    margin-top: 60px;
   }
 }
 @media (max-width: 1281px) {
   .custom-web .inner-wrp {
     padding-bottom: 90px;
-    margin-top: 70px;
+    margin-top: 40px;
   }
 }
 @media (max-width: 1199px) {
   .custom-web .inner-wrp {
     padding-bottom: 80px;
-    margin-top: 50px;
+    margin-top: 45px;
   }
 }
 @media (max-width: 991px) {

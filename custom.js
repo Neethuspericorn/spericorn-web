@@ -5,7 +5,7 @@ $(document).ready(function(){
         setHeights: true,
         offset: '',
         sectionName:false,
-        interstitialSection:"header,footer"
+        interstitialSection:"header,footer",
     });
     $(".menu-toggler").click(function() {
         $(this).toggleClass("on");
