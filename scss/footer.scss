@@ -1,4 +1,8 @@
 @import "partials/partials";
+footer.scroll-panel{
+    padding-top: 0;
+    padding-bottom: 0;
+}
 .footer-sec{
     background-color: #111827;
     // min-height: 100vh;
@@ -9,7 +13,7 @@
     };
     .footer-nav-sec{
         padding: 140px 0 120px;
-        @media ($sm-1679){
+        @media ($sm-1679){ 
             padding: 90px 0 70px;
         }
         @media ($sm-1441){
