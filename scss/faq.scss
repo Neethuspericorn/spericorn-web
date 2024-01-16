@@ -133,6 +133,9 @@
                         @media ($sm-991){
                             font: normal normal normal 14px/24px $font-primary;
                         }
+                        &.active{
+                            color: #3B7BF8;
+                        }
                     }
 
                     @media ($sm-1679){
@@ -152,11 +155,7 @@
                         flex:1 0 auto;
                         margin-bottom: 10px;
                     }
-                    &.active{
-                        button{
-                            color: #3B7BF8;
-                        }
-                    }
+                    
                     button{
                         &:hover{
                             color:#3B7BF8;

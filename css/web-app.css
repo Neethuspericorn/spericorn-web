@@ -261,6 +261,9 @@
     text-align: center;
   }
 }
+.custom-web .slider-wrp .nav-left .slide-list li button.active {
+  color: #F5F9FF;
+}
 @media (max-width: 1679px) {
   .custom-web .slider-wrp .nav-left .slide-list li {
     margin-bottom: 15px;
