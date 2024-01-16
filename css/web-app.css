@@ -66,16 +66,19 @@
 @media (max-width: 1281px) {
   .custom-web .inner-wrp {
     padding-bottom: 90px;
+    margin-top: 70px;
   }
 }
 @media (max-width: 1199px) {
   .custom-web .inner-wrp {
     padding-bottom: 80px;
+    margin-top: 50px;
   }
 }
 @media (max-width: 991px) {
   .custom-web .inner-wrp {
     padding-bottom: 50px;
+    margin-top: 40px;
   }
 }
 @media (max-width: 767px) {
