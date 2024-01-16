@@ -218,6 +218,9 @@
                         @media ($sm-767){
                             text-align: center;
                         }
+                        &.active{
+                            color: $slider-color-active;
+                        }
                     }
 
                     @media ($sm-1679){
