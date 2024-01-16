@@ -1,4 +1,9 @@
 $(document).ready(function(){
+    let scrWidth = 0;
+    $(window).on("load resize",function(e){
+        scrWidth = screen.width;
+    });
+    
     // $.scrollify({
     //     section : ".slide",
     //     scrollSpeed: 200,
@@ -65,13 +70,16 @@ $(document).ready(function(){
           var $slide = $($slides[currentSlide]);
           var offsetTop = $slide.offset().top;
           isAnimating = true;
-          $("html, body").animate(
-            {
-              scrollTop: offsetTop - 60
-            },
-            1000,
-            stopAnimation
-          );
+          if(scrWidth>992){
+            $("html, body").animate(
+                {
+                  scrollTop: offsetTop - 60
+                },
+                1000,
+                stopAnimation
+              );
+          }
+          
         } else {
           // back
           if (currentSlide - 1 < 0) return;
@@ -81,13 +89,16 @@ $(document).ready(function(){
           var $slide = $($slides[currentSlide]);
           var offsetTop = $slide.offset().top;
           isAnimating = true;
-          $("html, body").animate(
-            {
-              scrollTop: offsetTop
-            },
-            1000,
-            stopAnimation
-          );
+          if(scrWidth>992){
+            $("html, body").animate(
+                {
+                  scrollTop: offsetTop
+                },
+                1000,
+                stopAnimation
+              );
+          }
+          
         }
       },
       { passive: false }
