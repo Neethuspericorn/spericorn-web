@@ -70,7 +70,7 @@ $(document).ready(function(){
           var $slide = $($slides[currentSlide]);
           var offsetTop = $slide.offset().top;
           isAnimating = true;
-          if(scrWidth>992){
+          if(scrWidth>1300){
             $("html, body").animate(
                 {
                   scrollTop: offsetTop - 60
@@ -89,7 +89,7 @@ $(document).ready(function(){
           var $slide = $($slides[currentSlide]);
           var offsetTop = $slide.offset().top;
           isAnimating = true;
-          if(scrWidth>992){
+          if(scrWidth>1300){
             $("html, body").animate(
                 {
                   scrollTop: offsetTop
