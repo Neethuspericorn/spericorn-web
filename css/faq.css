@@ -98,10 +98,15 @@
   overflow-y: auto;
   max-width: 40%;
 }
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .faq .slider-wrp .nav-left {
     max-width: 100%;
     margin-bottom: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .faq .slider-wrp .nav-left {
+    max-height: 400px;
   }
 }
 .faq .slider-wrp .nav-left .slide-list {
@@ -115,6 +120,7 @@
   .faq .slider-wrp .nav-left .slide-list {
     flex-direction: row;
     margin-top: 0px;
+    column-gap: 10px;
   }
 }
 .faq .slider-wrp .nav-left .slide-list li {
@@ -182,25 +188,19 @@
 @media (max-width: 1481px) {
   .faq .slider-wrp .nav-left .slide-list li {
     font: normal normal normal 19px/29px "Titillium Web", sans-serif;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
   }
 }
 @media (max-width: 1441px) {
   .faq .slider-wrp .nav-left .slide-list li {
     font: normal normal normal 18px/28px "Titillium Web", sans-serif;
-    margin-bottom: 25px;
-  }
-}
-@media (max-width: 1281px) {
-  .faq .slider-wrp .nav-left .slide-list li {
-    font: normal normal normal 17px/27px "Titillium Web", sans-serif;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
   }
 }
 @media (max-width: 1199px) {
   .faq .slider-wrp .nav-left .slide-list li {
     font: normal normal normal 16px/26px "Titillium Web", sans-serif;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
   }
 }
 @media (max-width: 767px) {
@@ -387,3 +387,5 @@
   background-color: #3B7BF8;
   outline: 1px solid #3B7BF8;
 }
+
+/*# sourceMappingURL=faq.css.map */

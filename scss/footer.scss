@@ -8,18 +8,15 @@
         position: right bottom;
     };
     .footer-nav-sec{
-        padding: 160px 0 140px;
+        padding: 140px 0 120px;
         @media ($sm-1679){
-            padding: 100px 0 80px;
+            padding: 90px 0 70px;
         }
         @media ($sm-1441){
-            padding: 80px 0 60px;
-        }
-        @media ($sm-1281){
             padding: 60px 0 40px;
         }
         @media ($sm-991){
-            padding: 40px 0 30px;
+            padding: 30px 0 20px;
         }
         @media ($sm-767){
             padding-bottom: 0;
@@ -63,7 +60,7 @@
                     margin: 0;
                     li{
                         margin-bottom: 15px;
-                        @media ($sm-1281){
+                        @media ($sm-1679){
                             margin-bottom: 10px;
                         }
                         @media ($sm-991){
@@ -78,14 +75,12 @@
                             padding: 5px 0;
                             transition: .3s;
                             @media ($sm-1679){
-                                font-size: 18px;
+                                font-size: 17px;
                             }
                             @media ($sm-1441){
-                                font-size: 16px;
-                            }
-                            @media ($sm-1281){
                                 font-size: 14px;
                             }
+                             
                             @media ($sm-991){
                                 font-size: 13px;
                                 padding-bottom: 0;
@@ -128,21 +123,19 @@
              
         }
         .logo-wrapper{
-            min-height: 100px;
+            min-height: 80px;
             display: flex;
             align-items: center;
             @media ($sm-1679){
-                min-height: 80px;
+                min-height: 50px;
             }
             @media ($sm-1441){
-                min-height: 60px;
-            }
-            @media ($sm-1281){
-                min-height: 40px;
-            }
-            @media ($sm-991){
                 min-height: 30px;
             }
+            @media ($sm-1281){
+                min-height: 20px;
+            }
+             
             @media ($sm-767){
                 flex-wrap: wrap;
             }
@@ -230,13 +223,13 @@
             align-items: center;
             justify-content: space-between;
             @media ($sm-1679){
-                padding: 40px 0; 
+                padding: 30px 0; 
             }
             @media ($sm-1441){
-                padding: 30px 0;
+                padding: 20px 0;
             }
             @media ($sm-1281){
-                padding: 20px 0;
+                padding: 15px 0;
             }
             @media ($sm-991){
                 flex-wrap: wrap;

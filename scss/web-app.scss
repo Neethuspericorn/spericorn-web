@@ -6,7 +6,7 @@
     align-items: flex-start;
     padding-bottom: 165px;
     @media ($sm-1679){
-        padding-bottom: 140px;
+        padding-bottom: 130px;
     }
     @media ($sm-1481){
         padding-bottom: 120px;
@@ -24,26 +24,27 @@
         padding-bottom: 60px;
     }
     .inner-wrp{
-        margin-top:163px;
+        margin-top:86px;
         @media ($sm-1679){
-            margin-top: 130px;
+            margin-top: 60px;
         }
         @media ($sm-1481){
-            margin-top: 120px;
+            margin-top: 55px;
         }
         @media ($sm-1441){
-            margin-top: 100px;
+            margin-top: 50px;
         }
         @media ($sm-1281){
-            padding-bottom: 90px;
+            margin-top: 45px;
         }
         @media ($sm-1199){
-            padding-bottom: 80px;
+            margin-top: 40px;
         }
         @media ($sm-991){
-            padding-bottom: 50px;
+            margin-top: 38px;
         }
         @media ($sm-767){
+            margin-top: 0;
             padding-bottom: 0px;
         }
     }
@@ -155,6 +156,9 @@
             max-height: 450px;
             overflow-y: auto;
             max-width: 25%;
+            @media($sm-991){
+                max-width: 30%;
+            }
             @media (max-width:767px){
                 max-width: 100%;
                 margin-bottom: 20px;
@@ -168,6 +172,7 @@
                 @media ($sm-767){
                     flex-direction: row;
                     margin-top: 0px;
+                    column-gap: 10px;
                 }
                 li{
                     list-style: none;
@@ -176,6 +181,7 @@
                     position: relative;
                     display: flex;
                     align-items: center;
+                    justify-content: flex-start;
                     cursor: pointer;
                     color: $slider-color;
                     transition: all 0.5s;
@@ -186,6 +192,7 @@
                         outline: none;
                         cursor: pointer;
                         font: normal normal normal 25px/38px $font-primary;
+                        text-align: left;
                         @media ($sm-1679){
                             font: normal normal normal 20px/30px $font-primary;
                         }
@@ -203,6 +210,9 @@
                         }
                         @media ($sm-991){
                             font: normal normal normal 14px/24px $font-primary;
+                        }
+                        @media ($sm-767){
+                            text-align: center;
                         }
                     }
 
