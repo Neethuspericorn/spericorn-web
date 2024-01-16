@@ -155,6 +155,9 @@
             max-height: 450px;
             overflow-y: auto;
             max-width: 25%;
+            @media($sm-991){
+                max-width: 30%;
+            }
             @media (max-width:767px){
                 max-width: 100%;
                 margin-bottom: 20px;
@@ -176,6 +179,7 @@
                     position: relative;
                     display: flex;
                     align-items: center;
+                    justify-content: flex-start;
                     cursor: pointer;
                     color: $slider-color;
                     transition: all 0.5s;
@@ -186,6 +190,7 @@
                         outline: none;
                         cursor: pointer;
                         font: normal normal normal 25px/38px $font-primary;
+                        text-align: left;
                         @media ($sm-1679){
                             font: normal normal normal 20px/30px $font-primary;
                         }
@@ -203,6 +208,9 @@
                         }
                         @media ($sm-991){
                             font: normal normal normal 14px/24px $font-primary;
+                        }
+                        @media ($sm-767){
+                            text-align: center;
                         }
                     }
 

@@ -216,6 +216,11 @@
   overflow-y: auto;
   max-width: 25%;
 }
+@media (max-width: 991px) {
+  .custom-web .slider-wrp .nav-left {
+    max-width: 30%;
+  }
+}
 @media (max-width: 767px) {
   .custom-web .slider-wrp .nav-left {
     max-width: 100%;
@@ -242,6 +247,7 @@
   position: relative;
   display: flex;
   align-items: center;
+  justify-content: flex-start;
   cursor: pointer;
   color: #6D7B9B;
   transition: all 0.5s;
@@ -253,6 +259,7 @@
   outline: none;
   cursor: pointer;
   font: normal normal normal 25px/38px "Titillium Web", sans-serif;
+  text-align: left;
 }
 @media (max-width: 1679px) {
   .custom-web .slider-wrp .nav-left .slide-list li button {
@@ -282,6 +289,11 @@
 @media (max-width: 991px) {
   .custom-web .slider-wrp .nav-left .slide-list li button {
     font: normal normal normal 14px/24px "Titillium Web", sans-serif;
+  }
+}
+@media (max-width: 767px) {
+  .custom-web .slider-wrp .nav-left .slide-list li button {
+    text-align: center;
   }
 }
 @media (max-width: 1679px) {
