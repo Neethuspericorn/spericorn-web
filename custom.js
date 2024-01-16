@@ -3,13 +3,13 @@ $(document).ready(function(){
         section : ".slide",
         scrollSpeed: 200,
         setHeights: true,
-        offset: '',
+        offset: 0,
         sectionName:false,
         interstitialSection:"header,footer"
     });
-    $(".navbar-toggler").click(function() {
+    $(".menu-toggler").click(function() {
         $(this).toggleClass("on");
-        $(".navbar-collapse").slideToggle();
+        $(".menu-collapse").slideToggle();
     });
 
       $('.testi-slider').slick({

@@ -304,7 +304,8 @@
   margin-right: 0.75em;
   width: 1.5em;
   height: 1.2em;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .footer-sec .f-rights-sec .f-rights-wrapper {
   padding: 50px 0;
@@ -439,5 +440,3 @@
 .footer-sec .f-rights-sec .f-app-block .app-link:last-child {
   margin-right: 0;
 }
-
-/*# sourceMappingURL=footer.css.map */

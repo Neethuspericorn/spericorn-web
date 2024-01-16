@@ -46,6 +46,7 @@ img{
 .sec-title{  
     font-size: 39px;
     font-weight: 700;
+    margin-top: 0px;
     @media ($sm-1679){
         font-size: 30px;
     }
@@ -85,6 +86,9 @@ img{
     }
 }
 .custom-container{
+    @media (min-width:1024px){
+        max-width: calc(100vw - 50px);
+    }
     @media (min-width:1500px){
         max-width: 1450px;
     }

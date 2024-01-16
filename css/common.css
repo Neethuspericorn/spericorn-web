@@ -71,6 +71,7 @@ img {
 .sec-title {
   font-size: 39px;
   font-weight: 700;
+  margin-top: 0px;
 }
 @media (max-width: 1679px) {
   .sec-title {
@@ -118,6 +119,11 @@ img {
   overflow: hidden;
 }
 
+@media (min-width: 1024px) {
+  .custom-container {
+    max-width: calc(100vw - 50px);
+  }
+}
 @media (min-width: 1500px) {
   .custom-container {
     max-width: 1450px;

@@ -66,8 +66,23 @@
 .right-anim-slider .content-area .vert-slider-wrp.five.slick-slide {
   margin-bottom: 20px;
 }
-.right-anim-slider .content-area .vert-slider-wrp.seven.slick-slide {
-  margin-top: 120px;
+.banner-outr-container .right-anim-slider .gallery-h {
+  overflow: hidden;
+  margin-right: 25px;
 }
-
-/*# sourceMappingURL=banner-slide.css.map */
+@keyframes marqueeTop {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(0, -100%, 0);
+  }
+}
+@keyframes marqueeBottom {
+  0% {
+    transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}

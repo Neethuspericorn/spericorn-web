@@ -17,7 +17,7 @@
 }
 @media (max-width: 1679px) {
   .custom-web {
-    padding-bottom: 140px;
+    padding-bottom: 130px;
   }
 }
 @media (max-width: 1481px) {
@@ -46,40 +46,41 @@
   }
 }
 .custom-web .inner-wrp {
-  margin-top: 163px;
+  margin-top: 86px;
 }
 @media (max-width: 1679px) {
   .custom-web .inner-wrp {
-    margin-top: 130px;
+    margin-top: 60px;
   }
 }
 @media (max-width: 1481px) {
   .custom-web .inner-wrp {
-    margin-top: 120px;
+    margin-top: 55px;
   }
 }
 @media (max-width: 1441px) {
   .custom-web .inner-wrp {
-    margin-top: 100px;
+    margin-top: 50px;
   }
 }
 @media (max-width: 1281px) {
   .custom-web .inner-wrp {
-    padding-bottom: 90px;
+    margin-top: 45px;
   }
 }
 @media (max-width: 1199px) {
   .custom-web .inner-wrp {
-    padding-bottom: 80px;
+    margin-top: 40px;
   }
 }
 @media (max-width: 991px) {
   .custom-web .inner-wrp {
-    padding-bottom: 50px;
+    margin-top: 38px;
   }
 }
 @media (max-width: 767px) {
   .custom-web .inner-wrp {
+    margin-top: 0;
     padding-bottom: 0px;
   }
 }
@@ -215,6 +216,11 @@
   overflow-y: auto;
   max-width: 25%;
 }
+@media (max-width: 991px) {
+  .custom-web .slider-wrp .nav-left {
+    max-width: 30%;
+  }
+}
 @media (max-width: 767px) {
   .custom-web .slider-wrp .nav-left {
     max-width: 100%;
@@ -232,6 +238,7 @@
   .custom-web .slider-wrp .nav-left .slide-list {
     flex-direction: row;
     margin-top: 0px;
+    column-gap: 10px;
   }
 }
 .custom-web .slider-wrp .nav-left .slide-list li {
@@ -241,6 +248,7 @@
   position: relative;
   display: flex;
   align-items: center;
+  justify-content: flex-start;
   cursor: pointer;
   color: #6D7B9B;
   transition: all 0.5s;
@@ -252,6 +260,7 @@
   outline: none;
   cursor: pointer;
   font: normal normal normal 25px/38px "Titillium Web", sans-serif;
+  text-align: left;
 }
 @media (max-width: 1679px) {
   .custom-web .slider-wrp .nav-left .slide-list li button {
@@ -281,6 +290,11 @@
 @media (max-width: 991px) {
   .custom-web .slider-wrp .nav-left .slide-list li button {
     font: normal normal normal 14px/24px "Titillium Web", sans-serif;
+  }
+}
+@media (max-width: 767px) {
+  .custom-web .slider-wrp .nav-left .slide-list li button {
+    text-align: center;
   }
 }
 @media (max-width: 1679px) {

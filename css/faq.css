@@ -98,10 +98,15 @@
   overflow-y: auto;
   max-width: 40%;
 }
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .faq .slider-wrp .nav-left {
     max-width: 100%;
     margin-bottom: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .faq .slider-wrp .nav-left {
+    max-height: 400px;
   }
 }
 .faq .slider-wrp .nav-left .slide-list {
@@ -115,6 +120,7 @@
   .faq .slider-wrp .nav-left .slide-list {
     flex-direction: row;
     margin-top: 0px;
+    column-gap: 10px;
   }
 }
 .faq .slider-wrp .nav-left .slide-list li {

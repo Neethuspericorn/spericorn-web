@@ -1,6 +1,6 @@
 @import 'partials/partials';
 .header{
-    padding: 22px 0;
+    padding: 30px 0;
     position: fixed;
     width: 100%;
     left: 0px;
@@ -10,20 +10,25 @@
     background-color: $header-bg;
 
     @media ($sm-1679){
-        padding: 15px 0;
+        padding: 20px 0;
     }
     @media ($sm-1481){
-        padding: 12px 0;
+        padding: 18px 0;
     }
     @media ($sm-1281){
-        padding: 10px 0;
+        padding: 15px 0;
     }
     @media ($sm-991){
-        padding: 8px 0;
+        padding: 10px 0;
     }
-    .navbar-brand{
-    
-        
+    .main-nav{
+        display: flex;
+        flex-wrap: wrap;
+        .logo{
+            display: flex;
+            @media ($sm-991){
+                margin-right: auto;
+            }
             img{
                 @media ($sm-1679){
                     max-width: 120px;
@@ -32,11 +37,23 @@
                     max-width: 120px;
                 }
             }
-        
-    }
-    .navbar-toggler{
-        .navbar-toggler-icon{
+        }
+    .menu-toggler{
+        background-color: transparent;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 6px;
+        height: 40px;
+        display: none;
+        @media ($sm-991){
+            display: block;
+        }
+        .menu-toggler-icon{
             background-image: url('../img/menu-bar.svg');
+            display: block;
+            width: 27px;
+            height: 16px;
         }
         &:focus{
             border: none;
@@ -44,12 +61,23 @@
             box-shadow: none;
         }
     }
-    .navbar-expand-lg {
-        .navbar-nav{
+    .menu-collapse {
+        margin-left: auto;
+        @media ($sm-991){
+            display: none;
+            height: 100vh;
+            flex-basis: 100%;
+            flex-grow: 1;
+        }
+        .navigation{
+            padding: 0;
+            margin: 0;
             @media ($sm-991){
                 padding: 20px 0;
+                flex-direction: column;
             }
-            .nav-item{
+            li{
+                list-style: none;
                 padding-right: 31.5px;
                 padding-left: 31.5px;
                 @media ($sm-1679){
@@ -68,7 +96,7 @@
                 @media ($sm-1199){
                     padding-right: 15px;
                     padding-left: 15px;
-                    padding-top: 5px;
+                    padding-top: 0px;
                     padding-bottom: 5px;
                 }
                 @media ($sm-991){
@@ -77,7 +105,7 @@
                     padding-top: 5px;
                     padding-bottom: 5px;
                 }
-                .nav-link{
+                .menu-link{
                     font: normal normal normal 18px/27px Titillium Web;
                     color: $white;
                     position: relative;
@@ -88,15 +116,16 @@
                         padding-bottom: 0px;
                     }
                     @media (min-width:1679px){
-                        font-size: 17px;
+                        font: normal normal normal 17px/27px Titillium Web;
                         
                     }
                     @media ($sm-1199){
-                        font-size: 16px;
+                        font: normal normal normal 16px/26px Titillium Web;
                     }
                     @media ($sm-991){
                         padding-top: 5px;
                         padding-bottom: 5px;
+                        font-size: 14px;
                     }
                     &::after {
                         content: "";
@@ -111,8 +140,7 @@
                         transition: transform 0.25s ease-out;
 
                         @media ($sm-991){
-
-                            padding-bottom: 0px;
+                            bottom: 0px;
                         }
                       }
                       &:hover::after {
@@ -123,12 +151,65 @@
                 &:last-child{
                     padding-right: 0px;
                 }
+                &.dropdown{
+                    position: relative;
+                    .drp-dwn-wrp{
+                        @media ($lg-992){
+                            position: absolute;
+                            right: 0px;
+                            display: none;
+                            padding-top: 20px;
+                        }
+                        .dropdown-menu{
+                            &::before{
+                                @media ($lg-992){
+                                    content: "";
+                                    width: 0; 
+                                    height: 0; 
+                                    border-left: 15px solid transparent;
+                                    border-right: 15px solid transparent;
+                                    border-bottom: 20px solid #141b2b;
+                                    position: absolute;
+                                    right: 10px;
+                                    top: 5px;
+                                }
+                            }
+                            transition: all 0.5s linear;
+                            padding: 15px 20px;
+                            min-width: 200px;
+                            background: #141b2b;
+                            border-radius: 7px;
+                            -webkit-border-radius:7px;
+                            a{
+                                color: #fff;
+                                font:normal normal normal 16px/26px Titillium Web;
+                                padding: 5px 0;
+                            }
+                            @media ($sm-991){
+                                background-color: transparent;
+                            }
+                        }
+                        @media ($sm-991){
+                            position: relative;
+                        }
+                    }
+                }
+                &:hover{
+                    .drp-dwn-wrp{
+                        display: flex;
+                        .dropdown-menu{
+                            display: flex;
+                            flex-direction: column;
+                        }
+                    }
+                }
             }
         }
     }
-    .navbar-collapse{
+    .nav-collapse{
         @media ($sm-991){
             height: 100vh;
         }
+    }
     }
 }
