@@ -21,9 +21,14 @@
     @media ($sm-991){
         padding: 8px 0;
     }
-    .navbar-brand{
-    
-        
+    .main-nav{
+        display: flex;
+        flex-wrap: wrap;
+        .logo{
+            display: flex;
+            @media ($sm-991){
+                margin-right: auto;
+            }
             img{
                 @media ($sm-1679){
                     max-width: 120px;
@@ -32,11 +37,28 @@
                     max-width: 120px;
                 }
             }
-        
-    }
-    .navbar-toggler{
-        .navbar-toggler-icon{
+        }
+        .menu-collapse{
+            margin-left: auto;
+            flex-basis: 100%;
+            flex-grow: 1;
+        }
+    .menu-toggler{
+        background-color: transparent;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 6px;
+        height: 40px;
+        display: none;
+        @media ($sm-991){
+            display: block;
+        }
+        .menu-toggler-icon{
             background-image: url('../img/menu-bar.svg');
+            display: block;
+            width: 27px;
+            height: 16px;
         }
         &:focus{
             border: none;
@@ -44,12 +66,19 @@
             box-shadow: none;
         }
     }
-    .navbar-expand-lg {
-        .navbar-nav{
+    .menu-collapse {
+        @media ($sm-991){
+            display: none;
+        }
+        .navigation{
+            padding: 0;
+            margin: 0;
             @media ($sm-991){
                 padding: 20px 0;
+                flex-direction: column;
             }
-            .nav-item{
+            li{
+                list-style: none;
                 padding-right: 31.5px;
                 padding-left: 31.5px;
                 @media ($sm-1679){
@@ -77,7 +106,7 @@
                     padding-top: 5px;
                     padding-bottom: 5px;
                 }
-                .nav-link{
+                .menu-link{
                     font: normal normal normal 18px/27px Titillium Web;
                     color: $white;
                     position: relative;
@@ -123,12 +152,32 @@
                 &:last-child{
                     padding-right: 0px;
                 }
+                &.dropdown{
+                    position: relative;
+                    .dropdown-menu{
+                        display: none;
+                        transition: all 0.5s linear;
+                        padding: 15px 10px;
+                        position: absolute;
+                        min-width: 200px;
+                        a{
+                            color: #fff;
+                            font:normal normal normal 16px/26px Titillium Web
+                        }
+                    }
+                }
+                &:hover{
+                    .dropdown-menu{
+                        display: block;
+                    }
+                }
             }
         }
     }
-    .navbar-collapse{
+    .nav-collapse{
         @media ($sm-991){
             height: 100vh;
         }
+    }
     }
 }
