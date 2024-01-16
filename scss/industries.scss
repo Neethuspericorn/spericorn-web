@@ -76,7 +76,7 @@ a{
     @media ($sm-991){
         grid-template-columns: repeat(3,1fr);
         font-size: 40px;
-        row-gap: 10px !important;
+        row-gap: 20px !important;
      }
      @media ($sm-1679){
    
@@ -95,8 +95,12 @@ a{
             }
             @media ($sm-991){
                 font-size: 14px;
+                margin: 0;;
              }
         }
+        @media ($sm-991){
+            padding-top: 0;
+         }
     }
     @media ($sm-579){
         grid-template-columns: repeat(2,1fr) !important;
@@ -437,6 +441,7 @@ a{
            }
     }
     .main-desc{
+        margin: 0;;
         font: normal normal 300 19px/32px Titillium Web;
         @media ($sm-991){
             margin: 0;
