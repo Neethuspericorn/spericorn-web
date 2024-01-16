@@ -85,6 +85,9 @@ img{
     }
 }
 .custom-container{
+    @media (min-width:1024px){
+        max-width: calc(100vw - 50px);
+    }
     @media (min-width:1500px){
         max-width: 1450px;
     }
