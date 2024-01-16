@@ -3,7 +3,7 @@ $(document).ready(function(){
         section : ".slide",
         scrollSpeed: 200,
         setHeights: true,
-        offset: '',
+        offset: 0,
         sectionName:false,
         interstitialSection:"header,footer"
     });
