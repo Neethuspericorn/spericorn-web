@@ -103,6 +103,7 @@
 @media (max-width: 1679px) {
   .custom-web .slider-img {
     margin-top: -160px;
+    max-width: 40%;
   }
 }
 @media (max-width: 991px) {
@@ -141,38 +142,32 @@
 }
 @media (max-width: 1679px) {
   .custom-web .slider-wrp {
-    margin-top: 70px;
+    margin-top: 50px;
   }
 }
 @media (max-width: 1481px) {
   .custom-web .slider-wrp {
-    margin-top: 65px;
-  }
-}
-@media (max-width: 1441px) {
-  .custom-web .slider-wrp {
-    margin-top: 60px;
+    margin-top: 45px;
   }
 }
 @media (max-width: 1281px) {
   .custom-web .slider-wrp {
-    margin-top: 55px;
+    margin-top: 40px;
   }
 }
 @media (max-width: 1199px) {
   .custom-web .slider-wrp {
-    margin-top: 50px;
+    margin-top: 35px;
   }
 }
 @media (max-width: 991px) {
   .custom-web .slider-wrp {
-    margin-top: 45px;
+    margin-top: 30px;
   }
 }
 @media (max-width: 767px) {
   .custom-web .slider-wrp {
     flex-direction: column;
-    margin-top: 40px;
   }
 }
 .custom-web .slider-wrp .conetnt-left {
@@ -185,7 +180,7 @@
   overflow-y: auto;
   max-width: 22%;
 }
-@media (max-width: 1199px) {
+@media (max-width: 1679px) {
   .custom-web .slider-wrp .nav-left {
     max-height: 365px;
   }
@@ -268,34 +263,28 @@
 }
 @media (max-width: 1679px) {
   .custom-web .slider-wrp .nav-left .slide-list li {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
 }
 @media (max-width: 1481px) {
   .custom-web .slider-wrp .nav-left .slide-list li {
-    margin-bottom: 18px;
-  }
-}
-@media (max-width: 1441px) {
-  .custom-web .slider-wrp .nav-left .slide-list li {
-    margin-bottom: 17px;
+    margin-bottom: 14px;
   }
 }
 @media (max-width: 1281px) {
   .custom-web .slider-wrp .nav-left .slide-list li {
-    margin-bottom: 16px;
+    margin-bottom: 13px;
   }
 }
 @media (max-width: 1199px) {
   .custom-web .slider-wrp .nav-left .slide-list li {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
   }
 }
 @media (max-width: 767px) {
   .custom-web .slider-wrp .nav-left .slide-list li {
     max-width: 100%;
     flex: 1 0 auto;
-    margin-bottom: 10px;
   }
 }
 .custom-web .slider-wrp .nav-left .slide-list li::before {
