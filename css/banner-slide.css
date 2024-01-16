@@ -35,6 +35,12 @@
 }
 .banner-outr-container .right-anim-slider .content-area {
   transform: rotate(80deg);
+  margin-left: -320px;
+}
+@media (max-width: 1399px) {
+  .banner-outr-container .right-anim-slider .content-area {
+    margin-left: -120px;
+  }
 }
 
 .right-anim-slider .slick-slide img {
