@@ -80,6 +80,7 @@
 }
 @media (max-width: 767px) {
   .custom-web .inner-wrp {
+    margin-top: 0;
     padding-bottom: 0px;
   }
 }
