@@ -95,6 +95,7 @@
         aspect-ratio: 0.8;
         @media ($sm-1679){
             margin-top: -160px;
+            max-width: 40%;
         }
         @media ($sm-991){
             max-width: 100%;
@@ -129,29 +130,25 @@
         }
     }
     .slider-wrp{
-        margin-top: 117px;
+        margin-top: 87px;
         display: flex;
         @media ($sm-1679){
-            margin-top: 70px;
-        }
-        @media ($sm-1481){
-            margin-top: 65px;
-        }
-        @media ($sm-1441){
-            margin-top: 60px;;
-        }
-        @media ($sm-1281){
-            margin-top: 55px;
-        }
-        @media ($sm-1199){
             margin-top: 50px;
         }
-        @media ($sm-991){
+        @media ($sm-1481){
             margin-top: 45px;
+        }
+        @media ($sm-1281){
+            margin-top: 40px;
+        }
+        @media ($sm-1199){
+            margin-top: 35px;
+        }
+        @media ($sm-991){
+            margin-top: 30px;
         }
         @media ($sm-767){
             flex-direction: column;
-            margin-top: 40px;
         }
         .conetnt-left{
             display: flex;
@@ -163,7 +160,7 @@
             max-height: 450px;
             overflow-y: auto;
             max-width: 22%;
-            @media ($sm-1199){
+            @media ($sm-1679){
                 max-height: 365px;
             }
             @media($sm-991){
@@ -225,26 +222,21 @@
 
                     @media ($sm-1679){
                        
-                        margin-bottom: 20px;
+                        margin-bottom: 15px;
                     }
                     @media ($sm-1481){
 
-                        margin-bottom: 18px;
-                    }
-                    @media ($sm-1441){
-
-                        margin-bottom: 17px;
+                        margin-bottom: 14px;
                     }
                     @media ($sm-1281){
-                        margin-bottom: 16px;
+                        margin-bottom: 13px;
                     }
                     @media ($sm-1199){
-                        margin-bottom: 15px;
+                        margin-bottom: 10px;
                     }
                     @media ($sm-767){
                         max-width: 100%;
                         flex:1 0 auto;
-                        margin-bottom: 10px;
                     }
                     &::before{
                         content: "";
