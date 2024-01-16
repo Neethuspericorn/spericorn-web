@@ -19,6 +19,22 @@
   display: flex;
   flex-direction: column;
 }
+.banner .bnr-left .main-desc {
+  font: normal normal 300 22px/31px "Titillium Web", sans-serif;
+  margin-top: 15px;
+}
+@media (max-width: 1679px) {
+  .banner .bnr-left .main-desc {
+    font: normal normal 300 19px/28px "Titillium Web", sans-serif;
+    margin-top: 5px;
+  }
+}
+@media (max-width: 767px) {
+  .banner .bnr-left .main-desc {
+    font: normal normal 300 18px/25px "Titillium Web", sans-serif;
+    margin-top: 5px;
+  }
+}
 @media (max-width: 767px) {
   .banner .bnr-left {
     margin-right: 0px;
@@ -26,12 +42,12 @@
   }
 }
 .banner .bnr-left .bnr-title {
-  font: normal normal 700 44px/67px "Titillium Web", sans-serif;
+  font: normal normal 700 44px/35px "Titillium Web", sans-serif;
   margin-bottom: 13px;
 }
 @media (max-width: 1679px) {
   .banner .bnr-left .bnr-title {
-    font: normal normal 700 30px/50px "Titillium Web", sans-serif;
+    font: normal normal 700 30px/28px "Titillium Web", sans-serif;
   }
 }
 @media (max-width: 1441px) {
@@ -77,3 +93,5 @@
 .main-desc1 {
   color: #fff !important;
 }
+
+/*# sourceMappingURL=banner.css.map */
