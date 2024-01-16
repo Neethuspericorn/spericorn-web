@@ -6,7 +6,7 @@
     align-items: flex-start;
     padding-bottom: 165px;
     @media ($sm-1679){
-        padding-bottom: 140px;
+        padding-bottom: 130px;
     }
     @media ($sm-1481){
         padding-bottom: 120px;
@@ -26,25 +26,22 @@
     .inner-wrp{
         margin-top:86px;
         @media ($sm-1679){
-            margin-top: 80px;
-        }
-        @media ($sm-1481){
-            margin-top: 70px;
-        }
-        @media ($sm-1441){
             margin-top: 60px;
         }
-        @media ($sm-1281){
-            padding-bottom: 90px;
-            margin-top: 40px;
+        @media ($sm-1481){
+            margin-top: 55px;
         }
-        @media ($sm-1199){
-            padding-bottom: 80px;
+        @media ($sm-1441){
+            margin-top: 50px;
+        }
+        @media ($sm-1281){
             margin-top: 45px;
         }
-        @media ($sm-991){
-            padding-bottom: 50px;
+        @media ($sm-1199){
             margin-top: 40px;
+        }
+        @media ($sm-991){
+            margin-top: 38px;
         }
         @media ($sm-767){
             padding-bottom: 0px;
