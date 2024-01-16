@@ -3,17 +3,25 @@
 {
     height: 100vh;
     overflow: hidden;
+    position: relative;
     .bnr-left
     {
         justify-content: center;
         margin-top:-157px;
+        position: relative;
+        z-index: 2;
+        padding: 0;
     }
 }
 @media(max-width:991px)
 {
     .right-anim-slider
     {
-        display: none;
+       // display: none;
+       position: absolute;
+       inset: 0;
+       z-index: 1;
+       opacity: 0.15;
     }
     .bnr-left.sp-col-md-4 {
         max-width: 100% !important;
@@ -25,12 +33,23 @@
 {
     display:flex;
     justify-content:space-between;
+    
     .right-anim-slider
     {
         width:100%; 
         .content-area
         {
           transform: rotate(80deg);
+          margin-left: -320px;
+          @media(max-width:1399px)
+          {
+            margin-left: -120px;
+          }
+          @media($sm-991){
+            width: calc(100vh + 120px);
+            margin-left: 0;
+            
+          }
         }
     }
 }
