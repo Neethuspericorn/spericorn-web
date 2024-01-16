@@ -276,7 +276,7 @@ a{
         margin: 20px 0px;
     
     }
-    a{
+    .c-btn{
         font: normal normal normal 22px Titillium Web;
         letter-spacing: 0px;
         color: #3B7BF8;
@@ -703,7 +703,7 @@ a{
         @media ($sm-991){
         padding-top: 0;
         }
-        a{
+        .c-btn{
             background-color: #3B7BF8;
             color: #fff;
             display: inline-block;

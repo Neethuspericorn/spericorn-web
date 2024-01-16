@@ -323,7 +323,7 @@ a {
     margin: 20px 0px;
   }
 }
-.case-study-btn a {
+.case-study-btn .c-btn {
   font: normal normal normal 22px Titillium Web;
   letter-spacing: 0px;
   color: #3B7BF8;
@@ -336,49 +336,49 @@ a {
   display: inline-block;
 }
 @media (max-width: 1679px) {
-  .case-study-btn a {
+  .case-study-btn .c-btn {
     font-size: 16px !important;
   }
 }
 @media (max-width: 1281px) {
-  .case-study-btn a {
+  .case-study-btn .c-btn {
     font-size: 16px !important;
   }
 }
 @media (max-width: 991px) {
-  .case-study-btn a {
+  .case-study-btn .c-btn {
     font-size: 14px !important;
     padding: 10px 15px;
   }
 }
-.case-study-btn a span {
+.case-study-btn .c-btn span {
   z-index: 5;
   position: relative;
   transition: color 350ms ease;
 }
-.case-study-btn a:hover span {
+.case-study-btn .c-btn:hover span {
   color: #fff;
 }
-.case-study-btn a:hover::before {
+.case-study-btn .c-btn:hover::before {
   transform: translateX(0);
   transition: transform 350ms ease;
 }
-.case-study-btn a:hover::after {
+.case-study-btn .c-btn:hover::after {
   opacity: 1;
   transform: translateX(0);
   transition: transform 350ms 360ms ease;
 }
-.case-study-btn a::before {
+.case-study-btn .c-btn::before {
   transform: translateX(-100%);
   z-index: 1 !important;
 }
-.case-study-btn a::after {
+.case-study-btn .c-btn::after {
   z-index: 0;
   transform: translateX(100%);
   transition: none;
   transition: transform 350ms ease;
 }
-.case-study-btn a::before, .case-study-btn a::after {
+.case-study-btn .c-btn::before, .case-study-btn .c-btn::after {
   content: " ";
   display: block;
   position: absolute;
@@ -758,21 +758,21 @@ a {
     padding-top: 0;
   }
 }
-.consultation .consultn-btn1 a {
+.consultation .consultn-btn1 .c-btn {
   background-color: #3B7BF8;
   color: #fff;
   display: inline-block;
   z-index: 99;
 }
 @media (max-width: 991px) {
-  .consultation .consultn-btn1 a {
+  .consultation .consultn-btn1 .c-btn {
     padding: 10px 15px;
   }
 }
-.consultation .consultn-btn1 a:hover span {
+.consultation .consultn-btn1 .c-btn:hover span {
   color: #3B7BF8;
 }
-.consultation .consultn-btn1 a::before, .consultation .consultn-btn1 a::after {
+.consultation .consultn-btn1 .c-btn::before, .consultation .consultn-btn1 .c-btn::after {
   background-color: #fff !important;
 }
 
