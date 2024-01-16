@@ -116,11 +116,11 @@
                         padding-bottom: 0px;
                     }
                     @media (min-width:1679px){
-                        font-size: 17px;
+                        font: normal normal normal 17px/27px Titillium Web;
                         
                     }
                     @media ($sm-1199){
-                        font-size: 16px;
+                        font: normal normal normal 16px/26px Titillium Web;
                     }
                     @media ($sm-991){
                         padding-top: 5px;

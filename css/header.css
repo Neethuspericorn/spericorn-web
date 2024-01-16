@@ -158,12 +158,12 @@
 }
 @media (min-width: 1679px) {
   .header .main-nav .menu-collapse .navigation li .menu-link {
-    font-size: 17px;
+    font: normal normal normal 17px/27px Titillium Web;
   }
 }
 @media (max-width: 1199px) {
   .header .main-nav .menu-collapse .navigation li .menu-link {
-    font-size: 16px;
+    font: normal normal normal 16px/26px Titillium Web;
   }
 }
 @media (max-width: 991px) {
