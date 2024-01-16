@@ -192,19 +192,16 @@
                 width: 100%;
                 @media ($sm-1679){
                     padding: 40px;
-                    font: normal normal 300 16px/26px Titillium Web;
+                    font: normal normal 300 18px/26px Titillium Web;
                 }
                 @media ($sm-1481){
                     padding: 30px;
-                    font: normal normal 300 15px/25px Titillium Web;
-                }
-                @media ($sm-1199){
-                    padding: 25px;
-                    font: normal normal 300 14px/24px Titillium Web;
+                    font: normal normal 300 16px/26px Titillium Web;
                 }
                 @media ($sm-767){
                     padding: 20px;
                     max-width: 100%;
+                    font: normal normal 300 14px/24px Titillium Web;
                 }
             }
         }

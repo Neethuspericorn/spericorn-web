@@ -264,25 +264,20 @@
 @media (max-width: 1679px) {
   .faq .slider-wrp .details-right .gray-box {
     padding: 40px;
-    font: normal normal 300 16px/26px Titillium Web;
+    font: normal normal 300 18px/26px Titillium Web;
   }
 }
 @media (max-width: 1481px) {
   .faq .slider-wrp .details-right .gray-box {
     padding: 30px;
-    font: normal normal 300 15px/25px Titillium Web;
-  }
-}
-@media (max-width: 1199px) {
-  .faq .slider-wrp .details-right .gray-box {
-    padding: 25px;
-    font: normal normal 300 14px/24px Titillium Web;
+    font: normal normal 300 16px/26px Titillium Web;
   }
 }
 @media (max-width: 767px) {
   .faq .slider-wrp .details-right .gray-box {
     padding: 20px;
     max-width: 100%;
+    font: normal normal 300 14px/24px Titillium Web;
   }
 }
 .faq .btm-qa {
