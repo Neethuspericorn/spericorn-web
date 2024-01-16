@@ -14,12 +14,32 @@
 }
 @media (max-width: 1679px) {
   .faq {
-    padding: 85px 0 80px;
+    padding-bottom: 80px;
+    padding-top: 80px;
+  }
+}
+@media (max-width: 1481px) {
+  .faq {
+    padding-bottom: 70px;
+    padding-top: 70px;
+  }
+}
+@media (max-width: 1281px) {
+  .faq {
+    padding-bottom: 60px;
+    padding-top: 60px;
+  }
+}
+@media (max-width: 1199px) {
+  .faq {
+    padding-bottom: 50px;
+    padding-top: 50px;
   }
 }
 @media (max-width: 991px) {
   .faq {
-    padding: 50px 0 40px;
+    padding-bottom: 40px;
+    padding-top: 40px;
   }
 }
 .faq .casestudy-outer {
@@ -54,38 +74,32 @@
 }
 @media (max-width: 1679px) {
   .faq .slider-wrp {
-    margin-top: 70px;
+    margin-top: 40px;
   }
 }
 @media (max-width: 1481px) {
   .faq .slider-wrp {
-    margin-top: 65px;
-  }
-}
-@media (max-width: 1441px) {
-  .faq .slider-wrp {
-    margin-top: 60px;
+    margin-top: 35px;
   }
 }
 @media (max-width: 1281px) {
   .faq .slider-wrp {
-    margin-top: 55px;
+    margin-top: 30px;
   }
 }
 @media (max-width: 1199px) {
   .faq .slider-wrp {
-    margin-top: 50px;
+    margin-top: 25px;
   }
 }
 @media (max-width: 991px) {
   .faq .slider-wrp {
-    margin-top: 45px;
+    margin-top: 20px;
   }
 }
 @media (max-width: 767px) {
   .faq .slider-wrp {
     flex-direction: column;
-    margin-top: 40px;
   }
 }
 .faq .slider-wrp .conetnt-left {
@@ -98,7 +112,12 @@
   overflow-y: auto;
   max-width: 40%;
 }
-@media (max-width: 991px) {
+@media (max-width: 1199px) {
+  .faq .slider-wrp .nav-left {
+    max-height: 365px;
+  }
+}
+@media (max-width: 767px) {
   .faq .slider-wrp .nav-left {
     max-width: 100%;
     margin-bottom: 20px;
@@ -120,7 +139,8 @@
   .faq .slider-wrp .nav-left .slide-list {
     flex-direction: row;
     margin-top: 0px;
-    column-gap: 10px;
+    -moz-column-gap: 10px;
+         column-gap: 10px;
   }
 }
 .faq .slider-wrp .nav-left .slide-list li {
@@ -151,27 +171,22 @@
 }
 @media (max-width: 1679px) {
   .faq .slider-wrp .nav-left .slide-list li button {
-    font: normal normal normal 20px/30px "Titillium Web", sans-serif;
+    font: normal normal normal 18px/28px "Titillium Web", sans-serif;
   }
 }
 @media (max-width: 1481px) {
   .faq .slider-wrp .nav-left .slide-list li button {
-    font: normal normal normal 19px/29px "Titillium Web", sans-serif;
-  }
-}
-@media (max-width: 1441px) {
-  .faq .slider-wrp .nav-left .slide-list li button {
-    font: normal normal normal 18px/28px "Titillium Web", sans-serif;
+    font: normal normal normal 17px/17px "Titillium Web", sans-serif;
   }
 }
 @media (max-width: 1281px) {
   .faq .slider-wrp .nav-left .slide-list li button {
-    font: normal normal normal 17px/27px "Titillium Web", sans-serif;
+    font: normal normal normal 16px/26px "Titillium Web", sans-serif;
   }
 }
 @media (max-width: 1199px) {
   .faq .slider-wrp .nav-left .slide-list li button {
-    font: normal normal normal 16px/26px "Titillium Web", sans-serif;
+    font: normal normal normal 15px/25px "Titillium Web", sans-serif;
   }
 }
 @media (max-width: 991px) {
@@ -181,25 +196,21 @@
 }
 @media (max-width: 1679px) {
   .faq .slider-wrp .nav-left .slide-list li {
-    font: normal normal normal 20px/30px "Titillium Web", sans-serif;
     margin-bottom: 25px;
   }
 }
 @media (max-width: 1481px) {
   .faq .slider-wrp .nav-left .slide-list li {
-    font: normal normal normal 19px/29px "Titillium Web", sans-serif;
     margin-bottom: 20px;
   }
 }
 @media (max-width: 1441px) {
   .faq .slider-wrp .nav-left .slide-list li {
-    font: normal normal normal 18px/28px "Titillium Web", sans-serif;
     margin-bottom: 15px;
   }
 }
 @media (max-width: 1199px) {
   .faq .slider-wrp .nav-left .slide-list li {
-    font: normal normal normal 16px/26px "Titillium Web", sans-serif;
     margin-bottom: 10px;
   }
 }
@@ -253,26 +264,25 @@
 @media (max-width: 1679px) {
   .faq .slider-wrp .details-right .gray-box {
     padding: 40px;
-    font: normal normal 300 20px/32px Titillium Web;
+    font: normal normal 300 16px/26px Titillium Web;
   }
 }
 @media (max-width: 1481px) {
   .faq .slider-wrp .details-right .gray-box {
-    padding: 35px;
-    font: normal normal 300 18px/30px Titillium Web;
+    padding: 30px;
+    font: normal normal 300 15px/25px Titillium Web;
   }
 }
 @media (max-width: 1199px) {
   .faq .slider-wrp .details-right .gray-box {
-    padding: 30px;
-    font: normal normal 300 17px/29px Titillium Web;
+    padding: 25px;
+    font: normal normal 300 14px/24px Titillium Web;
   }
 }
 @media (max-width: 767px) {
   .faq .slider-wrp .details-right .gray-box {
-    padding: 25px;
+    padding: 20px;
     max-width: 100%;
-    font: normal normal 300 16px/28px Titillium Web;
   }
 }
 .faq .btm-qa {
@@ -285,17 +295,17 @@
 }
 @media (max-width: 1441px) {
   .faq .btm-qa {
-    margin-top: 60px;
+    margin-top: 50px;
   }
 }
 @media (max-width: 1281px) {
   .faq .btm-qa {
-    margin-top: 50px;
+    margin-top: 40px;
   }
 }
 @media (max-width: 991px) {
   .faq .btm-qa {
-    margin-top: 40px;
+    margin-top: 30px;
   }
 }
 .faq .btm-qa .btm-title {
@@ -305,22 +315,17 @@
 }
 @media (max-width: 1679px) {
   .faq .btm-qa .btm-title {
-    font-size: 28px;
+    font: normal normal 600 18px/28px Titillium Web;
   }
 }
-@media (max-width: 1441px) {
+@media (max-width: 1481px) {
   .faq .btm-qa .btm-title {
-    font-size: 24px;
-  }
-}
-@media (max-width: 1281px) {
-  .faq .btm-qa .btm-title {
-    font-size: 22px;
+    font: normal normal 600 17px/27px Titillium Web;
   }
 }
 @media (max-width: 991px) {
   .faq .btm-qa .btm-title {
-    font-size: 20px;
+    font: normal normal 600 16px/26px Titillium Web;
   }
 }
 .faq .btm-qa .cont-left {
@@ -337,6 +342,11 @@
 .faq .btm-qa .cont-left .para {
   color: #08243E;
   max-width: 499px;
+}
+@media (max-width: 1199px) {
+  .faq .btm-qa .cont-left .para {
+    max-width: 390px;
+  }
 }
 .faq .btm-qa .cont-left .btn-contact {
   background-color: #3B7BF8;
@@ -387,5 +397,3 @@
   background-color: #3B7BF8;
   outline: 1px solid #3B7BF8;
 }
-
-/*# sourceMappingURL=faq.css.map */

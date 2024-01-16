@@ -5,49 +5,56 @@
     display: flex;
     align-items: flex-start;
     padding-bottom: 165px;
+    padding-top: 165px;
     @media ($sm-1679){
         padding-bottom: 130px;
+        padding-top: 130px;
     }
     @media ($sm-1481){
         padding-bottom: 120px;
+        padding-top: 120px;
     }
     @media ($sm-1441){
         padding-bottom: 100px;
+        padding-top: 100px;
     }
     @media ($sm-1281){
         padding-bottom: 90px;
+        padding-top: 90px;
     }
     @media ($sm-1199){
         padding-bottom: 80px;
+        padding-top: 80px;
     }
     @media ($sm-991){
         padding-bottom: 60px;
+        padding-top: 60px;
     }
-    .inner-wrp{
-        margin-top:86px;
-        @media ($sm-1679){
-            margin-top: 60px;
-        }
-        @media ($sm-1481){
-            margin-top: 55px;
-        }
-        @media ($sm-1441){
-            margin-top: 50px;
-        }
-        @media ($sm-1281){
-            margin-top: 45px;
-        }
-        @media ($sm-1199){
-            margin-top: 40px;
-        }
-        @media ($sm-991){
-            margin-top: 38px;
-        }
-        @media ($sm-767){
-            margin-top: 0;
-            padding-bottom: 0px;
-        }
-    }
+    // .inner-wrp{
+    //     margin-top:86px;
+    //     @media ($sm-1679){
+    //         margin-top: 60px;
+    //     }
+    //     @media ($sm-1481){
+    //         margin-top: 55px;
+    //     }
+    //     @media ($sm-1441){
+    //         margin-top: 50px;
+    //     }
+    //     @media ($sm-1281){
+    //         margin-top: 45px;
+    //     }
+    //     @media ($sm-1199){
+    //         margin-top: 40px;
+    //     }
+    //     @media ($sm-991){
+    //         margin-top: 38px;
+    //     }
+    //     @media ($sm-767){
+    //         margin-top: 0;
+    //         padding-bottom: 0px;
+    //     }
+    // }
     .sec-title{
         color: $white;
         margin-bottom: 13px;
@@ -59,6 +66,7 @@
         font: normal normal 300 20px/35px $font-primary;
         color: $white;
         max-width: 647px;
+        margin: 0px;
         @media ($sm-1679){
             font: normal normal 300 18px/33px $font-primary;
             max-width: 620px;
@@ -85,12 +93,15 @@
         width: 100%;
         height: 100%;
         object-fit: contain;
-        max-width: 100%;
+        max-width: 48%;
         position: relative;
         margin-top: -235px;
-        aspect-ratio: 0.9;
+        aspect-ratio: 0.8;
         @media ($sm-1679){
             margin-top: -160px;
+        }
+        @media ($sm-991){
+            max-width: 100%;
         }
         // @media ($sm-1679){
         //     max-width: 100%;
@@ -155,7 +166,10 @@
             width: 100%;
             max-height: 450px;
             overflow-y: auto;
-            max-width: 25%;
+            max-width: 22%;
+            @media ($sm-1199){
+                max-height: 365px;
+            }
             @media($sm-991){
                 max-width: 30%;
             }
@@ -176,7 +190,7 @@
                 }
                 li{
                     list-style: none;
-                    font: normal normal normal 25px/38px $font-primary;
+                    // font: normal normal normal 25px/38px $font-primary;
                     margin-bottom: 36px;
                     position: relative;
                     display: flex;
@@ -194,19 +208,16 @@
                         font: normal normal normal 25px/38px $font-primary;
                         text-align: left;
                         @media ($sm-1679){
-                            font: normal normal normal 20px/30px $font-primary;
-                        }
-                        @media ($sm-1481){
-                            font: normal normal normal 19px/29px $font-primary;
-                        }
-                        @media ($sm-1441){
                             font: normal normal normal 18px/28px $font-primary;
                         }
-                        @media ($sm-1281){
+                        @media ($sm-1481){
                             font: normal normal normal 17px/27px $font-primary;
                         }
-                        @media ($sm-1199){
+                        @media ($sm-1281){
                             font: normal normal normal 16px/26px $font-primary;
+                        }
+                        @media ($sm-1199){
+                            font: normal normal normal 15px/25px $font-primary;
                         }
                         @media ($sm-991){
                             font: normal normal normal 14px/24px $font-primary;
@@ -217,24 +228,22 @@
                     }
 
                     @media ($sm-1679){
-                        font: normal normal normal 20px/30px $font-primary;
-                        margin-bottom: 25px;
+                       
+                        margin-bottom: 20px;
                     }
                     @media ($sm-1481){
-                        font: normal normal normal 19px/29px $font-primary;
-                        margin-bottom: 25px;
+
+                        margin-bottom: 18px;
                     }
                     @media ($sm-1441){
-                        font: normal normal normal 18px/28px $font-primary;
-                        margin-bottom: 25px;
+
+                        margin-bottom: 17px;
                     }
                     @media ($sm-1281){
-                        font: normal normal normal 17px/27px $font-primary;
-                        margin-bottom: 25px;
+                        margin-bottom: 16px;
                     }
                     @media ($sm-1199){
-                        font: normal normal normal 16px/26px $font-primary;
-                        margin-bottom: 25px;
+                        margin-bottom: 15px;
                     }
                     @media ($sm-767){
                         max-width: 100%;
@@ -268,7 +277,7 @@
         .details-right{
             padding-left: 54px;
             // max-width: 550px;
-            max-width: 75%;
+            max-width: 78%;
             @media ($sm-1679){
                 padding-left: 45px;
             }
@@ -294,34 +303,32 @@
                 color: $white;
                 margin-top: 0px;
                 @media ($sm-1679){
-                    font: normal normal bold 30px/50px $font-primary;
+                    font: normal normal bold 18px/28px $font-primary;
+                    margin-bottom: 15px;
                 }
                 @media ($sm-1441){
-                    font: normal normal bold 28px/38px $font-primary;
+                    font: normal normal bold 17px/27px $font-primary;
                 }
                 @media ($sm-1281){
-                    font: normal normal bold 24px/34px $font-primary;
+                    font: normal normal bold 16px/26px $font-primary;
                 }
                 @media ($sm-991){
-                    font: normal normal bold 22px/32px $font-primary;
+                    
                 }
             }
             .inner-desc{
                 margin-bottom: 0px;
                 @media ($sm-1679){
-                    font: normal normal 300 18px/28px $font-primary;
-                }
-                @media ($sm-1481){
-                    font: normal normal 300 17px/27px $font-primary;
-                }
-                @media ($sm-1441){
                     font: normal normal 300 16px/26px $font-primary;
                 }
-                @media ($sm-1199){
+                @media ($sm-1481){
                     font: normal normal 300 15px/25px $font-primary;
                 }
+                @media ($sm-1199){
+                    font: normal normal 300 14px/24px $font-primary;
+                }
                 @media ($sm-991){
-                    font: normal normal 300 14px/25px $font-primary;
+                    // font: normal normal 300 14px/25px $font-primary;
                 }
             }
             .pro-info{
@@ -329,10 +336,10 @@
                 margin: 0px;
                 padding-top: 84px;
                 @media ($sm-1679){
-                    padding-top: 40px;
+                    padding-top: 30px;
                 }
                 @media ($sm-1481){
-                    padding-top: 35px;
+                    padding-top: 25px;
                 }
                 li{
                     list-style: none;
@@ -344,8 +351,8 @@
                     padding-bottom: 30px;
                     margin-bottom: 30px;
                     @media ($sm-1679){
-                        padding-bottom: 15px;
-                    margin-bottom: 15px;
+                        padding-bottom: 5px;
+                    margin-bottom: 5px;
                     }
                     @media ($sm-991){
                         padding-bottom: 10px;
@@ -353,10 +360,13 @@
                     }
                     &:last-child{
                         border: none;
+                        margin-bottom: 0;
+                        padding-bottom: 0px;
                     }
 
                     .counts{
                         font: normal normal 600 41px/74px $font-primary;
+                        min-width: 84px;
                         @media ($sm-1679){
                             font: normal normal 600 35px/74px $font-primary;
                         }
@@ -391,6 +401,7 @@
                         .title{
                             color: $white;
                             font: normal normal 600 16px/24px $font-primary;
+                            margin-top:0px;
                             @media ($sm-1679){
                                 font: normal normal 600 15px/24px $font-primary;
                             }
@@ -408,6 +419,7 @@
             }
             .inner-content{
                 margin-right: 140px;
+                max-width: 90%;
                 @media ($sm-1679){
                     margin-right: 80px;
                 }
@@ -421,7 +433,7 @@
                     margin-right: 60px;
                 }
                 @media ($sm-1199){
-                    margin-right: 15px;
+                    margin-right: 30px;
                 }
                 @media ($sm-991){
                     margin-right: 0px;

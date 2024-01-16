@@ -1,12 +1,12 @@
 $(document).ready(function(){
-    $.scrollify({
-        section : ".slide",
-        scrollSpeed: 200,
-        setHeights: true,
-        offset: 0,
-        sectionName:false,
-        interstitialSection:"header,footer"
-    });
+    // $.scrollify({
+    //     section : ".slide",
+    //     scrollSpeed: 200,
+    //     setHeights: true,
+    //     offset: 0,
+    //     sectionName:false,
+    //     interstitialSection:"header,footer"
+    // });
     $(".menu-toggler").click(function() {
         $(this).toggleClass("on");
         $(".menu-collapse").slideToggle();
