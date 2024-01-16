@@ -79,6 +79,9 @@
                 max-height: 430px;
                 max-width: 35%;
             }
+            @media ($sm-1481){
+                max-height: 385px;
+            }
             @media ($sm-767){
                 max-width: 100%;
                 margin-bottom: 20px;

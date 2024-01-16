@@ -118,6 +118,11 @@
     max-width: 35%;
   }
 }
+@media (max-width: 1481px) {
+  .faq .slider-wrp .nav-left {
+    max-height: 385px;
+  }
+}
 @media (max-width: 767px) {
   .faq .slider-wrp .nav-left {
     max-width: 100%;
