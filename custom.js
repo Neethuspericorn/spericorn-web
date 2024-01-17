@@ -190,6 +190,7 @@ function setClass(e, t, s) {
         autoplay: false,
         autoplaySpeed: 2000,
         arrows: true,
+        variableWidth: true,
         responsive: [
           {
             breakpoint: 9999,
@@ -298,9 +299,7 @@ $window.on('resize', function() {
     return $icon_slider.slick(settings);
 });  
 
-  
-
-  });
+});
 
 
 
