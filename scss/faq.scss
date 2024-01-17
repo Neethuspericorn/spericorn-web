@@ -367,8 +367,10 @@
     border-radius: 5px;
     display: flex;
     justify-content: space-between;
+    font: normal normal 300 15px/23px $font-primary;
     .accordion-icon{
         transition: all 0.3s linear;
+        margin-left: 10px;
     }
     &.active{
         border-radius: 5px 5px 0 0;

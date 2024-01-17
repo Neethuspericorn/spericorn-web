@@ -472,9 +472,11 @@
   border-radius: 5px;
   display: flex;
   justify-content: space-between;
+  font: normal normal 300 15px/23px "Titillium Web", sans-serif;
 }
 .mobile-accordion .acco-head .accordion-icon {
   transition: all 0.3s linear;
+  margin-left: 10px;
 }
 .mobile-accordion .acco-head.active {
   border-radius: 5px 5px 0 0;

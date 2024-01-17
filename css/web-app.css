@@ -213,7 +213,7 @@
 @media (max-width: 767px) {
   .custom-web .slider-wrp .nav-left {
     max-width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
   }
 }
 .custom-web .slider-wrp .nav-left .slide-list {
@@ -307,7 +307,7 @@
 @media (max-width: 767px) {
   .custom-web .slider-wrp .nav-left .slide-list li {
     max-width: 100%;
-    flex: 1 0 auto;
+    padding: 0 5px;
   }
 }
 .custom-web .slider-wrp .nav-left .slide-list li::before {
