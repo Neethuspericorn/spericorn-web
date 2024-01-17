@@ -281,11 +281,21 @@
     font: normal normal 300 16px/26px Titillium Web;
   }
 }
+@media (max-width: 991px) {
+  .faq .slider-wrp .details-right .gray-box {
+    padding: 25px;
+    font: normal normal 300 14px/24px Titillium Web;
+  }
+}
 @media (max-width: 767px) {
   .faq .slider-wrp .details-right .gray-box {
     padding: 20px;
     max-width: 100%;
-    font: normal normal 300 14px/24px Titillium Web;
+  }
+}
+@media (max-width: 767px) {
+  .faq .slider-wrp.desk-faq {
+    display: none;
   }
 }
 .faq .btm-qa {
@@ -351,6 +361,11 @@
     max-width: 390px;
   }
 }
+@media (max-width: 991px) {
+  .faq .btm-qa .cont-left .para {
+    max-width: 100%;
+  }
+}
 .faq .btm-qa .cont-left .btn-contact {
   background-color: #3B7BF8;
   border-radius: 41px;
@@ -389,7 +404,19 @@
     margin-top: 20px;
   }
 }
-.faq .btm-qa .case-study-btn .c-btn {
+.faq .custom-scroll::-webkit-scrollbar {
+  width: 4px;
+  height: 2px;
+}
+.faq .custom-scroll::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 4px rgb(98, 118, 162);
+}
+.faq .custom-scroll::-webkit-scrollbar-thumb {
+  background-color: #3B7BF8;
+  outline: 1px solid #3B7BF8;
+}
+
+.case-study-btn .c-btn {
   font: normal normal normal 22px Titillium Web;
   letter-spacing: 0px;
   color: #3B7BF8;
@@ -402,18 +429,72 @@
   display: inline-block;
 }
 @media (max-width: 1679px) {
-  .faq .btm-qa .case-study-btn .c-btn {
+  .case-study-btn .c-btn {
     padding: 10px 40px;
   }
 }
-.faq .custom-scroll::-webkit-scrollbar {
-  width: 4px;
-  height: 2px;
+@media (max-width: 767px) {
+  .case-study-btn .c-btn {
+    font: normal normal 300 14px/24px "Titillium Web", sans-serif;
+    margin-left: 0px;
+    margin-top: 0px;
+    padding: 7px 30px;
+  }
 }
-.faq .custom-scroll::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 4px rgb(98, 118, 162);
+
+.mobile-accordion {
+  display: none;
+  /* Style the buttons that are used to open and close the accordion panel */
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  /* Style the accordion panel. Note: hidden by default */
 }
-.faq .custom-scroll::-webkit-scrollbar-thumb {
-  background-color: #3B7BF8;
-  outline: 1px solid #3B7BF8;
+@media (max-width: 767px) {
+  .mobile-accordion {
+    display: block;
+  }
+}
+.mobile-accordion .acco-panel {
+  margin-bottom: 8px;
+  border-radius: 5px;
+}
+.mobile-accordion .acco-head {
+  background-color: #1A273C;
+  color: #fff;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.0588235294);
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+.mobile-accordion .acco-head .accordion-icon {
+  transition: all 0.3s linear;
+}
+.mobile-accordion .acco-head.active {
+  border-radius: 5px 5px 0 0;
+}
+.mobile-accordion .acco-head.active .accordion-icon {
+  transform: rotate(45deg);
+}
+.mobile-accordion .active, .mobile-accordion .accordion:hover {
+  background-color: #1A273C;
+}
+.mobile-accordion .acco-body {
+  padding: 20px 18px 0;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+  border: 1px solid #1A273C;
+  border-radius: 0 0 5px 5px;
+}
+.mobile-accordion .acco-body.show {
+  display: block;
+}
+.mobile-accordion .acco-body .btm-qa {
+  margin-top: 15px;
 }
