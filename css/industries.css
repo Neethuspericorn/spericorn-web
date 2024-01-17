@@ -246,6 +246,7 @@ a {
   display: block;
   grid-column-gap: 0;
   row-gap: 0 !important;
+  width: 100%;
 }
 .years-with-icons.mobile-only .icon-sec .icon-title {
   padding: 20px;
