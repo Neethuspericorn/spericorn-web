@@ -144,7 +144,17 @@ function openService(evt, serviceName) {
 
   $(document).ready(function () {
 
-    
+    $(".tab-slide").slick({
+      mobileFirst: true, 
+      slide: 'li',
+      arrows: false,
+      responsive: [
+        {
+            breakpoint: 480,
+            settings: "unslick"
+        }
+      ]
+    })
 
   });
 
