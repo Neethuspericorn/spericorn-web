@@ -150,8 +150,8 @@ function openService(evt, serviceName) {
       arrows: false,
       responsive: [
         {
-            breakpoint: 480,
-            settings: "unslick"
+            breakpoint: 767,
+            settings: "unslick",
         }
       ]
     })
