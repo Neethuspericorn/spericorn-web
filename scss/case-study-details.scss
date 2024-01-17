@@ -1,0 +1,55 @@
+@import 'partials/partials';
+
+.case-study-det-banner{
+    position: relative;
+    padding-top: 100px;
+    & > * {
+        position: relative;
+        z-index: 2;
+    }
+    .banner-img-wrp{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 0;
+    }
+
+    .banner-titles{
+        max-width: 1200px;
+        margin: auto;
+        color: #ffffff;
+        text-align: center;
+    }
+}
+
+.project-details{
+    overflow-x: clip;
+    position: relative;
+    .sec-desc{
+        position: relative;
+        z-index: 2;
+        text-align: justify;
+        margin-top: 0;
+        margin-bottom: 1.5em;
+        font-size: 20px;
+        line-height: 1.9;
+    }
+    .proj-det-container{
+        max-width: 752px;
+        width: 39.1667vw;
+    }
+
+    .mock{
+        position: absolute;
+        width: 31.25vw;
+        aspect-ratio: 0.6831;
+        background-color:bisque;
+        overflow: hidden;
+        opacity: 0.4;
+        img{
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+}
