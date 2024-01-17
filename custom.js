@@ -73,7 +73,7 @@ $(document).ready(function(){
           if(scrWidth>1300){
             $("html, body").animate(
                 {
-                  scrollTop: offsetTop - 60
+                  scrollTop: offsetTop - 0
                 },
                 1000,
                 stopAnimation
