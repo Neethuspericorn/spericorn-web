@@ -170,18 +170,18 @@ function setClass(e, t, s) {
 
   $(document).ready(function () {
 
-    $(".bnr-icon-slide").slick({
-      mobileFirst: true, 
-      arrows: false,
-      slidesToShow: 4,
-      slidesToScroll: 1,
-      responsive: [
-        {
-            breakpoint: 991,
-            settings: "unslick",
-        }
-      ]
-    })
+    // $(".bnr-icon-slide").slick({
+    //   mobileFirst: true, 
+    //   arrows: false,
+    //   slidesToShow: 4,
+    //   slidesToScroll: 1,
+    //   responsive: [
+    //     {
+    //         breakpoint: 991,
+    //         settings: "unslick",
+    //     }
+    //   ]
+    // })
 
     // $(".tab-slide").slick({
     //   mobileFirst: true, 
