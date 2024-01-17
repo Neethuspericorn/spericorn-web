@@ -23,7 +23,7 @@ a{
         @media ($sm-991){
             font-size: 22px;
             line-height: 30px;
-            padding-bottom: 15px;
+            padding-bottom: 0px;
         }
 
         span{
@@ -368,10 +368,10 @@ a{
         font-size: 22px!important;
     }
 
-    @media ($sm-991){
-            padding: 10px 0px;
-        // font-size: 22px!important;
-        // padding-bottom: 0px;
+    @media ($sm-1199){
+        padding: 13px 0px 7px 0px;
+        font-size: 20px!important;
+        line-height: 22px;
     }
 
 }
@@ -424,8 +424,13 @@ a{
                 font: normal normal 300 22px/34px Titillium Web;
                 @media ($sm-1679){
                     margin: 0;
-                    font-size: 18px !important;
-                    line-height: 28px !important;
+                    font-size: 18px ;
+                    line-height: 28px;
+                   }
+                   @media ($sm-991){
+                    margin: 0;
+                    font-size: 14px !important;
+                    line-height: 24px !important;
                    }
             }
            
@@ -443,8 +448,10 @@ a{
     .main-desc{
         margin:0;
         font: normal normal 300 19px/32px Titillium Web;
-        @media ($sm-991){
+        @media ($sm-1199){
             margin: 0;
+            font-size: 14px !important;
+            line-height: 24px !important;
            }
            @media ($sm-1679){
             margin: 0;
@@ -609,7 +616,11 @@ a{
                 @media ($sm-1679){
                     font-size: 18px;
                  } 
-    
+                 @media ($sm-1199){
+                    margin: 0;
+                    font-size: 14px !important;
+                    line-height: 24px !important;
+                   }
             }
         }
 
@@ -622,6 +633,11 @@ a{
                 font-size: 16px !important;
                 line-height: 26px !important;
              } 
+             @media ($sm-1199){
+                margin: 0;
+                font-size: 14px !important;
+                line-height: 24px !important;
+               }
 
         }
   
@@ -631,6 +647,20 @@ a{
             padding: 0;
             border: none;
             font-weight: 700;
+            font: normal normal bold 22px/34px Titillium Web;
+            letter-spacing: 0px;
+            color: #FFFFFF;
+       
+        @media ($sm-1199){
+           padding-top: 10px;
+           font: normal normal bold 14px/24px Titillium Web !important;
+           padding-bottom: 6px;
+        }
+        @media ($sm-1679){
+
+            font: normal normal bold 16px/26px Titillium Web;
+      
+         }
         }
     }
 
@@ -645,8 +675,9 @@ a{
             @media ($sm-1441){
                 font-size: 22px!important;
             }
-            @media ($sm-991){
-                font-size: 22px!important;
+            @media ($sm-1199){
+                font-size: 20px!important;
+                line-height: 22px !important;
                 padding: 10px 0px;
             }
            
