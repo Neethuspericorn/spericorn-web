@@ -36,15 +36,17 @@
         line-height: 1.9;
     }
     .proj-det-container{
-        max-width: 800px;
+        max-width: 752px;
+        width: 39.1667vw;
     }
 
     .mock{
         position: absolute;
-        width: 25vw;
-        height: 732px;
+        width: 31.25vw;
+        aspect-ratio: 0.6831;
         background-color:bisque;
         overflow: hidden;
+        opacity: 0.4;
         img{
             width: 100%;
             object-fit: cover;
