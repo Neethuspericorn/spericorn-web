@@ -148,6 +148,8 @@ function openService(evt, serviceName) {
       mobileFirst: true, 
       slide: 'li',
       arrows: false,
+      slidesToShow: 3,
+      slidesToScroll: 1,
       responsive: [
         {
             breakpoint: 767,
