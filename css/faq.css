@@ -451,6 +451,7 @@
 @media (max-width: 767px) {
   .mobile-accordion {
     display: block;
+    margin-top: 15px;
   }
 }
 .mobile-accordion .acco-panel {
