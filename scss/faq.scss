@@ -75,6 +75,7 @@
             max-height: 570px;
             overflow-y: auto;
             max-width: 42%;
+            padding-right: 10px;
             @media ($sm-1679){
                 max-height: 430px;
                 max-width: 35%;
@@ -82,13 +83,15 @@
             @media ($sm-1481){
                 max-height: 385px;
             }
+            @media ($sm-1441){
+                max-height: 330px;
+            }
             @media ($sm-767){
                 max-width: 100%;
+                max-height: 400px;
                 margin-bottom: 20px;
             }
-            @media ($sm-767){
-                max-height: 400px;
-            }
+
             .slide-list{
                 margin-left: 0px;
                 padding-left: 0px;
