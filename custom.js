@@ -170,19 +170,6 @@ function setClass(e, t, s) {
 
   $(document).ready(function () {
 
-    // $(".bnr-icon-slide").slick({
-    //   mobileFirst: true, 
-    //   arrows: false,
-    //   slidesToShow: 4,
-    //   slidesToScroll: 1,
-    //   responsive: [
-    //     {
-    //         breakpoint: 991,
-    //         settings: "unslick",
-    //     }
-    //   ]
-    // })
-
     // $(".tab-slide").slick({
     //   mobileFirst: true, 
     //   slide: 'li',
@@ -204,6 +191,10 @@ function setClass(e, t, s) {
         autoplaySpeed: 2000,
         arrows: true,
         responsive: [
+          {
+            breakpoint: 9999,
+            settings: "unslick"
+        },
           {
             breakpoint: 768,
             settings: "unslick"
@@ -238,11 +229,10 @@ function setClass(e, t, s) {
   
     // Initialize the slider
     var slider = initSlider();
-  
     // Reinitialize the slider on window resize
     $(window).on('resize', function() {
       var windowWidth = $(window).width();
-  
+      $(".slider.slick-initialized").slick('reinit');
       if (windowWidth >= 767) {
         // If the slider is initialized, destroy it
         if (slider.hasClass('slick-initialized')) {
@@ -254,7 +244,60 @@ function setClass(e, t, s) {
           slider = initSlider();
         }
       }
+
     });
+
+$window = $(window);
+$icon_slider = $('.bnr-icon-slide');
+settings = {
+  mobileFirst: true,
+  responsive: [
+    {
+      breakpoint: 800,
+      settings: {
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+      },
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        infinite: true,
+      },
+    },
+    {
+      breakpoint: 500,
+      settings: {
+        slidesToShow:2,
+        slidesToScroll: 1,
+        infinite: true,
+      },
+    },
+    {
+      breakpoint: 200,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+      },
+    },
+  ],
+};
+$icon_slider.slick(settings);
+
+$window.on('resize', function() {
+  if ($window.width() < 991) {
+    if ($icon_sliderr.hasClass('slick-initialized'))
+    $icon_slider.slick('unslick');
+    return
+  }
+  if ( ! $icon_slider.hasClass('slick-initialized'))
+    return $icon_slider.slick(settings);
+});  
+
   
 
   });

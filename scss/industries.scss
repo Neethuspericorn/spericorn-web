@@ -182,6 +182,62 @@ a{
     // margin-top: -190px;
     width: 100%;
     padding: 30px 0px;
+    &.desk-only{
+        @media ($lg-992){
+            display: block;
+        }
+        @media ($sm-991){
+            display: none;
+        }
+    }
+    &.mobile-only{
+        @media ($lg-992){
+            display: none;
+        }
+        @media ($sm-991){
+            display: block;
+        }
+        .icon-sec{
+            display: block;
+            grid-column-gap: 0;
+            row-gap: 0 !important;
+            .icon-title{
+                padding: 20px;
+            }
+            .bottom-title{
+                padding-top: 10px;
+            }
+        }
+        .slick-arrow{
+            background-color: transparent;
+            border: none;
+            outline: none;
+            font-size: 0;
+            width: 20px;
+            height: 15px;
+            position: absolute;
+            top: 35%;
+            &.slick-prev{
+                left: 0;
+            }
+            &::before{
+                content: "";
+                height: 15px;
+                background: url('../img/left-chevron-thin-left.svg') no-repeat center;
+                filter: brightness(2.5);
+                display: block;
+                width: 8px;
+            }
+            &.slick-next{
+                right: 0px;
+                &::before{
+                    background: url('../img/left-chevron-thin-right.svg') no-repeat center;
+                    width: 8px;
+                    
+                }
+            }
+        }
+    }
     .icon-sec{
         @media ($sm-991){
             row-gap: 20px !important;
