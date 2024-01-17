@@ -24,8 +24,10 @@
 }
 
 .project-details{
-    overflow-x: clip;
+    overflow: clip;
     position: relative;
+    padding-bottom: 100px;
+    color: #08243E;
     .sec-desc{
         position: relative;
         z-index: 2;
@@ -43,13 +45,68 @@
     .mock{
         position: absolute;
         width: 31.25vw;
-        aspect-ratio: 0.6831;
+        aspect-ratio: 0.8;
         background-color:bisque;
         overflow: hidden;
         opacity: 0.4;
+        box-shadow: 0px 0px 20px rgba(0,0,0,0.3);
+        border-radius: 20px;
+        &.mock-left{
+            left: -10%;
+            &.mock-left-1{
+                top: 0;
+            }
+            &.mock-left-2{
+                bottom: 0;
+                transform: translateY(60%);
+                left: -15%;
+            }
+        }
+        
+        &.mock-right{
+            right: -10%;
+            &.mock-right-1{
+                transform: translateY(60%);
+            }
+        }
         img{
             width: 100%;
             object-fit: cover;
+        }
+    }
+}
+
+.project-technologies{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    color: #08243E;
+    & > *{
+        position: relative;
+        z-index: 2;
+    }
+    .tech-list-wrp{
+        display: flex;
+        align-items: center;
+        position: relative;
+        z-index: 2;
+    }
+    .tech-list{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        font-size: 24px;
+        li{
+            margin-bottom: 3.7em;
+        }
+        .tech-title,
+        .tech-itm{
+            display: block;
+        }
+        .tech-title{
+            font-weight: 300;
+        }
+        .tech-itm{
+            font-weight: 600;
         }
     }
 }
